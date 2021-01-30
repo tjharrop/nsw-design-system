@@ -11,9 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
+  <script>
     // SVG Sprite Loader
     var svgAjax = new XMLHttpRequest();
     svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
@@ -31,995 +29,416 @@
 </head>
 
 <body >
-  <div class="nsw-masthead">
-    <div class="nsw-m-left-md">
-      <p>A NSW Government website</p>
+  
+<nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#main-navigation"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
+</nav>
+<div class="nsw-masthead">
+  <div class="nsw-container">
+    <p>A NSW Government website</p>
+  </div>
+</div>
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+          <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+            <use xlink:href="#dpc-logo"></use>
+          </svg>
+          <span class="sr-only">NSW Department of Premier and Cabinet</span>
+        </a>
+      </div>
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+      <div class="nsw-header__right">
+        <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
+          aria-controls="header-search">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
+        </button>
+      </div>
+    </div>
+    <div class="nsw-search">
+      <div id="header-search" class="nsw-search__area js-search-area" hidden>
+        <form role="search">
+          <label for="nsw-search__input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
+            name="input-autocomplete" type="text">
+          <button class="nsw-search__submit" type="submit" aria-label="search">
+          <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          </button>
+        </form>
+        <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
+          <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="sr-only">Close search</span>
+        </button>
+      </div>
     </div>
   </div>
-  <header class="nsw-header nsw-header--simple">
-    <div class="nsw-m-left-md">
-      <div class="nsw-header__wrapper">
-        <div class="nsw-header__center">
-          <a href="#" class="nsw-header__logo-link">
-            <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
-            <span class="sr-only">digital.nsw</span>
-          </a>
-        </div>
-      </div>
-  </header>
-  <div class="nsw-grid nsw-m-none" style="margin:0;">
-    <div class="nsw-col-3 nsw-col">
-      <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
-        <div class="nsw-sidenav__header">
-          <h2 id="componentsTitle" class="nsw-sidenav__heading">
-            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Components</span></h2>
-        </div>
-        <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
-                Accordion
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
-                Breadcrumbs
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/button/index.html" class="nsw-sidenav__link " >
-                Buttons
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
-                Callout
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/card/index.html" class="nsw-sidenav__link " >
-                Card
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
-                Direction links
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/feature-tile/index.html" class="nsw-sidenav__link " >
-                Feature tile
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/footer/index.html" class="nsw-sidenav__link " >
-                Footer
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/forms/index.html" class="nsw-sidenav__link " >
-                Forms
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/site-wide-message/index.html" class="nsw-sidenav__link " >
-                Global alert
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/header/index.html" class="nsw-sidenav__link " >
-                Header
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/hero-banner/index.html" class="nsw-sidenav__link " >
-                Hero banner
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/hero-search/index.html" class="nsw-sidenav__link " >
-                Hero search
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/in-page-navigation/index.html" class="nsw-sidenav__link " >
-                In-page navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
-                In-page notification
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/link-list/index.html" class="nsw-sidenav__link " >
-                Link list
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
-                Main navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/pagination/index.html" class="nsw-sidenav__link " >
-                Pagination
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/side-navigation/index.html" class="nsw-sidenav__link " >
-                Side navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/social-bar/index.html" class="nsw-sidenav__link " >
-                Social bar
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tables/index.html" class="nsw-sidenav__link " >
-                Tables
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tab-navigation/index.html" class="nsw-sidenav__link " >
-                Tabs
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tags/index.html" class="nsw-sidenav__link " >
-                Tags
-              </a>
-            </li>
-        </ul>
-      </nav>
+</header>
+<nav id="main-navigation" class="nsw-navigation " aria-label="Main menu">
+  <div class="nsw-navigation__header">
+    <h2 id="nsw-navigation">Menu</h2>
+    <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
+      <svg class="nsw-icon icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-navigation__list">
+      <li class="nsw-navigation__list-item">
+        <a href="http://google.com" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">About DPC</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#updates" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Updates</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#publications" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Publications</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#tools-resources" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Tools &amp; Resources</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#contact-us" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Contact us</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+
+<div class="nsw-hero-banner ">
+  <div class="nsw-container">
+    <div class="nsw-hero-banner__image-area">
+      <img src="https://picsum.photos/id/695/2000/1250" class="nsw-hero-banner__image" alt="">
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0;">
-      <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
-          <h1>Full width - Hero banner</h1>
-          <p>Testing description</p>
+    <div class="nsw-hero-banner__content-area">
+      <div class="nsw-hero-banner__content">
+        <h2 class="nsw-hero-banner__title">
+          <a href="#" class="nsw-hero-banner__link">Buy Regional this Christmas</a>
+        </h2>
+        <p>NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.</p>
+        <svg class="nsw-icon nsw-hero-banner__icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
       </div>
-      <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
-          <a class="nsw-skipto__link" href="#main-navigation"><span>Skip to navigation</span></a>
-          <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
-        </nav>
-        <div class="nsw-masthead">
-          <div class="nsw-container">
-            <p>A NSW Government website</p>
+    </div>
+  </div>
+</div>
+
+<main id="content">
+  <section class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Energy switch</a>
+                      </h2>
+                      <p class="nsw-card__copy">Save money by comparing electricity and gas plans.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/3/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Creative kids</a>
+                      </h2>
+                      <p class="nsw-card__copy">$100 voucher for children&#x27;s creative and cultural activities.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/531/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Active kids</a>
+                      </h2>
+                      <p class="nsw-card__copy">$100 voucher for children&#x27;s sport, fitness and recreation.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/646/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
           </div>
         </div>
-        <header class="nsw-header">
-          <div class="nsw-header__container">
-            <div class="nsw-header__wrapper">
-              <div class="nsw-header__center">
-                <a href="#" class="nsw-header__logo-link">
-                  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
-                    <use xlink:href="#dpc-logo"></use>
-                  </svg>
-                  <span class="sr-only">NSW Department of Premier and Cabinet</span>
-                </a>
-              </div>
-              <div class="nsw-header__left">
-                <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
-                  aria-controls="main-navigation">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
-                </button>
-              </div>
-              <div class="nsw-header__right">
-                <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
-                  aria-controls="header-search">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
-                </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="nsw-section--light-10">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <h2 class="nsw-section-title">Energy and utilities</h2>
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Energy save</a>
+                      </h2>
+                      <p class="nsw-card__copy">Helps you compare electricity and gas and switch providers.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
               </div>
             </div>
-            <div class="nsw-search">
-              <div id="header-search" class="nsw-search__area js-search-area" hidden>
-                <form role="search">
-                  <label for="nsw-search__input" class="sr-only">Search site for:</label>
-                  <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
-                    name="input-autocomplete" type="text">
-                  <button class="nsw-search__submit" type="submit" aria-label="search">
-                  <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  </button>
-                </form>
-                <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
-                  <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#close"></use>
-                  </svg>
-                  <span class="sr-only">Close search</span>
-                </button>
+            <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Family rebate</a>
+                      </h2>
+                      <p class="nsw-card__copy">Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Appliance save</a>
+                      </h2>
+                      <p class="nsw-card__copy">Concession card holders may be able to save on a new fridge or television.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Family rebate</a>
+                      </h2>
+                      <p class="nsw-card__copy">Helps families with dependants to pay their energy bills. Applications opening again late July for the 2019-20 rebate.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
               </div>
             </div>
           </div>
-        </header>
-        <nav id="main-navigation" class="nsw-navigation " aria-label="Main menu">
-          <div class="nsw-navigation__header">
-            <h2 id="nsw-navigation">Menu</h2>
-            <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
-              <svg class="nsw-icon icon" focusable="false" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-              <span class="sr-only">Close Menu</span>
-            </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <h2 class="nsw-section-title">Latest updates</h2>
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Nominations open for Green Globe Awards 2019</a>
+                      </h2>
+                      <p class="nsw-card__tag">Community</p>
+                      <p class="nsw-card__date">
+                        <time datetime="2019-03-09">09 March 2019</time>
+                      </p>
+                      <p class="nsw-card__copy">The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across NSW.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/292/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">Quality green spaces and a million more trees for NSW</a>
+                      </h2>
+                      <p class="nsw-card__tag">Environment</p>
+                      <p class="nsw-card__date">
+                        <time datetime="2019-03-01">01 March 2019</time>
+                      </p>
+                      <p class="nsw-card__copy">The NSW Government will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/28/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
+            <div class="nsw-col nsw-col-md-4">
+              <div class="nsw-card ">
+                  <div class="nsw-card__content">
+                      <h2 class="nsw-card__title">
+                        <a href="#" class="nsw-card__link">New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
+                      </h2>
+                      <p class="nsw-card__tag">Education</p>
+                      <p class="nsw-card__date">
+                        <time datetime="2019-02-20">20 February 2019</time>
+                      </p>
+                      <p class="nsw-card__copy">The NSW Government will redouble its efforts to lift literacy and numeracy standards across NSW public schools to ensure students are given every opportunity to be their best.</p>
+                      <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#arrow"></use>
+                      </svg>
+                  </div>
+                  <div class="nsw-card__image-area">
+                      <img src="https://picsum.photos/id/24/400/200" alt="" class="nsw-card__image">
+                  </div>
+              </div>
+            </div>
           </div>
-          <ul class="nsw-navigation__list">
-              <li class="nsw-navigation__list-item">
-                <a href="http://google.com" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">About DPC</span>
-                </a>
-              </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#updates" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Updates</span>
-                </a>
-              </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#publications" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Publications</span>
-                </a>
-              </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#tools-resources" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Tools &amp; Resources</span>
-                </a>
-              </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#contact-us" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Contact us</span>
-                </a>
-              </li>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="nsw-footer">
+  <div class="nsw-footer__upper">
+    <div class="nsw-container section-links">
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Popular</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Contact the Premier</a></li>
+              <li class="section-links__item"><a href="#">Contact a Minister</a></li>
+              <li class="section-links__item"><a href="#">About NSW</a></li>
+              <li class="section-links__item"><a href="#">State flag</a></li>
+              <li class="section-links__item"><a href="#">State Funerals</a></li>
+              <li class="section-links__item"><a href="#">Buy Regional</a></li>
+              <li class="section-links__item"><a href="#">Life events</a></li>
+              <li class="section-links__item"><a href="#">NSW Government directory</a></li>
+              <li class="section-links__item"><a href="#">Service NSW locations</a></li>
           </ul>
-        </nav>
-        
-        <div class="nsw-hero-banner ">
-          <div class="nsw-container">
-            <div class="nsw-hero-banner__image-area">
-              <img src="https://picsum.photos/id/695/2000/1250" class="nsw-hero-banner__image" alt="">
-            </div>
-            <div class="nsw-hero-banner__content-area">
-              <div class="nsw-hero-banner__content">
-                <h2 class="nsw-hero-banner__title">
-                  <a href="#" class="nsw-hero-banner__link">Buy Regional this Christmas</a>
-                </h2>
-                <p>NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.</p>
-                <svg class="nsw-icon nsw-hero-banner__icon" focusable="false" aria-hidden="true">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
         </div>
-        
-        <main id="content">
-          <section class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Energy switch</a>
-                              </h2>
-                              <p class="nsw-card__copy">Save money by comparing electricity and gas plans.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/3/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Creative kids</a>
-                              </h2>
-                              <p class="nsw-card__copy">$100 voucher for children&#x27;s creative and cultural activities.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/531/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Active kids</a>
-                              </h2>
-                              <p class="nsw-card__copy">$100 voucher for children&#x27;s sport, fitness and recreation.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/646/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section class="nsw-section--light-10">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <h2 class="nsw-section-title">Energy and utilities</h2>
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Energy save</a>
-                              </h2>
-                              <p class="nsw-card__copy">Helps you compare electricity and gas and switch providers.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Family rebate</a>
-                              </h2>
-                              <p class="nsw-card__copy">Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Appliance save</a>
-                              </h2>
-                              <p class="nsw-card__copy">Concession card holders may be able to save on a new fridge or television.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-6 nsw-col-lg-3">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Family rebate</a>
-                              </h2>
-                              <p class="nsw-card__copy">Helps families with dependants to pay their energy bills. Applications opening again late July for the 2019-20 rebate.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        
-          <section class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <h2 class="nsw-section-title">Latest updates</h2>
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Nominations open for Green Globe Awards 2019</a>
-                              </h2>
-                              <p class="nsw-card__tag">Community</p>
-                              <p class="nsw-card__date">
-                                <time datetime="2019-03-09">09 March 2019</time>
-                              </p>
-                              <p class="nsw-card__copy">The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across NSW.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/292/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">Quality green spaces and a million more trees for NSW</a>
-                              </h2>
-                              <p class="nsw-card__tag">Environment</p>
-                              <p class="nsw-card__date">
-                                <time datetime="2019-03-01">01 March 2019</time>
-                              </p>
-                              <p class="nsw-card__copy">The NSW Government will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/28/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                    <div class="nsw-col nsw-col-md-4">
-                      <div class="nsw-card ">
-                          <div class="nsw-card__content">
-                              <h2 class="nsw-card__title">
-                                <a href="#" class="nsw-card__link">New Premier&#x27;s Priority to lift literacy and numeracy standards</a>
-                              </h2>
-                              <p class="nsw-card__tag">Education</p>
-                              <p class="nsw-card__date">
-                                <time datetime="2019-02-20">20 February 2019</time>
-                              </p>
-                              <p class="nsw-card__copy">The NSW Government will redouble its efforts to lift literacy and numeracy standards across NSW public schools to ensure students are given every opportunity to be their best.</p>
-                              <svg class="nsw-icon nsw-card__icon" focusable="false" aria-hidden="true">
-                                <use xlink:href="#arrow"></use>
-                              </svg>
-                          </div>
-                          <div class="nsw-card__image-area">
-                              <img src="https://picsum.photos/id/24/400/200" alt="" class="nsw-card__image">
-                          </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-        
-        <footer class="nsw-footer">
-          <div class="nsw-footer__upper">
-            <div class="nsw-container section-links">
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Popular</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Contact the Premier</a></li>
-                      <li class="section-links__item"><a href="#">Contact a Minister</a></li>
-                      <li class="section-links__item"><a href="#">About NSW</a></li>
-                      <li class="section-links__item"><a href="#">State flag</a></li>
-                      <li class="section-links__item"><a href="#">State Funerals</a></li>
-                      <li class="section-links__item"><a href="#">Buy Regional</a></li>
-                      <li class="section-links__item"><a href="#">Life events</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government directory</a></li>
-                      <li class="section-links__item"><a href="#">Service NSW locations</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">News</a></li>
-                      <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
-                      <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
-                      <li class="section-links__item"><a href="#">Have your say</a></li>
-                      <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
-                      <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
-                      <li class="section-links__item"><a href="#">I work for NSW</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Departments</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Customer Service</a></li>
-                      <li class="section-links__item"><a href="#">Communities and Justice</a></li>
-                      <li class="section-links__item"><a href="#">Education</a></li>
-                      <li class="section-links__item"><a href="#">Health</a></li>
-                      <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
-                      <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
-                      <li class="section-links__item"><a href="#">Regional NSW</a></li>
-                      <li class="section-links__item"><a href="#">Transport</a></li>
-                      <li class="section-links__item"><a href="#">Treasury</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">The Premier</a></li>
-                      <li class="section-links__item"><a href="#">NSW Ministers</a></li>
-                      <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
-                      <li class="section-links__item"><a href="#">Boards and Committees</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government communications</a></li>
-                      <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
-                      <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-          <div class="nsw-footer__lower">
-            <div class="nsw-container">
-              <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
-              <hr>
-              <ul class="nsw-footer-links">
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Accessibility</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Copyright</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Disclaimer</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Privacy</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Content sources</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">RSS</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Contact us</a>
-                  </li>
-              </ul>
-              <div class="nsw-footer__info">
-                <p class="nsw-footer__copyright">Copyright © 2019</p>
-                <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;nav class&#x3D;&quot;nsw-skipto nsw-container&quot; aria-label&#x3D;&quot;Skip to links&quot;&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#main-navigation&quot;&gt;&lt;span&gt;Skip to navigation&lt;/span&gt;&lt;/a&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#content&quot;&gt;&lt;span&gt;Skip to content&lt;/span&gt;&lt;/a&gt;
-        &lt;/nav&gt;
-        &lt;div class&#x3D;&quot;nsw-masthead&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-            &lt;p&gt;A NSW Government website&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;header class&#x3D;&quot;nsw-header&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-header__container&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-header__wrapper&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-header__center&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-header__logo-link&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header__logo&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#dpc-logo&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;NSW Department of Premier and Cabinet&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__left&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--menu js-open-navigation&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;main-navigation&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#menu&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Open&lt;/span&gt; Menu&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__right&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--search js-open-search&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Show&lt;/span&gt; Search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;nsw-search&quot;&gt;
-              &lt;div id&#x3D;&quot;header-search&quot; class&#x3D;&quot;nsw-search__area js-search-area&quot; hidden&gt;
-                &lt;form role&#x3D;&quot;search&quot;&gt;
-                  &lt;label for&#x3D;&quot;nsw-search__input&quot; class&#x3D;&quot;sr-only&quot;&gt;Search site for:&lt;/label&gt;
-                  &lt;input autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;nsw-search__input js-search-input&quot; id&#x3D;&quot;nsw-search__input&quot;
-                    name&#x3D;&quot;input-autocomplete&quot; type&#x3D;&quot;text&quot;&gt;
-                  &lt;button class&#x3D;&quot;nsw-search__submit&quot; type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__search-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;/button&gt;
-                &lt;/form&gt;
-                &lt;button class&#x3D;&quot;nsw-search__close-btn js-close-search&quot; aria-expanded&#x3D;&quot;true&quot; aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__close-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/header&gt;
-        &lt;nav id&#x3D;&quot;main-navigation&quot; class&#x3D;&quot;nsw-navigation &quot; aria-label&#x3D;&quot;Main menu&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-navigation__header&quot;&gt;
-            &lt;h2 id&#x3D;&quot;nsw-navigation&quot;&gt;Menu&lt;/h2&gt;
-            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-navigation__close js-close-navigation&quot; aria-expanded&#x3D;&quot;true&quot;&gt;
-              &lt;svg class&#x3D;&quot;nsw-icon icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-              &lt;/svg&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close Menu&lt;/span&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-          &lt;ul class&#x3D;&quot;nsw-navigation__list&quot;&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;http://google.com&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;About DPC&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#updates&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Updates&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#publications&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Publications&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#tools-resources&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Tools &amp;amp; Resources&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#contact-us&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Contact us&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-        
-        &lt;div class&#x3D;&quot;nsw-hero-banner &quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-hero-banner__image-area&quot;&gt;
-              &lt;img src&#x3D;&quot;https://picsum.photos/id/695/2000/1250&quot; class&#x3D;&quot;nsw-hero-banner__image&quot; alt&#x3D;&quot;&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;nsw-hero-banner__content-area&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-hero-banner__content&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-hero-banner__title&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-hero-banner__link&quot;&gt;Buy Regional this Christmas&lt;/a&gt;
-                &lt;/h2&gt;
-                &lt;p&gt;NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.&lt;/p&gt;
-                &lt;svg class&#x3D;&quot;nsw-icon nsw-hero-banner__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                  &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                &lt;/svg&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;main id&#x3D;&quot;content&quot;&gt;
-          &lt;section class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Energy switch&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;Save money by comparing electricity and gas plans.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/3/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Creative kids&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;$100 voucher for children&amp;#x27;s creative and cultural activities.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/531/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Active kids&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;$100 voucher for children&amp;#x27;s sport, fitness and recreation.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/646/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/section&gt;
-        
-          &lt;section class&#x3D;&quot;nsw-section--light-10&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Energy and utilities&lt;/h2&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-6 nsw-col-lg-3&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Energy save&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;Helps you compare electricity and gas and switch providers.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-6 nsw-col-lg-3&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Family rebate&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;Helps families with dependants to pay their energy bills. Applications opening late July for the 2019-20 rebate.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-6 nsw-col-lg-3&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Appliance save&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;Concession card holders may be able to save on a new fridge or television.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-6 nsw-col-lg-3&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Family rebate&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;Helps families with dependants to pay their energy bills. Applications opening again late July for the 2019-20 rebate.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/section&gt;
-        
-          &lt;section class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Latest updates&lt;/h2&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Nominations open for Green Globe Awards 2019&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__tag&quot;&gt;Community&lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__date&quot;&gt;
-                                &lt;time datetime&#x3D;&quot;2019-03-09&quot;&gt;09 March 2019&lt;/time&gt;
-                              &lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;The annual awards will recognise individuals and organisations for their leadership , commitment and innovation in sustainability across NSW.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/292/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;Quality green spaces and a million more trees for NSW&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__tag&quot;&gt;Environment&lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__date&quot;&gt;
-                                &lt;time datetime&#x3D;&quot;2019-03-01&quot;&gt;01 March 2019&lt;/time&gt;
-                              &lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;The NSW Government will create more quality green spaces and increase ther tree canopy in Sydney bt 2022.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/28/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-card &quot;&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__content&quot;&gt;
-                              &lt;h2 class&#x3D;&quot;nsw-card__title&quot;&gt;
-                                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-card__link&quot;&gt;New Premier&amp;#x27;s Priority to lift literacy and numeracy standards&lt;/a&gt;
-                              &lt;/h2&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__tag&quot;&gt;Education&lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__date&quot;&gt;
-                                &lt;time datetime&#x3D;&quot;2019-02-20&quot;&gt;20 February 2019&lt;/time&gt;
-                              &lt;/p&gt;
-                              &lt;p class&#x3D;&quot;nsw-card__copy&quot;&gt;The NSW Government will redouble its efforts to lift literacy and numeracy standards across NSW public schools to ensure students are given every opportunity to be their best.&lt;/p&gt;
-                              &lt;svg class&#x3D;&quot;nsw-icon nsw-card__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                                &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                              &lt;/svg&gt;
-                          &lt;/div&gt;
-                          &lt;div class&#x3D;&quot;nsw-card__image-area&quot;&gt;
-                              &lt;img src&#x3D;&quot;https://picsum.photos/id/24/400/200&quot; alt&#x3D;&quot;&quot; class&#x3D;&quot;nsw-card__image&quot;&gt;
-                          &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/section&gt;
-        &lt;/main&gt;
-        
-        &lt;footer class&#x3D;&quot;nsw-footer&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__upper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container section-links&quot;&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Popular&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact the Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact a Minister&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State flag&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State Funerals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Buy Regional&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Life events&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government directory&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service NSW locations&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;What&amp;#x27;s happening&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Ministerial media releases&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Projects and initiatives&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Have your say&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW school and public holidays&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find a job in NSW Government&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;I work for NSW&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Departments&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Customer Service&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Communities and Justice&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Health&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Planning, Industry and Environment&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier and Cabinet&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Regional NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Transport&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Treasury&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;The Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Ministers&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find your local Member of Parliament&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Boards and Committees&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government communications&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Unsolicited proposals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier&amp;#x27;s Priorities&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__lower&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;p&gt;We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.&lt;/p&gt;
-              &lt;hr&gt;
-              &lt;ul class&#x3D;&quot;nsw-footer-links&quot;&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Accessibility&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Copyright&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Disclaimer&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Privacy&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Content sources&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;RSS&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Contact us&lt;/a&gt;
-                  &lt;/li&gt;
-              &lt;/ul&gt;
-              &lt;div class&#x3D;&quot;nsw-footer__info&quot;&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__copyright&quot;&gt;Copyright © 2019&lt;/p&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__built&quot;&gt;Built by &lt;a href&#x3D;&quot;https://www.digital.nsw.gov.au/digital-design-system&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;NSW Design System&lt;/a&gt;&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/footer&gt;
-        </code></pre>
-          </section>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">News</a></li>
+              <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
+              <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
+              <li class="section-links__item"><a href="#">Have your say</a></li>
+              <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
+              <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
+              <li class="section-links__item"><a href="#">I work for NSW</a></li>
+          </ul>
         </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Departments</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Customer Service</a></li>
+              <li class="section-links__item"><a href="#">Communities and Justice</a></li>
+              <li class="section-links__item"><a href="#">Education</a></li>
+              <li class="section-links__item"><a href="#">Health</a></li>
+              <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
+              <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
+              <li class="section-links__item"><a href="#">Regional NSW</a></li>
+              <li class="section-links__item"><a href="#">Transport</a></li>
+              <li class="section-links__item"><a href="#">Treasury</a></li>
+          </ul>
+        </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">The Premier</a></li>
+              <li class="section-links__item"><a href="#">NSW Ministers</a></li>
+              <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
+              <li class="section-links__item"><a href="#">Boards and Committees</a></li>
+              <li class="section-links__item"><a href="#">NSW Government communications</a></li>
+              <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
+              <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+      <hr>
+      <ul class="nsw-footer-links">
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Accessibility</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Copyright</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Disclaimer</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Privacy</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Content sources</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">RSS</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Contact us</a>
+          </li>
+      </ul>
+      <div class="nsw-footer__info">
+        <p class="nsw-footer__copyright">Copyright © 2019</p>
+        <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
       </div>
     </div>
   </div>
+</footer>
+
   <script src="../../js/main.js"></script>
-  <script>
-    window.NSW.initSite()
-    hljs.initHighlightingOnLoad();
-</script>
+  <script>window.NSW.initSite()</script>
 </body>
 </html>

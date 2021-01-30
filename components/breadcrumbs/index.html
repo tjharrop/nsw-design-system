@@ -28,6 +28,9 @@
     // Replace 'no-js' with 'js' on the html tag
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
+  <style>
+    .nsw-container {position: relative;} /* to align grid overlay */
+  </style>
 </head>
 
 <body >
@@ -47,7 +50,7 @@
         </div>
       </div>
   </header>
-  <div class="nsw-grid nsw-m-none" style="margin:0;">
+  <div class="nsw-grid nsw-m-none" style="margin:0; /* helpers don't override grid */">
     <div class="nsw-col-3 nsw-col">
       <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
         <div class="nsw-sidenav__header">
@@ -171,12 +174,63 @@
               </a>
             </li>
         </ul>
+        <div class="nsw-sidenav__header">
+          <h2 id="stylesTitle" class="nsw-sidenav__heading">
+            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Styles</span></h2>
+        </div>
+        <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+            <li class="nsw-sidenav__list-item ">
+              <a href="/styles/grid/index.html" class="nsw-sidenav__link" >
+                Grid
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/styles/iconography/index.html" class="nsw-sidenav__link" >
+                Iconography
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/styles/layout/index.html" class="nsw-sidenav__link" >
+                Layout
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/styles/typography/index.html" class="nsw-sidenav__link" >
+                Typography
+              </a>
+            </li>
+        </ul>
+        <div class="nsw-sidenav__header">
+          <h2 id="templatesTitle" class="nsw-sidenav__heading">
+            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Templates</span></h2>
+        </div>
+        <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+            <li class="nsw-sidenav__list-item ">
+              <a href="/templates/full-width-hero-banner/index.html" class="nsw-sidenav__link " >
+                Full width - Hero banner
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/templates/full-width-hero-search/index.html" class="nsw-sidenav__link " >
+                Full width - Hero search
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/templates/nav-sidebar-left/index.html" class="nsw-sidenav__link " >
+                Two column - Side navigation left align (nav hides on mobile)
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/templates/sidebar-right/index.html" class="nsw-sidenav__link " >
+                Two column - Sidebar right align
+              </a>
+            </li>
+        </ul>
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0;">
+    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Breadcrumbs</h1>
-          <p>Testing description</p>
       </div>
       <div>
         <div class="nsw-tabs js-tabs">

@@ -11,9 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
+  <script>
     // SVG Sprite Loader
     var svgAjax = new XMLHttpRequest();
     svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
@@ -31,985 +29,411 @@
 </head>
 
 <body >
-  <div class="nsw-masthead">
-    <div class="nsw-m-left-md">
-      <p>A NSW Government website</p>
+  
+<nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#main-navigation"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
+</nav>
+<div class="nsw-masthead">
+  <div class="nsw-container">
+    <p>A NSW Government website</p>
+  </div>
+</div>
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+          <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+            <use xlink:href="#dpc-logo"></use>
+          </svg>
+          <span class="sr-only">NSW Department of Premier and Cabinet</span>
+        </a>
+      </div>
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+      <div class="nsw-header__right">
+        <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
+          aria-controls="header-search">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
+        </button>
+      </div>
+    </div>
+    <div class="nsw-search">
+      <div id="header-search" class="nsw-search__area js-search-area" hidden>
+        <form role="search">
+          <label for="nsw-search__input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
+            name="input-autocomplete" type="text">
+          <button class="nsw-search__submit" type="submit" aria-label="search">
+          <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          </button>
+        </form>
+        <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
+          <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="sr-only">Close search</span>
+        </button>
+      </div>
     </div>
   </div>
-  <header class="nsw-header nsw-header--simple">
-    <div class="nsw-m-left-md">
-      <div class="nsw-header__wrapper">
-        <div class="nsw-header__center">
-          <a href="#" class="nsw-header__logo-link">
-            <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
-            <span class="sr-only">digital.nsw</span>
-          </a>
-        </div>
-      </div>
-  </header>
-  <div class="nsw-grid nsw-m-none" style="margin:0;">
-    <div class="nsw-col-3 nsw-col">
-      <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
+</header>
+<nav id="main-navigation" class="nsw-navigation " aria-label="Main menu">
+  <div class="nsw-navigation__header">
+    <h2 id="nsw-navigation">Menu</h2>
+    <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
+      <svg class="nsw-icon icon" focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close Menu</span>
+    </button>
+  </div>
+  <ul class="nsw-navigation__list">
+      <li class="nsw-navigation__list-item">
+        <a href="http://google.com" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">About DPC</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#updates" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Updates</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#publications" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Publications</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#tools-resources" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Tools &amp; Resources</span>
+        </a>
+      </li>
+      <li class="nsw-navigation__list-item">
+        <a href="/index.html#contact-us" class="nsw-navigation__link">
+          <span class="nsw-navigation__link-text">Contact us</span>
+        </a>
+      </li>
+  </ul>
+</nav>
+<div class="nsw-container nsw-p-bottom-xs">
+  <nav aria-label="Breadcrumb" class="nsw-breadcrumb">
+    <ol class="nsw-breadcrumb__list">
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >Home</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
+        </li>
+    </ol>
+  </nav>
+</div>
+
+<div class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
+  <div class="nsw-page-layout">
+    <div class="nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop">
+      <nav class="nsw-sidenav" aria-labelledby="sksm7sss26ns side navigation">
         <div class="nsw-sidenav__header">
-          <h2 id="componentsTitle" class="nsw-sidenav__heading">
-            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Components</span></h2>
+          <h2 id="sksm7sss26ns" class="nsw-sidenav__heading">
+            <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
         </div>
         <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
-                Accordion
+              <a href="#" class="nsw-sidenav__link " >
+                About the Department
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
-                Breadcrumbs
+              <a href="#" class="nsw-sidenav__link " >
+                Careers
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/button/index.html" class="nsw-sidenav__link " >
-                Buttons
+              <a href="#" class="nsw-sidenav__link " >
+                Accessing DPC information
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
-                Callout
+              <a href="#" class="nsw-sidenav__link " >
+                Premier and Cabinet cluster
               </a>
             </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/card/index.html" class="nsw-sidenav__link " >
-                Card
+            <li class="nsw-sidenav__list-item has-active-children">
+              <a href="#" class="nsw-sidenav__link " >
+                NSW Digital Design System
               </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
-                Direction links
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/feature-tile/index.html" class="nsw-sidenav__link " >
-                Feature tile
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/footer/index.html" class="nsw-sidenav__link " >
-                Footer
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/forms/index.html" class="nsw-sidenav__link " >
-                Forms
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/site-wide-message/index.html" class="nsw-sidenav__link " >
-                Global alert
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/header/index.html" class="nsw-sidenav__link " >
-                Header
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/hero-banner/index.html" class="nsw-sidenav__link " >
-                Hero banner
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/hero-search/index.html" class="nsw-sidenav__link " >
-                Hero search
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/in-page-navigation/index.html" class="nsw-sidenav__link " >
-                In-page navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
-                In-page notification
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/link-list/index.html" class="nsw-sidenav__link " >
-                Link list
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
-                Main navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/pagination/index.html" class="nsw-sidenav__link " >
-                Pagination
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/side-navigation/index.html" class="nsw-sidenav__link " >
-                Side navigation
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/social-bar/index.html" class="nsw-sidenav__link " >
-                Social bar
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tables/index.html" class="nsw-sidenav__link " >
-                Tables
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tab-navigation/index.html" class="nsw-sidenav__link " >
-                Tabs
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
-              <a href="/components/tags/index.html" class="nsw-sidenav__link " >
-                Tags
-              </a>
+              <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
+                  <li class="nsw-sidenav__list-item ">
+                    <a href="#" class="nsw-sidenav__link " >
+                      Building a service
+                    </a>
+                  </li>
+                  <li class="nsw-sidenav__list-item ">
+                    <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+                      Content design
+                    </a>
+                  </li>
+                  <li class="nsw-sidenav__list-item ">
+                    <a href="#" class="nsw-sidenav__link " >
+                      Using artefacts
+                    </a>
+                  </li>
+                  <li class="nsw-sidenav__list-item ">
+                    <a href="#" class="nsw-sidenav__link " >
+                      Experimenting
+                    </a>
+                  </li>
+              </ul>
             </li>
         </ul>
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0;">
-      <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
-          <h1>Two column - Side navigation left align (nav hides on mobile)</h1>
-          <p>Testing description</p>
+    <main id="content" class="nsw-page-layout__main">
+      <div class="nsw-wysiwyg-content nsw-block">
+        <h1>Content design</h1>
+        <p class="nsw-intro">Content designers create patterns of content to guide the user and help them achieve their goal.</p>
       </div>
-      <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
-          <a class="nsw-skipto__link" href="#main-navigation"><span>Skip to navigation</span></a>
-          <a class="nsw-skipto__link" href="#content"><span>Skip to content</span></a>
-        </nav>
-        <div class="nsw-masthead">
-          <div class="nsw-container">
-            <p>A NSW Government website</p>
+
+      <nav class="nsw-page-nav" aria-labelledby="in-page-nav">
+        <h2 id="in-page-nav" class="nsw-page-nav__title">On this page</h2>
+        <ul class="nsw-page-nav__list">
+            <li class="nsw-page-nav__list-item">
+              <a href="#" class="nsw-page-nav__link">Ways of working</a>
+            </li>
+            <li class="nsw-page-nav__list-item">
+              <a href="#" class="nsw-page-nav__link">Core skills</a>
+            </li>
+            <li class="nsw-page-nav__list-item">
+              <a href="#" class="nsw-page-nav__link">Content design for transactions</a>
+            </li>
+        </ul>
+      </nav>
+
+      <div class="nsw-wysiwyg-content nsw-block">
+        <h2 id="ways-of-working">Ways of working</h2>
+        <p>Content design is not copy writing. It may not even be about writing a lot of words. It’s a way of working that starts with the problem you need to resolve for users.</p>
+
+        <h3>Building relationships</h3>
+        <p>Work with others to understand the problem you need to address on behalf of the user. Other people in your team may already be doing that.</p>
+        <p>A content person comes in many guises and you may not be a part of the <a href="#">multidisciplinary product team</a>. While you're gathering evidence about the user, try to build relationships across that product team.</p>
+      </div>
+
+      <div class="nsw-accordion js-accordion">
+        <h2 class="nsw-accordion__title">Sprint cadence or workflow</h2>
+        <div class="nsw-accordion__content">
+        	<div class="nsw-wysiwyg-content">
+          	<p>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.</p><p>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.</p><p>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.</p>
           </div>
         </div>
-        <header class="nsw-header">
-          <div class="nsw-header__container">
-            <div class="nsw-header__wrapper">
-              <div class="nsw-header__center">
-                <a href="#" class="nsw-header__logo-link">
-                  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
-                    <use xlink:href="#dpc-logo"></use>
-                  </svg>
-                  <span class="sr-only">NSW Department of Premier and Cabinet</span>
-                </a>
-              </div>
-              <div class="nsw-header__left">
-                <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
-                  aria-controls="main-navigation">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
-                </button>
-              </div>
-              <div class="nsw-header__right">
-                <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
-                  aria-controls="header-search">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
-                </button>
-              </div>
-            </div>
-            <div class="nsw-search">
-              <div id="header-search" class="nsw-search__area js-search-area" hidden>
-                <form role="search">
-                  <label for="nsw-search__input" class="sr-only">Search site for:</label>
-                  <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
-                    name="input-autocomplete" type="text">
-                  <button class="nsw-search__submit" type="submit" aria-label="search">
-                  <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  </button>
-                </form>
-                <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
-                  <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#close"></use>
-                  </svg>
-                  <span class="sr-only">Close search</span>
-                </button>
-              </div>
-            </div>
+        <h2 class="nsw-accordion__title">Simplifying complexity</h2>
+        <div class="nsw-accordion__content">
+        	<div class="nsw-wysiwyg-content">
+          	<p>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. </p><p>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.</p><p>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.</p><p>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.</p>
           </div>
-        </header>
-        <nav id="main-navigation" class="nsw-navigation " aria-label="Main menu">
-          <div class="nsw-navigation__header">
-            <h2 id="nsw-navigation">Menu</h2>
-            <button type="button" class="nsw-navigation__close js-close-navigation" aria-expanded="true">
-              <svg class="nsw-icon icon" focusable="false" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-              <span class="sr-only">Close Menu</span>
-            </button>
+        </div>
+        <h2 class="nsw-accordion__title">Working with subject matter experts</h2>
+        <div class="nsw-accordion__content">
+        	<div class="nsw-wysiwyg-content">
+          	<p>Share your way of working with your subject matter experts – in person if possible. </p><p>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.</p>
           </div>
-          <ul class="nsw-navigation__list">
-              <li class="nsw-navigation__list-item">
-                <a href="http://google.com" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">About DPC</span>
+        </div>
+      </div>
+
+      <div class="nsw-wysiwyg-content nsw-block">
+        <h2 id="core-skills">Core skills</h2>
+        <p>You may have come to content design from a variety of backgrounds – such as communications, marketing, web editing, copywriting, technical writing, journalism.</p>
+
+        <h3>Plain language</h3>
+        <p>Content designers need to know the basics of <a href="#">good readability</a>. They’re aware how readers scan content. There’s a skill involved in improving content for ease of use. They will know how to create signposts for users, mix up the length of sentences and use active language. They work hard to make the meaning succinct and clear.</p>
+      </div>
+
+      <div class="nsw-callout">
+        <svg class="nsw-icon nsw-callout__icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#status-info"></use>
+        </svg>
+        <div class="nsw-callout__content">
+          <h4 class="nsw-callout__title">Plain language tool</h4>
+          <p>Learn more about writing clear, concise, organised, and appropriate content for your intended audience using <a href='#'>plain language tools</a>.</p>
+          
+        </div>
+      </div>
+
+      <div class="nsw-wysiwyg-content nsw-block">
+        <h2 id="content-design-for-transactions">Content design for transactions</h2>
+        <p>As a content designer, your task is to get the user from A to B in the transaction. </p>
+        <p>When designing content for transactions:  </p>
+        <ul>
+          <li>minimise the user’s chance of error  </li>
+          <li>maximise collaborative teamwork </li>
+          <li>balance business and user needs.  </li>
+        </ul>
+        <p>In this guide we’ve used Service NSW examples. </p>
+      </div>
+
+      <div class="nsw-tabs js-tabs">
+        <ul class="nsw-tabs__list">
+          <li class="nsw-tabs__list-item">
+            <a href="#section1" class="nsw-tabs__link">Explain transaction</a>
+          </li>
+          <li class="nsw-tabs__list-item">
+            <a href="#section2" class="nsw-tabs__link">Map transaction</a>
+          </li>
+          <li class="nsw-tabs__list-item">
+            <a href="#section3" class="nsw-tabs__link">Signpost steps</a>
+          </li>
+        </ul>
+        <section id="section1" class="nsw-tabs__content">
+          <div class='nsw-wysiwyg-content'><h3>Explain transaction</h3><p>The landing page explains the entire transaction to a user. It serves as the front door.</p></p>By having a clear guide at the start, users know where they can return to for more information, or to start again.</p></div>
+        </section>
+        <section id="section2" class="nsw-tabs__content">
+          <div class='nsw-wysiwyg-content'><h3>Map transaction</h3><p>The start of the transaction gives the user a map – the steps to take, and what to expect afterwards. The purpose of the landing page is to give the user context. It will display on the agency site that leads to the transaction.</p><p>The user arrives at this page when they’re looking to do a transaction. They’re likely to arrive via a Google search or email link. A user should be able to find what they need to know about the transaction, and how to complete it.  </p></div>
+        </section>
+        <section id="section3" class="nsw-tabs__content">
+          <div class='nsw-wysiwyg-content'><h3>Signpost steps</h3><p>The purpose of signposting the steps is to reduce the user’s chance of error. This helps the user move through the transaction with ease. The user can scan what they need to do so they can complete their task.  </p></div>
+        </section>
+      </div>
+
+      <div class="nsw-link-list">
+        <div class="nsw-link-list__title">Related guides</div>
+        <ul class="nsw-link-list__list">
+              <li class="nsw-link-list__item" >
+                <a class="nsw-link-list__link" href="#">User-focused content design process
+                  <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#updates" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Updates</span>
+              <li class="nsw-link-list__item" >
+                <a class="nsw-link-list__link" href="#">Digital collaboration tools
+                  <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#publications" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Publications</span>
+              <li class="nsw-link-list__item" >
+                <a class="nsw-link-list__link" href="#">Testing and improving guides
+                  <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+                    <use xlink:href="#arrow"></use>
+                  </svg>
                 </a>
               </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#tools-resources" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Tools &amp; Resources</span>
-                </a>
-              </li>
-              <li class="nsw-navigation__list-item">
-                <a href="/index.html#contact-us" class="nsw-navigation__link">
-                  <span class="nsw-navigation__link-text">Contact us</span>
-                </a>
-              </li>
+        </ul>
+      </div>    </main>
+  </div>
+</div>
+
+<footer class="nsw-footer">
+  <div class="nsw-footer__upper">
+    <div class="nsw-container section-links">
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Popular</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Contact the Premier</a></li>
+              <li class="section-links__item"><a href="#">Contact a Minister</a></li>
+              <li class="section-links__item"><a href="#">About NSW</a></li>
+              <li class="section-links__item"><a href="#">State flag</a></li>
+              <li class="section-links__item"><a href="#">State Funerals</a></li>
+              <li class="section-links__item"><a href="#">Buy Regional</a></li>
+              <li class="section-links__item"><a href="#">Life events</a></li>
+              <li class="section-links__item"><a href="#">NSW Government directory</a></li>
+              <li class="section-links__item"><a href="#">Service NSW locations</a></li>
           </ul>
-        </nav>
-        <div class="nsw-container nsw-p-bottom-xs">
-          <nav aria-label="Breadcrumb" class="nsw-breadcrumb">
-            <ol class="nsw-breadcrumb__list">
-                <li class="nsw-breadcrumb__item">
-                  <a href="#" class="nsw-breadcrumb__link " >Home</a>
-                </li>
-                <li class="nsw-breadcrumb__item">
-                  <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
-                </li>
-                <li class="nsw-breadcrumb__item">
-                  <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
-                </li>
-                <li class="nsw-breadcrumb__item">
-                  <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
-                </li>
-            </ol>
-          </nav>
         </div>
-        
-        <div class="nsw-container nsw-p-top-sm nsw-p-bottom-lg">
-          <div class="nsw-page-layout">
-            <div class="nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop">
-              <nav class="nsw-sidenav" aria-labelledby="sksm7sss26ns side navigation">
-                <div class="nsw-sidenav__header">
-                  <h2 id="sksm7sss26ns" class="nsw-sidenav__heading">
-                    <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
-                </div>
-                <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
-                    <li class="nsw-sidenav__list-item ">
-                      <a href="#" class="nsw-sidenav__link " >
-                        About the Department
-                      </a>
-                    </li>
-                    <li class="nsw-sidenav__list-item ">
-                      <a href="#" class="nsw-sidenav__link " >
-                        Careers
-                      </a>
-                    </li>
-                    <li class="nsw-sidenav__list-item ">
-                      <a href="#" class="nsw-sidenav__link " >
-                        Accessing DPC information
-                      </a>
-                    </li>
-                    <li class="nsw-sidenav__list-item ">
-                      <a href="#" class="nsw-sidenav__link " >
-                        Premier and Cabinet cluster
-                      </a>
-                    </li>
-                    <li class="nsw-sidenav__list-item has-active-children">
-                      <a href="#" class="nsw-sidenav__link " >
-                        NSW Digital Design System
-                      </a>
-                      <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
-                          <li class="nsw-sidenav__list-item ">
-                            <a href="#" class="nsw-sidenav__link " >
-                              Building a service
-                            </a>
-                          </li>
-                          <li class="nsw-sidenav__list-item ">
-                            <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
-                              Content design
-                            </a>
-                          </li>
-                          <li class="nsw-sidenav__list-item ">
-                            <a href="#" class="nsw-sidenav__link " >
-                              Using artefacts
-                            </a>
-                          </li>
-                          <li class="nsw-sidenav__list-item ">
-                            <a href="#" class="nsw-sidenav__link " >
-                              Experimenting
-                            </a>
-                          </li>
-                      </ul>
-                    </li>
-                </ul>
-              </nav>
-            </div>
-            <main id="content" class="nsw-page-layout__main">
-              <div class="nsw-wysiwyg-content nsw-block">
-                <h1>Content design</h1>
-                <p class="nsw-intro">Content designers create patterns of content to guide the user and help them achieve their goal.</p>
-              </div>
-        
-              <nav class="nsw-page-nav" aria-labelledby="in-page-nav">
-                <h2 id="in-page-nav" class="nsw-page-nav__title">On this page</h2>
-                <ul class="nsw-page-nav__list">
-                    <li class="nsw-page-nav__list-item">
-                      <a href="#" class="nsw-page-nav__link">Ways of working</a>
-                    </li>
-                    <li class="nsw-page-nav__list-item">
-                      <a href="#" class="nsw-page-nav__link">Core skills</a>
-                    </li>
-                    <li class="nsw-page-nav__list-item">
-                      <a href="#" class="nsw-page-nav__link">Content design for transactions</a>
-                    </li>
-                </ul>
-              </nav>
-        
-              <div class="nsw-wysiwyg-content nsw-block">
-                <h2 id="ways-of-working">Ways of working</h2>
-                <p>Content design is not copy writing. It may not even be about writing a lot of words. It’s a way of working that starts with the problem you need to resolve for users.</p>
-        
-                <h3>Building relationships</h3>
-                <p>Work with others to understand the problem you need to address on behalf of the user. Other people in your team may already be doing that.</p>
-                <p>A content person comes in many guises and you may not be a part of the <a href="#">multidisciplinary product team</a>. While you're gathering evidence about the user, try to build relationships across that product team.</p>
-              </div>
-        
-              <div class="nsw-accordion js-accordion">
-                <h2 class="nsw-accordion__title">Sprint cadence or workflow</h2>
-                <div class="nsw-accordion__content">
-                	<div class="nsw-wysiwyg-content">
-                  	<p>In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.</p><p>Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.</p><p>As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.</p>
-                  </div>
-                </div>
-                <h2 class="nsw-accordion__title">Simplifying complexity</h2>
-                <div class="nsw-accordion__content">
-                	<div class="nsw-wysiwyg-content">
-                  	<p>Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. </p><p>Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.</p><p>A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.</p><p>Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.</p>
-                  </div>
-                </div>
-                <h2 class="nsw-accordion__title">Working with subject matter experts</h2>
-                <div class="nsw-accordion__content">
-                	<div class="nsw-wysiwyg-content">
-                  	<p>Share your way of working with your subject matter experts – in person if possible. </p><p>They're a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you're focusing on the user, and what you're trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.</p>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="nsw-wysiwyg-content nsw-block">
-                <h2 id="core-skills">Core skills</h2>
-                <p>You may have come to content design from a variety of backgrounds – such as communications, marketing, web editing, copywriting, technical writing, journalism.</p>
-        
-                <h3>Plain language</h3>
-                <p>Content designers need to know the basics of <a href="#">good readability</a>. They’re aware how readers scan content. There’s a skill involved in improving content for ease of use. They will know how to create signposts for users, mix up the length of sentences and use active language. They work hard to make the meaning succinct and clear.</p>
-              </div>
-        
-              <div class="nsw-callout">
-                <svg class="nsw-icon nsw-callout__icon" focusable="false" aria-hidden="true">
-                  <use xlink:href="#status-info"></use>
-                </svg>
-                <div class="nsw-callout__content">
-                  <h4 class="nsw-callout__title">Plain language tool</h4>
-                  <p>Learn more about writing clear, concise, organised, and appropriate content for your intended audience using <a href='#'>plain language tools</a>.</p>
-                  
-                </div>
-              </div>
-        
-              <div class="nsw-wysiwyg-content nsw-block">
-                <h2 id="content-design-for-transactions">Content design for transactions</h2>
-                <p>As a content designer, your task is to get the user from A to B in the transaction. </p>
-                <p>When designing content for transactions:  </p>
-                <ul>
-                  <li>minimise the user’s chance of error  </li>
-                  <li>maximise collaborative teamwork </li>
-                  <li>balance business and user needs.  </li>
-                </ul>
-                <p>In this guide we’ve used Service NSW examples. </p>
-              </div>
-        
-              <div class="nsw-tabs js-tabs">
-                <ul class="nsw-tabs__list">
-                  <li class="nsw-tabs__list-item">
-                    <a href="#section1" class="nsw-tabs__link">Explain transaction</a>
-                  </li>
-                  <li class="nsw-tabs__list-item">
-                    <a href="#section2" class="nsw-tabs__link">Map transaction</a>
-                  </li>
-                  <li class="nsw-tabs__list-item">
-                    <a href="#section3" class="nsw-tabs__link">Signpost steps</a>
-                  </li>
-                </ul>
-                <section id="section1" class="nsw-tabs__content">
-                  <div class='nsw-wysiwyg-content'><h3>Explain transaction</h3><p>The landing page explains the entire transaction to a user. It serves as the front door.</p></p>By having a clear guide at the start, users know where they can return to for more information, or to start again.</p></div>
-                </section>
-                <section id="section2" class="nsw-tabs__content">
-                  <div class='nsw-wysiwyg-content'><h3>Map transaction</h3><p>The start of the transaction gives the user a map – the steps to take, and what to expect afterwards. The purpose of the landing page is to give the user context. It will display on the agency site that leads to the transaction.</p><p>The user arrives at this page when they’re looking to do a transaction. They’re likely to arrive via a Google search or email link. A user should be able to find what they need to know about the transaction, and how to complete it.  </p></div>
-                </section>
-                <section id="section3" class="nsw-tabs__content">
-                  <div class='nsw-wysiwyg-content'><h3>Signpost steps</h3><p>The purpose of signposting the steps is to reduce the user’s chance of error. This helps the user move through the transaction with ease. The user can scan what they need to do so they can complete their task.  </p></div>
-                </section>
-              </div>
-        
-              <div class="nsw-link-list">
-                <div class="nsw-link-list__title">Related guides</div>
-                <ul class="nsw-link-list__list">
-                      <li class="nsw-link-list__item" >
-                        <a class="nsw-link-list__link" href="#">User-focused content design process
-                          <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-                            <use xlink:href="#arrow"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="nsw-link-list__item" >
-                        <a class="nsw-link-list__link" href="#">Digital collaboration tools
-                          <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-                            <use xlink:href="#arrow"></use>
-                          </svg>
-                        </a>
-                      </li>
-                      <li class="nsw-link-list__item" >
-                        <a class="nsw-link-list__link" href="#">Testing and improving guides
-                          <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-                            <use xlink:href="#arrow"></use>
-                          </svg>
-                        </a>
-                      </li>
-                </ul>
-              </div>    </main>
-          </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">News</a></li>
+              <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
+              <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
+              <li class="section-links__item"><a href="#">Have your say</a></li>
+              <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
+              <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
+              <li class="section-links__item"><a href="#">I work for NSW</a></li>
+          </ul>
         </div>
-        
-        <footer class="nsw-footer">
-          <div class="nsw-footer__upper">
-            <div class="nsw-container section-links">
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Popular</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Contact the Premier</a></li>
-                      <li class="section-links__item"><a href="#">Contact a Minister</a></li>
-                      <li class="section-links__item"><a href="#">About NSW</a></li>
-                      <li class="section-links__item"><a href="#">State flag</a></li>
-                      <li class="section-links__item"><a href="#">State Funerals</a></li>
-                      <li class="section-links__item"><a href="#">Buy Regional</a></li>
-                      <li class="section-links__item"><a href="#">Life events</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government directory</a></li>
-                      <li class="section-links__item"><a href="#">Service NSW locations</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">News</a></li>
-                      <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
-                      <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
-                      <li class="section-links__item"><a href="#">Have your say</a></li>
-                      <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
-                      <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
-                      <li class="section-links__item"><a href="#">I work for NSW</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Departments</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Customer Service</a></li>
-                      <li class="section-links__item"><a href="#">Communities and Justice</a></li>
-                      <li class="section-links__item"><a href="#">Education</a></li>
-                      <li class="section-links__item"><a href="#">Health</a></li>
-                      <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
-                      <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
-                      <li class="section-links__item"><a href="#">Regional NSW</a></li>
-                      <li class="section-links__item"><a href="#">Transport</a></li>
-                      <li class="section-links__item"><a href="#">Treasury</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">The Premier</a></li>
-                      <li class="section-links__item"><a href="#">NSW Ministers</a></li>
-                      <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
-                      <li class="section-links__item"><a href="#">Boards and Committees</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government communications</a></li>
-                      <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
-                      <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-          <div class="nsw-footer__lower">
-            <div class="nsw-container">
-              <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
-              <hr>
-              <ul class="nsw-footer-links">
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Accessibility</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Copyright</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Disclaimer</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Privacy</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Content sources</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">RSS</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Contact us</a>
-                  </li>
-              </ul>
-              <div class="nsw-footer__info">
-                <p class="nsw-footer__copyright">Copyright © 2019</p>
-                <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;nav class&#x3D;&quot;nsw-skipto nsw-container&quot; aria-label&#x3D;&quot;Skip to links&quot;&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#main-navigation&quot;&gt;&lt;span&gt;Skip to navigation&lt;/span&gt;&lt;/a&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#content&quot;&gt;&lt;span&gt;Skip to content&lt;/span&gt;&lt;/a&gt;
-        &lt;/nav&gt;
-        &lt;div class&#x3D;&quot;nsw-masthead&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-            &lt;p&gt;A NSW Government website&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;header class&#x3D;&quot;nsw-header&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-header__container&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-header__wrapper&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-header__center&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-header__logo-link&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header__logo&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#dpc-logo&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;NSW Department of Premier and Cabinet&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__left&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--menu js-open-navigation&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;main-navigation&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#menu&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Open&lt;/span&gt; Menu&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__right&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--search js-open-search&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Show&lt;/span&gt; Search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;nsw-search&quot;&gt;
-              &lt;div id&#x3D;&quot;header-search&quot; class&#x3D;&quot;nsw-search__area js-search-area&quot; hidden&gt;
-                &lt;form role&#x3D;&quot;search&quot;&gt;
-                  &lt;label for&#x3D;&quot;nsw-search__input&quot; class&#x3D;&quot;sr-only&quot;&gt;Search site for:&lt;/label&gt;
-                  &lt;input autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;nsw-search__input js-search-input&quot; id&#x3D;&quot;nsw-search__input&quot;
-                    name&#x3D;&quot;input-autocomplete&quot; type&#x3D;&quot;text&quot;&gt;
-                  &lt;button class&#x3D;&quot;nsw-search__submit&quot; type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__search-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;/button&gt;
-                &lt;/form&gt;
-                &lt;button class&#x3D;&quot;nsw-search__close-btn js-close-search&quot; aria-expanded&#x3D;&quot;true&quot; aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__close-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/header&gt;
-        &lt;nav id&#x3D;&quot;main-navigation&quot; class&#x3D;&quot;nsw-navigation &quot; aria-label&#x3D;&quot;Main menu&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-navigation__header&quot;&gt;
-            &lt;h2 id&#x3D;&quot;nsw-navigation&quot;&gt;Menu&lt;/h2&gt;
-            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-navigation__close js-close-navigation&quot; aria-expanded&#x3D;&quot;true&quot;&gt;
-              &lt;svg class&#x3D;&quot;nsw-icon icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-              &lt;/svg&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close Menu&lt;/span&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-          &lt;ul class&#x3D;&quot;nsw-navigation__list&quot;&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;http://google.com&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;About DPC&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#updates&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Updates&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#publications&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Publications&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#tools-resources&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Tools &amp;amp; Resources&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-              &lt;li class&#x3D;&quot;nsw-navigation__list-item&quot;&gt;
-                &lt;a href&#x3D;&quot;/index.html#contact-us&quot; class&#x3D;&quot;nsw-navigation__link&quot;&gt;
-                  &lt;span class&#x3D;&quot;nsw-navigation__link-text&quot;&gt;Contact us&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/li&gt;
-          &lt;/ul&gt;
-        &lt;/nav&gt;
-        &lt;div class&#x3D;&quot;nsw-container nsw-p-bottom-xs&quot;&gt;
-          &lt;nav aria-label&#x3D;&quot;Breadcrumb&quot; class&#x3D;&quot;nsw-breadcrumb&quot;&gt;
-            &lt;ol class&#x3D;&quot;nsw-breadcrumb__list&quot;&gt;
-                &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;Home&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;About DPC&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;NSW Digital Design System&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link nsw-breadcrumb--current&quot; aria-current&#x3D;&quot;page&quot;&gt;Content design&lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ol&gt;
-          &lt;/nav&gt;
-        &lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;nsw-container nsw-p-top-sm nsw-p-bottom-lg&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop&quot;&gt;
-              &lt;nav class&#x3D;&quot;nsw-sidenav&quot; aria-labelledby&#x3D;&quot;sksm7sss26ns side navigation&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-sidenav__header&quot;&gt;
-                  &lt;h2 id&#x3D;&quot;sksm7sss26ns&quot; class&#x3D;&quot;nsw-sidenav__heading&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__heading-link&quot;&gt;About DPC&lt;/a&gt;&lt;/h2&gt;
-                &lt;/div&gt;
-                &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-1&quot;&gt;
-                    &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                        About the Department
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                        Careers
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                        Accessing DPC information
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                        Premier and Cabinet cluster
-                      &lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                        NSW Digital Design System
-                      &lt;/a&gt;
-                      &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-2&quot;&gt;
-                          &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                              Building a service
-                            &lt;/a&gt;
-                          &lt;/li&gt;
-                          &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link is-current&quot; aria-current&#x3D;&quot;page&quot;&gt;
-                              Content design
-                            &lt;/a&gt;
-                          &lt;/li&gt;
-                          &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                              Using artefacts
-                            &lt;/a&gt;
-                          &lt;/li&gt;
-                          &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
-                            &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
-                              Experimenting
-                            &lt;/a&gt;
-                          &lt;/li&gt;
-                      &lt;/ul&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/nav&gt;
-            &lt;/div&gt;
-            &lt;main id&#x3D;&quot;content&quot; class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-wysiwyg-content nsw-block&quot;&gt;
-                &lt;h1&gt;Content design&lt;/h1&gt;
-                &lt;p class&#x3D;&quot;nsw-intro&quot;&gt;Content designers create patterns of content to guide the user and help them achieve their goal.&lt;/p&gt;
-              &lt;/div&gt;
-        
-              &lt;nav class&#x3D;&quot;nsw-page-nav&quot; aria-labelledby&#x3D;&quot;in-page-nav&quot;&gt;
-                &lt;h2 id&#x3D;&quot;in-page-nav&quot; class&#x3D;&quot;nsw-page-nav__title&quot;&gt;On this page&lt;/h2&gt;
-                &lt;ul class&#x3D;&quot;nsw-page-nav__list&quot;&gt;
-                    &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Ways of working&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Core skills&lt;/a&gt;
-                    &lt;/li&gt;
-                    &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Content design for transactions&lt;/a&gt;
-                    &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/nav&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-wysiwyg-content nsw-block&quot;&gt;
-                &lt;h2 id&#x3D;&quot;ways-of-working&quot;&gt;Ways of working&lt;/h2&gt;
-                &lt;p&gt;Content design is not copy writing. It may not even be about writing a lot of words. It’s a way of working that starts with the problem you need to resolve for users.&lt;/p&gt;
-        
-                &lt;h3&gt;Building relationships&lt;/h3&gt;
-                &lt;p&gt;Work with others to understand the problem you need to address on behalf of the user. Other people in your team may already be doing that.&lt;/p&gt;
-                &lt;p&gt;A content person comes in many guises and you may not be a part of the &lt;a href&#x3D;&quot;#&quot;&gt;multidisciplinary product team&lt;/a&gt;. While you&#x27;re gathering evidence about the user, try to build relationships across that product team.&lt;/p&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-accordion js-accordion&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;Sprint cadence or workflow&lt;/h2&gt;
-                &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-                	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-                  	&lt;p&gt;In your team there may already be a sprint cadence that includes content design. Become familiar with agile practices such as the Kanban wall, daily stand ups and sprint planning. Understand the user journey and their needs. Get involved in usability testing sessions and iteration.&lt;/p&gt;&lt;p&gt;Otherwise, the content workflow may be separate from the product team. At the very least, make sure the team has real content to use, when they’re building a prototype. Also ensure your team uses real content when it does usability testing. Attend playbacks from this testing, to know how your content needs to change.&lt;/p&gt;&lt;p&gt;As well as designing the user experience with product team members, a content designer works to know the facts with subject matter experts.&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;Simplifying complexity&lt;/h2&gt;
-                &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-                	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-                  	&lt;p&gt;Your aim from the outset is to simplify everything for the user. Your main task will be to set up a clear path for them to achieve their goal. &lt;/p&gt;&lt;p&gt;Start with a user story. You should create one for each piece of content, from user research. If you’re part of a multidisciplinary product team, everyone is likely to be using them as you design and build.&lt;/p&gt;&lt;p&gt;A user story will help you to pinpoint the user need from the outset. It puts the user front-of-mind and gives you a focus when designing and writing the content.&lt;/p&gt;&lt;p&gt;Next, create a structure for your page, based on the user story. Write up meaningful H2 headers to serve as signposts to help the user do what they need to do.&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-                &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;Working with subject matter experts&lt;/h2&gt;
-                &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-                	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-                  	&lt;p&gt;Share your way of working with your subject matter experts – in person if possible. &lt;/p&gt;&lt;p&gt;They&#x27;re a great way of introducing your approach to a subject matter expert, which may be completely foreign to them. It will show them how you&#x27;re focusing on the user, and what you&#x27;re trying to solve. Ask them for feedback. Find out if there’s anything missing and if you’re on the right track.&lt;/p&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-wysiwyg-content nsw-block&quot;&gt;
-                &lt;h2 id&#x3D;&quot;core-skills&quot;&gt;Core skills&lt;/h2&gt;
-                &lt;p&gt;You may have come to content design from a variety of backgrounds – such as communications, marketing, web editing, copywriting, technical writing, journalism.&lt;/p&gt;
-        
-                &lt;h3&gt;Plain language&lt;/h3&gt;
-                &lt;p&gt;Content designers need to know the basics of &lt;a href&#x3D;&quot;#&quot;&gt;good readability&lt;/a&gt;. They’re aware how readers scan content. There’s a skill involved in improving content for ease of use. They will know how to create signposts for users, mix up the length of sentences and use active language. They work hard to make the meaning succinct and clear.&lt;/p&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-callout&quot;&gt;
-                &lt;svg class&#x3D;&quot;nsw-icon nsw-callout__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                  &lt;use xlink:href&#x3D;&quot;#status-info&quot;&gt;&lt;/use&gt;
-                &lt;/svg&gt;
-                &lt;div class&#x3D;&quot;nsw-callout__content&quot;&gt;
-                  &lt;h4 class&#x3D;&quot;nsw-callout__title&quot;&gt;Plain language tool&lt;/h4&gt;
-                  &lt;p&gt;Learn more about writing clear, concise, organised, and appropriate content for your intended audience using &lt;a href&#x3D;&#x27;#&#x27;&gt;plain language tools&lt;/a&gt;.&lt;/p&gt;
-                  
-                &lt;/div&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-wysiwyg-content nsw-block&quot;&gt;
-                &lt;h2 id&#x3D;&quot;content-design-for-transactions&quot;&gt;Content design for transactions&lt;/h2&gt;
-                &lt;p&gt;As a content designer, your task is to get the user from A to B in the transaction. &lt;/p&gt;
-                &lt;p&gt;When designing content for transactions:  &lt;/p&gt;
-                &lt;ul&gt;
-                  &lt;li&gt;minimise the user’s chance of error  &lt;/li&gt;
-                  &lt;li&gt;maximise collaborative teamwork &lt;/li&gt;
-                  &lt;li&gt;balance business and user needs.  &lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;p&gt;In this guide we’ve used Service NSW examples. &lt;/p&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-tabs js-tabs&quot;&gt;
-                &lt;ul class&#x3D;&quot;nsw-tabs__list&quot;&gt;
-                  &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#section1&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;Explain transaction&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#section2&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;Map transaction&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#section3&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;Signpost steps&lt;/a&gt;
-                  &lt;/li&gt;
-                &lt;/ul&gt;
-                &lt;section id&#x3D;&quot;section1&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-                  &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h3&gt;Explain transaction&lt;/h3&gt;&lt;p&gt;The landing page explains the entire transaction to a user. It serves as the front door.&lt;/p&gt;&lt;/p&gt;By having a clear guide at the start, users know where they can return to for more information, or to start again.&lt;/p&gt;&lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section id&#x3D;&quot;section2&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-                  &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h3&gt;Map transaction&lt;/h3&gt;&lt;p&gt;The start of the transaction gives the user a map – the steps to take, and what to expect afterwards. The purpose of the landing page is to give the user context. It will display on the agency site that leads to the transaction.&lt;/p&gt;&lt;p&gt;The user arrives at this page when they’re looking to do a transaction. They’re likely to arrive via a Google search or email link. A user should be able to find what they need to know about the transaction, and how to complete it.  &lt;/p&gt;&lt;/div&gt;
-                &lt;/section&gt;
-                &lt;section id&#x3D;&quot;section3&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-                  &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h3&gt;Signpost steps&lt;/h3&gt;&lt;p&gt;The purpose of signposting the steps is to reduce the user’s chance of error. This helps the user move through the transaction with ease. The user can scan what they need to do so they can complete their task.  &lt;/p&gt;&lt;/div&gt;
-                &lt;/section&gt;
-              &lt;/div&gt;
-        
-              &lt;div class&#x3D;&quot;nsw-link-list&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-link-list__title&quot;&gt;Related guides&lt;/div&gt;
-                &lt;ul class&#x3D;&quot;nsw-link-list__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-                        &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;User-focused content design process
-                          &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                            &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                          &lt;/svg&gt;
-                        &lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-                        &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;Digital collaboration tools
-                          &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                            &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                          &lt;/svg&gt;
-                        &lt;/a&gt;
-                      &lt;/li&gt;
-                      &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-                        &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;Testing and improving guides
-                          &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                            &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                          &lt;/svg&gt;
-                        &lt;/a&gt;
-                      &lt;/li&gt;
-                &lt;/ul&gt;
-              &lt;/div&gt;    &lt;/main&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        
-        &lt;footer class&#x3D;&quot;nsw-footer&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__upper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container section-links&quot;&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Popular&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact the Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact a Minister&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State flag&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State Funerals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Buy Regional&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Life events&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government directory&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service NSW locations&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;What&amp;#x27;s happening&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Ministerial media releases&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Projects and initiatives&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Have your say&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW school and public holidays&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find a job in NSW Government&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;I work for NSW&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Departments&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Customer Service&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Communities and Justice&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Health&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Planning, Industry and Environment&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier and Cabinet&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Regional NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Transport&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Treasury&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;The Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Ministers&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find your local Member of Parliament&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Boards and Committees&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government communications&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Unsolicited proposals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier&amp;#x27;s Priorities&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__lower&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;p&gt;We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.&lt;/p&gt;
-              &lt;hr&gt;
-              &lt;ul class&#x3D;&quot;nsw-footer-links&quot;&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Accessibility&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Copyright&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Disclaimer&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Privacy&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Content sources&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;RSS&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Contact us&lt;/a&gt;
-                  &lt;/li&gt;
-              &lt;/ul&gt;
-              &lt;div class&#x3D;&quot;nsw-footer__info&quot;&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__copyright&quot;&gt;Copyright © 2019&lt;/p&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__built&quot;&gt;Built by &lt;a href&#x3D;&quot;https://www.digital.nsw.gov.au/digital-design-system&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;NSW Design System&lt;/a&gt;&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/footer&gt;
-        </code></pre>
-          </section>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Departments</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Customer Service</a></li>
+              <li class="section-links__item"><a href="#">Communities and Justice</a></li>
+              <li class="section-links__item"><a href="#">Education</a></li>
+              <li class="section-links__item"><a href="#">Health</a></li>
+              <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
+              <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
+              <li class="section-links__item"><a href="#">Regional NSW</a></li>
+              <li class="section-links__item"><a href="#">Transport</a></li>
+              <li class="section-links__item"><a href="#">Treasury</a></li>
+          </ul>
         </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">The Premier</a></li>
+              <li class="section-links__item"><a href="#">NSW Ministers</a></li>
+              <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
+              <li class="section-links__item"><a href="#">Boards and Committees</a></li>
+              <li class="section-links__item"><a href="#">NSW Government communications</a></li>
+              <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
+              <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+      <hr>
+      <ul class="nsw-footer-links">
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Accessibility</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Copyright</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Disclaimer</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Privacy</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Content sources</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">RSS</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Contact us</a>
+          </li>
+      </ul>
+      <div class="nsw-footer__info">
+        <p class="nsw-footer__copyright">Copyright © 2019</p>
+        <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
       </div>
     </div>
   </div>
+</footer>
+
   <script src="../../js/main.js"></script>
-  <script>
-    window.NSW.initSite()
-    hljs.initHighlightingOnLoad();
-</script>
+  <script>window.NSW.initSite()</script>
 </body>
 </html>
