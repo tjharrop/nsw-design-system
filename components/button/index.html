@@ -231,12 +231,18 @@
     <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Buttons</h1>
-            <p>Buttons provide users with the ability to submit an action or follow a link to another location.</p>
+            <p>Buttons provide users with the ability to submit an action.</p>
       </div>
       <div>
         <div class="nsw-tabs js-tabs">
           <div class="nsw-p-left-md nsw-bg--light-10">
             <ul class="nsw-tabs__list">
+              <li class="nsw-tabs__list-item">
+                <a href="#GuidanceSection" class="nsw-tabs__link">Guidance</a>
+              </li>
+              <li class="nsw-tabs__list-item">
+                <a href="#AccessibilitySection" class="nsw-tabs__link">Accessibility</a>
+              </li>
               <li class="nsw-tabs__list-item">
                 <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
               </li>
@@ -245,244 +251,232 @@
               </li>
             </ul>
           </div>
+          <section id="GuidanceSection" class="nsw-tabs__content">
+            <h2>Using buttons</h2> <p>Buttons should be used when the user performs an action, and should describe what happens when pressed. Examples of button contexts include:</p> <ul> <li>Submitting a form</li> <li>Cancelling a transaction</li> <li>Saving information</li> <li>Making a payment</li> </ul> <h3>Buttons vs. links</h3> <p>Buttons should be used if there is an <em>action</em> performed. For navigating users to different pages, use a text link instead.</p> <h2>Button states</h2> <p>Buttons are styled according to their purpose:</p> <ul> <li><strong>Primary</strong> buttons are for the page's primary user action (call to action)</li> <li><strong>Highlight</strong> buttons can be coloured with your brand colour and used in place of primary buttons</li> <li><strong>Secondary</strong> buttons are used for call to action other than the primary</li> <li><strong>Disabled</strong> buttons can be used if research shows that it helps users understand the screen</li> </ul> <h3>Tips</h3> <ul> <li>Disabled buttons can be harder to see, so avoid using them where possible</li> <li>Consider the GOV.UK guidance on how to <a class="ext" data-extlink="" href="https://design-system.service.gov.uk/components/button/#stop-users-from-accidentally-sending-information-more-than-once">stop users from accidentally sending information more than once</a></li> <li>Overusing buttons and button-style links makes them less noticable</li> <li>A comprehensive review of buttons vs. links is available from Indiana University - <a class="ext" data-extlink="" href="https://ux.iu.edu/writings/buttons-vs-links-basic/">Buttons &amp; Links - the Basics</a></li> </ul>
+          </section>
+          <section id="AccessibilitySection" class="nsw-tabs__content">
+            <h2>Button accessibility</h2> <p>The NSW Design system meets WGAG AA.</p> <h3>Further reading on button accessibility</h3> <ul> <li><strong>carnegiemuseums.org</strong> - <a href="http://web-accessibility.carnegiemuseums.org/content/buttons/">Links, Buttons, &amp; Other Clickable Elements</a></li> </ul>
+          </section>
           <section id="demosection" class="nsw-tabs__content">
             
         <main>
           <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col">
-                      <h2 class="nsw-section-title">Primary</h2>
-                      <a href="#" class="nsw-button nsw-button--primary">
-                        Link
-                      </a>
-                      <button
-                          type="button"
-                        class="nsw-button nsw-button--primary"
-                        >
-                        Button
-                      </button>
-                      <button
-                          type="submit"
-                        class="nsw-button nsw-button--primary"
-                        >
-                        Submit Button
-                      </button>
-                      <button
-                          type="reset"
-                        class="nsw-button nsw-button--primary"
-                        >
-                        Reset Button
-                      </button>
-                      <input
-                          type="button"
-                        class="nsw-button nsw-button--primary"
-                        
-                        value="Input"
-                        >
-                      <input
-                          type="submit"
-                        class="nsw-button nsw-button--primary"
-                        
-                        value="Input Submit"
-                        >
-                      <input
-                          type="reset"
-                        class="nsw-button nsw-button--primary"
-                        
-                        value="Input Reset"
-                        >
-                    </div>
-                    <div class="nsw-col">
-                      <h2 class="nsw-section-title">Highlight</h2>
-                      <a href="#" class="nsw-button nsw-button--highlight">
-                        Link
-                      </a>
-                      <button
-                          type="button"
-                        class="nsw-button nsw-button--highlight"
-                        >
-                        Button
-                      </button>
-                      <button
-                          type="submit"
-                        class="nsw-button nsw-button--highlight"
-                        >
-                        Submit Button
-                      </button>
-                      <button
-                          type="reset"
-                        class="nsw-button nsw-button--highlight"
-                        >
-                        Reset Button
-                      </button>
-                      <input
-                          type="button"
-                        class="nsw-button nsw-button--highlight"
-                        
-                        value="Input"
-                        >
-                      <input
-                          type="submit"
-                        class="nsw-button nsw-button--highlight"
-                        
-                        value="Input Submit"
-                        >
-                      <input
-                          type="reset"
-                        class="nsw-button nsw-button--highlight"
-                        
-                        value="Input Reset"
-                        >
-                    </div>
-                    <div class="nsw-col">
-                      <h2 class="nsw-section-title">Outline</h2>
-                      <a href="#" class="nsw-button nsw-button--outline">
-                        Link
-                      </a>
-                      <button
-                          type="button"
-                        class="nsw-button nsw-button--outline"
-                        >
-                        Button
-                      </button>
-                      <button
-                          type="submit"
-                        class="nsw-button nsw-button--outline"
-                        >
-                        Submit Button
-                      </button>
-                      <button
-                          type="reset"
-                        class="nsw-button nsw-button--outline"
-                        >
-                        Reset Button
-                      </button>
-                      <input
-                          type="button"
-                        class="nsw-button nsw-button--outline"
-                        
-                        value="Input"
-                        >
-                      <input
-                          type="submit"
-                        class="nsw-button nsw-button--outline"
-                        
-                        value="Input Submit"
-                        >
-                      <input
-                          type="reset"
-                        class="nsw-button nsw-button--outline"
-                        
-                        value="Input Reset"
-                        >
-                    </div>
-                  </div>
-                </div>
+            <div class="nsw-grid">
+              <div class="nsw-col nsw-m-left-md">
+                <h2 class="nsw-section-title">Primary</h2>
+                <a href="#" class="nsw-button nsw-button--primary">
+                  Link
+                </a>
+                <button
+                    type="button"
+                  class="nsw-button nsw-button--primary"
+                  >
+                  Button
+                </button>
+                <button
+                    type="submit"
+                  class="nsw-button nsw-button--primary"
+                  >
+                  Submit Button
+                </button>
+                <button
+                    type="reset"
+                  class="nsw-button nsw-button--primary"
+                  >
+                  Reset Button
+                </button>
+                <input
+                    type="button"
+                  class="nsw-button nsw-button--primary"
+                  
+                  value="Input"
+                  >
+                <input
+                    type="submit"
+                  class="nsw-button nsw-button--primary"
+                  
+                  value="Input Submit"
+                  >
+                <input
+                    type="reset"
+                  class="nsw-button nsw-button--primary"
+                  
+                  value="Input Reset"
+                  >
+              </div>
+              <div class="nsw-col nsw-m-left-md">
+                <h2 class="nsw-section-title">Highlight</h2>
+                <a href="#" class="nsw-button nsw-button--highlight">
+                  Link
+                </a>
+                <button
+                    type="button"
+                  class="nsw-button nsw-button--highlight"
+                  >
+                  Button
+                </button>
+                <button
+                    type="submit"
+                  class="nsw-button nsw-button--highlight"
+                  >
+                  Submit Button
+                </button>
+                <button
+                    type="reset"
+                  class="nsw-button nsw-button--highlight"
+                  >
+                  Reset Button
+                </button>
+                <input
+                    type="button"
+                  class="nsw-button nsw-button--highlight"
+                  
+                  value="Input"
+                  >
+                <input
+                    type="submit"
+                  class="nsw-button nsw-button--highlight"
+                  
+                  value="Input Submit"
+                  >
+                <input
+                    type="reset"
+                  class="nsw-button nsw-button--highlight"
+                  
+                  value="Input Reset"
+                  >
+              </div>
+              <div class="nsw-col nsw-m-left-md">
+                <h2 class="nsw-section-title">Outline</h2>
+                <a href="#" class="nsw-button nsw-button--outline">
+                  Link
+                </a>
+                <button
+                    type="button"
+                  class="nsw-button nsw-button--outline"
+                  >
+                  Button
+                </button>
+                <button
+                    type="submit"
+                  class="nsw-button nsw-button--outline"
+                  >
+                  Submit Button
+                </button>
+                <button
+                    type="reset"
+                  class="nsw-button nsw-button--outline"
+                  >
+                  Reset Button
+                </button>
+                <input
+                    type="button"
+                  class="nsw-button nsw-button--outline"
+                  
+                  value="Input"
+                  >
+                <input
+                    type="submit"
+                  class="nsw-button nsw-button--outline"
+                  
+                  value="Input Submit"
+                  >
+                <input
+                    type="reset"
+                  class="nsw-button nsw-button--outline"
+                  
+                  value="Input Reset"
+                  >
               </div>
             </div>
           </div>
           <div class="nsw-section--light-40">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col">
-                      <h2 class="nsw-section-title">White</h2>
-                      <a href="#" class="nsw-button nsw-button--white">
-                        Link
-                      </a>
-                      <button
-                          type="button"
-                        class="nsw-button nsw-button--white"
-                        >
-                        Button
-                      </button>
-                      <button
-                          type="submit"
-                        class="nsw-button nsw-button--white"
-                        >
-                        Submit Button
-                      </button>
-                      <button
-                          type="reset"
-                        class="nsw-button nsw-button--white"
-                        >
-                        Reset Button
-                      </button>
-                      <input
-                          type="button"
-                        class="nsw-button nsw-button--white"
-                        
-                        value="Input"
-                        >
-                      <input
-                          type="submit"
-                        class="nsw-button nsw-button--white"
-                        
-                        value="Input Submit"
-                        >
-                      <input
-                          type="reset"
-                        class="nsw-button nsw-button--white"
-                        
-                        value="Input Reset"
-                        >
-                    </div>
-                  </div>
-                </div>
+            <div class="nsw-grid">
+              <div class="nsw-col nsw-m-left-md">
+                <h2 class="nsw-section-title">White</h2>
+                <a href="#" class="nsw-button nsw-button--white">
+                  Link
+                </a>
+                <button
+                    type="button"
+                  class="nsw-button nsw-button--white"
+                  >
+                  Button
+                </button>
+                <button
+                    type="submit"
+                  class="nsw-button nsw-button--white"
+                  >
+                  Submit Button
+                </button>
+                <button
+                    type="reset"
+                  class="nsw-button nsw-button--white"
+                  >
+                  Reset Button
+                </button>
+                <input
+                    type="button"
+                  class="nsw-button nsw-button--white"
+                  
+                  value="Input"
+                  >
+                <input
+                    type="submit"
+                  class="nsw-button nsw-button--white"
+                  
+                  value="Input Submit"
+                  >
+                <input
+                    type="reset"
+                  class="nsw-button nsw-button--white"
+                  
+                  value="Input Reset"
+                  >
               </div>
             </div>
           </div>
           <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col">
-                      <h2 class="nsw-section-title">Disabled</h2>
-                      <p><strong>Note:</strong> Its not possible to disable links, a class of .disable should only be applied to buttons and inputs</p>
-                      <button
-                          type="button"
-                        class="nsw-button nsw-button--primary"
-                        disabled>
-                        Button
-                      </button>
-                      <button
-                          type="submit"
-                        class="nsw-button nsw-button--primary"
-                        disabled>
-                        Submit Button
-                      </button>
-                      <button
-                          type="reset"
-                        class="nsw-button nsw-button--primary"
-                        disabled>
-                        Reset Button
-                      </button>
-                      <input
-                          type="button"
-                        class="nsw-button nsw-button--primary"
-                        disabled
-                        value="Input"
-                        >
-                      <input
-                          type="submit"
-                        class="nsw-button nsw-button--primary"
-                        disabled
-                        value="Input Submit"
-                        >
-                      <input
-                          type="reset"
-                        class="nsw-button nsw-button--primary"
-                        disabled
-                        value="Input Reset"
-                        >
-                    </div>
-                  </div>
-                </div>
+            <div class="nsw-grid">
+              <div class="nsw-col nsw-m-left-md">
+                <h2 class="nsw-section-title">Disabled</h2>
+                <p><strong>Note:</strong> Its not possible to disable links, a class of .disable should only be applied to buttons and inputs</p>
+                <button
+                    type="button"
+                  class="nsw-button nsw-button--primary"
+                  disabled>
+                  Button
+                </button>
+                <button
+                    type="submit"
+                  class="nsw-button nsw-button--primary"
+                  disabled>
+                  Submit Button
+                </button>
+                <button
+                    type="reset"
+                  class="nsw-button nsw-button--primary"
+                  disabled>
+                  Reset Button
+                </button>
+                <input
+                    type="button"
+                  class="nsw-button nsw-button--primary"
+                  disabled
+                  value="Input"
+                  >
+                <input
+                    type="submit"
+                  class="nsw-button nsw-button--primary"
+                  disabled
+                  value="Input Submit"
+                  >
+                <input
+                    type="reset"
+                  class="nsw-button nsw-button--primary"
+                  disabled
+                  value="Input Reset"
+                  >
               </div>
             </div>
           </div>
@@ -493,240 +487,222 @@
             <pre><code class="html">
         &lt;main&gt;
           &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-                      &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Primary&lt;/h2&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--primary&quot;&gt;
-                        Link
-                      &lt;/a&gt;
-                      &lt;button
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        &gt;
-                        Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        &gt;
-                        Submit Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        &gt;
-                        Reset Button
-                      &lt;/button&gt;
-                      &lt;input
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        
-                        value&#x3D;&quot;Input&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        
-                        value&#x3D;&quot;Input Submit&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        
-                        value&#x3D;&quot;Input Reset&quot;
-                        &gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-                      &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Highlight&lt;/h2&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--highlight&quot;&gt;
-                        Link
-                      &lt;/a&gt;
-                      &lt;button
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        &gt;
-                        Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        &gt;
-                        Submit Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        &gt;
-                        Reset Button
-                      &lt;/button&gt;
-                      &lt;input
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        
-                        value&#x3D;&quot;Input&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        
-                        value&#x3D;&quot;Input Submit&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                        
-                        value&#x3D;&quot;Input Reset&quot;
-                        &gt;
-                    &lt;/div&gt;
-                    &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-                      &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Outline&lt;/h2&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--outline&quot;&gt;
-                        Link
-                      &lt;/a&gt;
-                      &lt;button
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        &gt;
-                        Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        &gt;
-                        Submit Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        &gt;
-                        Reset Button
-                      &lt;/button&gt;
-                      &lt;input
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        
-                        value&#x3D;&quot;Input&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        
-                        value&#x3D;&quot;Input Submit&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                        
-                        value&#x3D;&quot;Input Reset&quot;
-                        &gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
+              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Primary&lt;/h2&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--primary&quot;&gt;
+                  Link
+                &lt;/a&gt;
+                &lt;button
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  &gt;
+                  Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  &gt;
+                  Submit Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  &gt;
+                  Reset Button
+                &lt;/button&gt;
+                &lt;input
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  
+                  value&#x3D;&quot;Input&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  
+                  value&#x3D;&quot;Input Submit&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  
+                  value&#x3D;&quot;Input Reset&quot;
+                  &gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Highlight&lt;/h2&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--highlight&quot;&gt;
+                  Link
+                &lt;/a&gt;
+                &lt;button
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  &gt;
+                  Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  &gt;
+                  Submit Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  &gt;
+                  Reset Button
+                &lt;/button&gt;
+                &lt;input
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  
+                  value&#x3D;&quot;Input&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  
+                  value&#x3D;&quot;Input Submit&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
+                  
+                  value&#x3D;&quot;Input Reset&quot;
+                  &gt;
+              &lt;/div&gt;
+              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Outline&lt;/h2&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--outline&quot;&gt;
+                  Link
+                &lt;/a&gt;
+                &lt;button
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  &gt;
+                  Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  &gt;
+                  Submit Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  &gt;
+                  Reset Button
+                &lt;/button&gt;
+                &lt;input
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  
+                  value&#x3D;&quot;Input&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  
+                  value&#x3D;&quot;Input Submit&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
+                  
+                  value&#x3D;&quot;Input Reset&quot;
+                  &gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;nsw-section--light-40&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-                      &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;White&lt;/h2&gt;
-                      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--white&quot;&gt;
-                        Link
-                      &lt;/a&gt;
-                      &lt;button
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        &gt;
-                        Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        &gt;
-                        Submit Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        &gt;
-                        Reset Button
-                      &lt;/button&gt;
-                      &lt;input
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        
-                        value&#x3D;&quot;Input&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        
-                        value&#x3D;&quot;Input Submit&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                        
-                        value&#x3D;&quot;Input Reset&quot;
-                        &gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
+              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;White&lt;/h2&gt;
+                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--white&quot;&gt;
+                  Link
+                &lt;/a&gt;
+                &lt;button
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  &gt;
+                  Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  &gt;
+                  Submit Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  &gt;
+                  Reset Button
+                &lt;/button&gt;
+                &lt;input
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  
+                  value&#x3D;&quot;Input&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  
+                  value&#x3D;&quot;Input Submit&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
+                  
+                  value&#x3D;&quot;Input Reset&quot;
+                  &gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
           &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-                      &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Disabled&lt;/h2&gt;
-                      &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Its not possible to disable links, a class of .disable should only be applied to buttons and inputs&lt;/p&gt;
-                      &lt;button
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled&gt;
-                        Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled&gt;
-                        Submit Button
-                      &lt;/button&gt;
-                      &lt;button
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled&gt;
-                        Reset Button
-                      &lt;/button&gt;
-                      &lt;input
-                          type&#x3D;&quot;button&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled
-                        value&#x3D;&quot;Input&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;submit&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled
-                        value&#x3D;&quot;Input Submit&quot;
-                        &gt;
-                      &lt;input
-                          type&#x3D;&quot;reset&quot;
-                        class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                        disabled
-                        value&#x3D;&quot;Input Reset&quot;
-                        &gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
+            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
+              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
+                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Disabled&lt;/h2&gt;
+                &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Its not possible to disable links, a class of .disable should only be applied to buttons and inputs&lt;/p&gt;
+                &lt;button
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled&gt;
+                  Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled&gt;
+                  Submit Button
+                &lt;/button&gt;
+                &lt;button
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled&gt;
+                  Reset Button
+                &lt;/button&gt;
+                &lt;input
+                    type&#x3D;&quot;button&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled
+                  value&#x3D;&quot;Input&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;submit&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled
+                  value&#x3D;&quot;Input Submit&quot;
+                  &gt;
+                &lt;input
+                    type&#x3D;&quot;reset&quot;
+                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
+                  disabled
+                  value&#x3D;&quot;Input Reset&quot;
+                  &gt;
               &lt;/div&gt;
             &lt;/div&gt;
           &lt;/div&gt;
@@ -737,6 +713,24 @@
       </div>
     </div>
   </div>
+  <footer class="nsw-footer">
+    <div class="nsw-footer__upper">
+      <div class="nsw-container section-links">
+      </div>
+    </div>
+    <div class="nsw-footer__lower">
+      <div class="nsw-container">
+        <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+        <hr>
+        <ul class="nsw-footer-links">
+        </ul>
+        <div class="nsw-footer__info">
+          <p class="nsw-footer__copyright">Copyright © 2021</p>
+          <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
   <script src="../../js/main.js"></script>
   <script>
     window.NSW.initSite()
