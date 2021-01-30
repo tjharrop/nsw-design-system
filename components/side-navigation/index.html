@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Side navigation</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
+    // SVG Sprite Loader
+    var svgAjax = new XMLHttpRequest();
+    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
+    svgAjax.send();
+    svgAjax.onload = function(e) {
+      var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
+      var svg = fragment.querySelector('svg')
+      svg.setAttribute('aria-hidden', true);
+      svg.style.cssText = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+      document.body.insertBefore(fragment, document.body.childNodes[0]);
+    };
+    // Replace 'no-js' with 'js' on the html tag
+    (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+</head>
+
+<body >
+  <div class="nsw-masthead">
+    <div class="nsw-m-left-md">
+      <p>A NSW Government website</p>
+    </div>
+  </div>
+  <header class="nsw-header nsw-header--simple">
+    <div class="nsw-m-left-md">
+      <div class="nsw-header__wrapper">
+        <div class="nsw-header__center">
+          <a href="#" class="nsw-header__logo-link">
+            <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
+            <span class="sr-only">digital.nsw</span>
+          </a>
+        </div>
+      </div>
+  </header>
+  <div class="nsw-grid nsw-m-none" style="margin:0;">
+    <div class="nsw-col-3 nsw-col">
+      <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
+        <div class="nsw-sidenav__header">
+          <h2 id="componentsTitle" class="nsw-sidenav__heading">
+            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Components</span></h2>
+        </div>
+        <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
+                Accordion
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
+                Breadcrumbs
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/button/index.html" class="nsw-sidenav__link " >
+                Buttons
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
+                Callout
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/card/index.html" class="nsw-sidenav__link " >
+                Card
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
+                Direction links
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/feature-tile/index.html" class="nsw-sidenav__link " >
+                Feature tile
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/footer/index.html" class="nsw-sidenav__link " >
+                Footer
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/forms/index.html" class="nsw-sidenav__link " >
+                Forms
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/site-wide-message/index.html" class="nsw-sidenav__link " >
+                Global alert
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/header/index.html" class="nsw-sidenav__link " >
+                Header
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/hero-banner/index.html" class="nsw-sidenav__link " >
+                Hero banner
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/hero-search/index.html" class="nsw-sidenav__link " >
+                Hero search
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/in-page-navigation/index.html" class="nsw-sidenav__link " >
+                In-page navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
+                In-page notification
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/link-list/index.html" class="nsw-sidenav__link " >
+                Link list
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
+                Main navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/pagination/index.html" class="nsw-sidenav__link " >
+                Pagination
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/side-navigation/index.html" class="nsw-sidenav__link " >
+                Side navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/social-bar/index.html" class="nsw-sidenav__link " >
+                Social bar
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tables/index.html" class="nsw-sidenav__link " >
+                Tables
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tab-navigation/index.html" class="nsw-sidenav__link " >
+                Tabs
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tags/index.html" class="nsw-sidenav__link " >
+                Tags
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0;">
+      <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
+          <h1>Side navigation</h1>
+          <p>Testing description</p>
+      </div>
+      <div>
+        <div class="nsw-tabs js-tabs">
+          <div class="nsw-p-left-md nsw-bg--light-10">
+            <ul class="nsw-tabs__list">
+              <li class="nsw-tabs__list-item">
+                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+              </li>
+              <li class="nsw-tabs__list-item">
+                <a href="#codesection" class="nsw-tabs__link">Code</a>
+              </li>
+            </ul>
+          </div>
+          <section id="demosection" class="nsw-tabs__content">
+            
+        <div class="nsw-section--white">
+          <div class="nsw-container">
+            <div class="nsw-page-layout">
+              <div class="nsw-page-layout__main">
+                <div class="nsw-grid">
+                  <div class="nsw-col nsw-col-md-4">
+                		<h2 class="nsw-section-title">Single level</h2>
+                		<div class="nsw-m-top-md" style="max-width: 336px;"> 
+                    	<nav class="nsw-sidenav" aria-labelledby="sksm726ns side navigation">
+                    	  <div class="nsw-sidenav__header">
+                    	    <h2 id="sksm726ns" class="nsw-sidenav__heading">
+                    	      <a href="#" class="nsw-sidenav__heading-link">Agile Methodology</a></h2>
+                    	  </div>
+                    	  <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Pre-discovery
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Discovery
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item has-active-children">
+                    	        <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+                    	          Alpha
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Beta
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Live
+                    	        </a>
+                    	      </li>
+                    	  </ul>
+                    	</nav>
+                    </div>
+                  </div>
+                  <div class="nsw-col nsw-col-md-4">
+                		<h2 class="nsw-section-title">Two levels</h2>
+                		<div class="nsw-m-top-md" style="max-width: 336px;"> 
+                    	<nav class="nsw-sidenav" aria-labelledby="sksm7sss26ns side navigation">
+                    	  <div class="nsw-sidenav__header">
+                    	    <h2 id="sksm7sss26ns" class="nsw-sidenav__heading">
+                    	      <a href="#" class="nsw-sidenav__heading-link">About DPC</a></h2>
+                    	  </div>
+                    	  <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          About the Department
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Careers
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Accessing DPC information
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Premier and Cabinet cluster
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item has-active-children">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          NSW Digital Design System
+                    	        </a>
+                    	        <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Building a service
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+                    	                Content design
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Using artefacts
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Experimenting
+                    	              </a>
+                    	            </li>
+                    	        </ul>
+                    	      </li>
+                    	  </ul>
+                    	</nav>
+                    </div>
+                  </div>
+                  <div class="nsw-col nsw-col-md-4">
+                		<h2 class="nsw-section-title">Four levels</h2>
+                		<div class="nsw-m-top-md" style="max-width: 336px;"> 
+                    	<nav class="nsw-sidenav" aria-labelledby="sksm7sss27ns side navigation">
+                    	  <div class="nsw-sidenav__header">
+                    	    <h2 id="sksm7sss27ns" class="nsw-sidenav__heading">
+                    	      <a href="#" class="nsw-sidenav__heading-link">Service Design</a></h2>
+                    	  </div>
+                    	  <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          What is Service Design
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Service Design methodologies
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item has-active-children">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Agile Ways of working
+                    	        </a>
+                    	        <ul class="nsw-sidenav__list nsw-sidenav__list--level-2">
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Pre-discovery
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Discovery
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item has-active-children">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Alpha
+                    	              </a>
+                    	              <ul class="nsw-sidenav__list nsw-sidenav__list--level-3">
+                    	                  <li class="nsw-sidenav__list-item ">
+                    	                    <a href="#" class="nsw-sidenav__link " >
+                    	                      What is Alpha?
+                    	                    </a>
+                    	                  </li>
+                    	                  <li class="nsw-sidenav__list-item ">
+                    	                    <a href="#" class="nsw-sidenav__link " >
+                    	                      Turning Research into design
+                    	                    </a>
+                    	                  </li>
+                    	                  <li class="nsw-sidenav__list-item has-active-children">
+                    	                    <a href="#" class="nsw-sidenav__link is-current" aria-current="page">
+                    	                      Prototyping
+                    	                    </a>
+                    	                    <ul class="nsw-sidenav__list nsw-sidenav__list--level-4">
+                    	                        <li class="nsw-sidenav__list-item ">
+                    	                          <a href="#" class="nsw-sidenav__link " >
+                    	                            Low fidelity
+                    	                          </a>
+                    	                        </li>
+                    	                        <li class="nsw-sidenav__list-item ">
+                    	                          <a href="#" class="nsw-sidenav__link " >
+                    	                            High Fidelity
+                    	                          </a>
+                    	                        </li>
+                    	                        <li class="nsw-sidenav__list-item ">
+                    	                          <a href="#" class="nsw-sidenav__link " >
+                    	                            Prototyping tools
+                    	                          </a>
+                    	                        </li>
+                    	                    </ul>
+                    	                  </li>
+                    	              </ul>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Beta
+                    	              </a>
+                    	            </li>
+                    	            <li class="nsw-sidenav__list-item ">
+                    	              <a href="#" class="nsw-sidenav__link " >
+                    	                Live
+                    	              </a>
+                    	            </li>
+                    	        </ul>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Team roles
+                    	        </a>
+                    	      </li>
+                    	      <li class="nsw-sidenav__list-item ">
+                    	        <a href="#" class="nsw-sidenav__link " >
+                    	          Resources
+                    	        </a>
+                    	      </li>
+                    	  </ul>
+                    	</nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          </section>
+          <section id="codesection" class="nsw-tabs__content">
+            <pre><code class="html">
+        &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
+          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
+            &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
+              &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
+                &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
+                  &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
+                		&lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Single level&lt;/h2&gt;
+                		&lt;div class&#x3D;&quot;nsw-m-top-md&quot; style&#x3D;&quot;max-width: 336px;&quot;&gt; 
+                    	&lt;nav class&#x3D;&quot;nsw-sidenav&quot; aria-labelledby&#x3D;&quot;sksm726ns side navigation&quot;&gt;
+                    	  &lt;div class&#x3D;&quot;nsw-sidenav__header&quot;&gt;
+                    	    &lt;h2 id&#x3D;&quot;sksm726ns&quot; class&#x3D;&quot;nsw-sidenav__heading&quot;&gt;
+                    	      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__heading-link&quot;&gt;Agile Methodology&lt;/a&gt;&lt;/h2&gt;
+                    	  &lt;/div&gt;
+                    	  &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-1&quot;&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Pre-discovery
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Discovery
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link is-current&quot; aria-current&#x3D;&quot;page&quot;&gt;
+                    	          Alpha
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Beta
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Live
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	  &lt;/ul&gt;
+                    	&lt;/nav&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
+                		&lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Two levels&lt;/h2&gt;
+                		&lt;div class&#x3D;&quot;nsw-m-top-md&quot; style&#x3D;&quot;max-width: 336px;&quot;&gt; 
+                    	&lt;nav class&#x3D;&quot;nsw-sidenav&quot; aria-labelledby&#x3D;&quot;sksm7sss26ns side navigation&quot;&gt;
+                    	  &lt;div class&#x3D;&quot;nsw-sidenav__header&quot;&gt;
+                    	    &lt;h2 id&#x3D;&quot;sksm7sss26ns&quot; class&#x3D;&quot;nsw-sidenav__heading&quot;&gt;
+                    	      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__heading-link&quot;&gt;About DPC&lt;/a&gt;&lt;/h2&gt;
+                    	  &lt;/div&gt;
+                    	  &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-1&quot;&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          About the Department
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Careers
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Accessing DPC information
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Premier and Cabinet cluster
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          NSW Digital Design System
+                    	        &lt;/a&gt;
+                    	        &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-2&quot;&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Building a service
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link is-current&quot; aria-current&#x3D;&quot;page&quot;&gt;
+                    	                Content design
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Using artefacts
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Experimenting
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	        &lt;/ul&gt;
+                    	      &lt;/li&gt;
+                    	  &lt;/ul&gt;
+                    	&lt;/nav&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                  &lt;div class&#x3D;&quot;nsw-col nsw-col-md-4&quot;&gt;
+                		&lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Four levels&lt;/h2&gt;
+                		&lt;div class&#x3D;&quot;nsw-m-top-md&quot; style&#x3D;&quot;max-width: 336px;&quot;&gt; 
+                    	&lt;nav class&#x3D;&quot;nsw-sidenav&quot; aria-labelledby&#x3D;&quot;sksm7sss27ns side navigation&quot;&gt;
+                    	  &lt;div class&#x3D;&quot;nsw-sidenav__header&quot;&gt;
+                    	    &lt;h2 id&#x3D;&quot;sksm7sss27ns&quot; class&#x3D;&quot;nsw-sidenav__heading&quot;&gt;
+                    	      &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__heading-link&quot;&gt;Service Design&lt;/a&gt;&lt;/h2&gt;
+                    	  &lt;/div&gt;
+                    	  &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-1&quot;&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          What is Service Design
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Service Design methodologies
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Agile Ways of working
+                    	        &lt;/a&gt;
+                    	        &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-2&quot;&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Pre-discovery
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Discovery
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Alpha
+                    	              &lt;/a&gt;
+                    	              &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-3&quot;&gt;
+                    	                  &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                      What is Alpha?
+                    	                    &lt;/a&gt;
+                    	                  &lt;/li&gt;
+                    	                  &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                      Turning Research into design
+                    	                    &lt;/a&gt;
+                    	                  &lt;/li&gt;
+                    	                  &lt;li class&#x3D;&quot;nsw-sidenav__list-item has-active-children&quot;&gt;
+                    	                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link is-current&quot; aria-current&#x3D;&quot;page&quot;&gt;
+                    	                      Prototyping
+                    	                    &lt;/a&gt;
+                    	                    &lt;ul class&#x3D;&quot;nsw-sidenav__list nsw-sidenav__list--level-4&quot;&gt;
+                    	                        &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	                          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                            Low fidelity
+                    	                          &lt;/a&gt;
+                    	                        &lt;/li&gt;
+                    	                        &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	                          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                            High Fidelity
+                    	                          &lt;/a&gt;
+                    	                        &lt;/li&gt;
+                    	                        &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	                          &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                            Prototyping tools
+                    	                          &lt;/a&gt;
+                    	                        &lt;/li&gt;
+                    	                    &lt;/ul&gt;
+                    	                  &lt;/li&gt;
+                    	              &lt;/ul&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Beta
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	            &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	                Live
+                    	              &lt;/a&gt;
+                    	            &lt;/li&gt;
+                    	        &lt;/ul&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Team roles
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	      &lt;li class&#x3D;&quot;nsw-sidenav__list-item &quot;&gt;
+                    	        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-sidenav__link &quot; &gt;
+                    	          Resources
+                    	        &lt;/a&gt;
+                    	      &lt;/li&gt;
+                    	  &lt;/ul&gt;
+                    	&lt;/nav&gt;
+                    &lt;/div&gt;
+                  &lt;/div&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code></pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>

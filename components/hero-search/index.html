@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NSW Digital Design System - Hero search</title>
+  <meta name="robots" content="noindex" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="icon" href="../../favicon.ico">
+  <link rel="stylesheet" href="../../css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
+    // SVG Sprite Loader
+    var svgAjax = new XMLHttpRequest();
+    svgAjax.open("GET", "../../assets/svg/sprite.svg", true);
+    svgAjax.send();
+    svgAjax.onload = function(e) {
+      var fragment = document.createRange().createContextualFragment(svgAjax.responseText);
+      var svg = fragment.querySelector('svg')
+      svg.setAttribute('aria-hidden', true);
+      svg.style.cssText = 'position: absolute; width: 0; height: 0; overflow: hidden;'
+      document.body.insertBefore(fragment, document.body.childNodes[0]);
+    };
+    // Replace 'no-js' with 'js' on the html tag
+    (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
+  </script>
+</head>
+
+<body >
+  <div class="nsw-masthead">
+    <div class="nsw-m-left-md">
+      <p>A NSW Government website</p>
+    </div>
+  </div>
+  <header class="nsw-header nsw-header--simple">
+    <div class="nsw-m-left-md">
+      <div class="nsw-header__wrapper">
+        <div class="nsw-header__center">
+          <a href="#" class="nsw-header__logo-link">
+            <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
+            <span class="sr-only">digital.nsw</span>
+          </a>
+        </div>
+      </div>
+  </header>
+  <div class="nsw-grid nsw-m-none" style="margin:0;">
+    <div class="nsw-col-3 nsw-col">
+      <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
+        <div class="nsw-sidenav__header">
+          <h2 id="componentsTitle" class="nsw-sidenav__heading">
+            <span class="nsw-sidenav__heading-link" aria-controls="nav-default">Components</span></h2>
+        </div>
+        <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
+                Accordion
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
+                Breadcrumbs
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/button/index.html" class="nsw-sidenav__link " >
+                Buttons
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
+                Callout
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/card/index.html" class="nsw-sidenav__link " >
+                Card
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
+                Direction links
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/feature-tile/index.html" class="nsw-sidenav__link " >
+                Feature tile
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/footer/index.html" class="nsw-sidenav__link " >
+                Footer
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/forms/index.html" class="nsw-sidenav__link " >
+                Forms
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/site-wide-message/index.html" class="nsw-sidenav__link " >
+                Global alert
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/header/index.html" class="nsw-sidenav__link " >
+                Header
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/hero-banner/index.html" class="nsw-sidenav__link " >
+                Hero banner
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/hero-search/index.html" class="nsw-sidenav__link " >
+                Hero search
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/in-page-navigation/index.html" class="nsw-sidenav__link " >
+                In-page navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
+                In-page notification
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/link-list/index.html" class="nsw-sidenav__link " >
+                Link list
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
+                Main navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/pagination/index.html" class="nsw-sidenav__link " >
+                Pagination
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/side-navigation/index.html" class="nsw-sidenav__link " >
+                Side navigation
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/social-bar/index.html" class="nsw-sidenav__link " >
+                Social bar
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tables/index.html" class="nsw-sidenav__link " >
+                Tables
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tab-navigation/index.html" class="nsw-sidenav__link " >
+                Tabs
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/tags/index.html" class="nsw-sidenav__link " >
+                Tags
+              </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0;">
+      <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
+          <h1>Hero search</h1>
+          <p>Testing description</p>
+      </div>
+      <div>
+        <div class="nsw-tabs js-tabs">
+          <div class="nsw-p-left-md nsw-bg--light-10">
+            <ul class="nsw-tabs__list">
+              <li class="nsw-tabs__list-item">
+                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+              </li>
+              <li class="nsw-tabs__list-item">
+                <a href="#codesection" class="nsw-tabs__link">Code</a>
+              </li>
+            </ul>
+          </div>
+          <section id="demosection" class="nsw-tabs__content">
+            
+        <div class="nsw-section--image" style="background-image: url(https://picsum.photos/id/199/2000/1250);">
+          <div class="hero-search">
+            <div class="nsw-container">
+              <div class="hero-search__content nsw-body-content">
+                <h1 class="hero-search__title">NSW Government</h1>
+                <p>Find information, access services and have your say.</p>
+                <form role="search" class="hero-search__form">
+                  <div class="nsw-form-search">
+                    <label for="hero-search-input" class="sr-only">Search site for:</label>
+                    <input autocomplete="off" class="nsw-form-search__input" id="hero-search-input" name="hero-search" type="text">
+                    <button class="nsw-form-search__submit" type="submit" aria-label="search">
+                      <svg class="nsw-icon" focusable="false" aria-hidden="true">
+                        <use xlink:href="#search"></use>
+                      </svg>
+                      <span class="sr-only">Search</span>
+                    </button>
+                  </div>
+                </form>
+                <div class="hero-search__suggested">
+                  <ul>
+                      <li><a href="#">COVID-19 (coronavirus</a></li>
+                      <li><a href="#">Water restrictions</a></li>
+                      <li><a href="#">Support for bushfire affected communities</a></li>
+                      <li><a href="#">Renew rego</a></li>
+                      <li><a href="#">Green slips</a></li>
+                      <li><a href="#">Driving, boating and transport</a></li>
+                      <li><a href="#">School and public holidays</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+          </section>
+          <section id="codesection" class="nsw-tabs__content">
+            <pre><code class="html">
+        &lt;div class&#x3D;&quot;nsw-section--image&quot; style&#x3D;&quot;background-image: url(https://picsum.photos/id/199/2000/1250);&quot;&gt;
+          &lt;div class&#x3D;&quot;hero-search&quot;&gt;
+            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
+              &lt;div class&#x3D;&quot;hero-search__content nsw-body-content&quot;&gt;
+                &lt;h1 class&#x3D;&quot;hero-search__title&quot;&gt;NSW Government&lt;/h1&gt;
+                &lt;p&gt;Find information, access services and have your say.&lt;/p&gt;
+                &lt;form role&#x3D;&quot;search&quot; class&#x3D;&quot;hero-search__form&quot;&gt;
+                  &lt;div class&#x3D;&quot;nsw-form-search&quot;&gt;
+                    &lt;label for&#x3D;&quot;hero-search-input&quot; class&#x3D;&quot;sr-only&quot;&gt;Search site for:&lt;/label&gt;
+                    &lt;input autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;nsw-form-search__input&quot; id&#x3D;&quot;hero-search-input&quot; name&#x3D;&quot;hero-search&quot; type&#x3D;&quot;text&quot;&gt;
+                    &lt;button class&#x3D;&quot;nsw-form-search__submit&quot; type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;search&quot;&gt;
+                      &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+                        &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
+                      &lt;/svg&gt;
+                      &lt;span class&#x3D;&quot;sr-only&quot;&gt;Search&lt;/span&gt;
+                    &lt;/button&gt;
+                  &lt;/div&gt;
+                &lt;/form&gt;
+                &lt;div class&#x3D;&quot;hero-search__suggested&quot;&gt;
+                  &lt;ul&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;COVID-19 (coronavirus&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Water restrictions&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Support for bushfire affected communities&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Renew rego&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Green slips&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Driving, boating and transport&lt;/a&gt;&lt;/li&gt;
+                      &lt;li&gt;&lt;a href&#x3D;&quot;#&quot;&gt;School and public holidays&lt;/a&gt;&lt;/li&gt;
+                  &lt;/ul&gt;
+                &lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+        </code></pre>
+          </section>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../../js/main.js"></script>
+  <script>
+    window.NSW.initSite()
+    hljs.initHighlightingOnLoad();
+</script>
+</body>
+</html>
