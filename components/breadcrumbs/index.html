@@ -59,8 +59,8 @@
         </div>
         <ul class="nsw-sidenav__list nsw-sidenav__list--level-1">
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
-                Accordion
+              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
+                Breadcrumbs
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
@@ -179,8 +179,8 @@
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/breadcrumbs/index.html" class="nsw-sidenav__link " >
-                Breadcrumbs
+              <a href="/components/accordion/index.html" class="nsw-sidenav__link " >
+                Accordion
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
@@ -189,23 +189,23 @@
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
-                Callout
-              </a>
-            </li>
-            <li class="nsw-sidenav__list-item ">
               <a href="/components/card/index.html" class="nsw-sidenav__link " >
                 Card
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
-                Direction links
+              <a href="/components/callout/index.html" class="nsw-sidenav__link " >
+                Callout
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
               <a href="/components/feature-tile/index.html" class="nsw-sidenav__link " >
                 Feature tile
+              </a>
+            </li>
+            <li class="nsw-sidenav__list-item ">
+              <a href="/components/direction-links/index.html" class="nsw-sidenav__link " >
+                Direction links
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
@@ -244,13 +244,13 @@
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
-                Main navigation
+              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
+                In-page notification
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
-              <a href="/components/notification/index.html" class="nsw-sidenav__link " >
-                In-page notification
+              <a href="/components/main-navigation/index.html" class="nsw-sidenav__link " >
+                Main navigation
               </a>
             </li>
             <li class="nsw-sidenav__list-item ">
@@ -392,7 +392,7 @@
           <div class="nsw-p-left-md nsw-bg--light-10">
             <ul class="nsw-tabs__list">
               <li class="nsw-tabs__list-item">
-                <a href="#section147280" class="nsw-tabs__link">Guidance</a>
+                <a href="#section147281" class="nsw-tabs__link">Guidance</a>
               </li>
               <li class="nsw-tabs__list-item">
                 <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
@@ -402,22 +402,28 @@
               </li>
             </ul>
           </div>
-          <section id="section147280" class="nsw-tabs__content">
-              <p>Breadcrumbs show the location of a page, in relation to its parent pages, and allow users to navigate back through these pages with ease.</p>
+          <section id="section147281" class="nsw-tabs__content">
+              <p>Breadcrumbs help users to understand where they are within a website’s structure.</p>
         <h2 id="using-breadcrumbs">Using breadcrumbs</h2>
-        <p>Breadcrumbs are a complementary way to navigate back through the site architecture. Use breadcrumbs to give users context and a progressive sense of place. This helps the user to understand the site structure and facilitates discovery if they’ve landed on the page using search.</p>
+        <p>Use the breadcrumbs component when you need to help users understand and move between the multiple levels of a website.</p>
         <p>Do:</p>
         <ul>
         <li>display in the top left of the main content area above the page title</li>
         <li>ensure you use the same labels and casing as the main IA</li>
-        <li>use for large deep websites.</li>
         </ul>
-        <h3 id="when-to-avoid">When to avoid</h3>
-        <p>Do not use for progressive flows such as wizards.</p>
-        <h3 id="how-this-component-works">How this component works</h3>
-        <p><strong>Showing a users location</strong></p>
-        <p>Breadcrumbs show the current page location in the context of its parent pages, starting with the home link. The parent pages use link styling and can be used to navigate a user back to a parent page. The label of the user’s current page is not a link to indicate the user&#39;s current location.</p>
-        <p>For mobile resolutions (under 768px) the breadcrumb shows a link to the immediate parent and current page only.</p>
+        <h2 id="when-to-avoid">When to avoid</h2>
+        <p>Do not use the breadcrumbs component on websites with a flat structure, or to show progress through a linear journey or transaction.</p>
+        <p>Breadcrumb navigation should be regarded as an extra feature and shouldn’t replace effective primary navigation menus.</p>
+        <p>If you’re using other navigational elements on the page, such as a sidebar, consider whether your users need the additional support of breadcrumbs.</p>
+        <h2 id="how-this-component-works">How this component works</h2>
+        <p>Breadcrumbs are a navigational aid that display a user&#39;s location on a website as a row of links, usually located at the top of the page.</p>
+        <p>Breadcrumbs should:</p>
+        <ul>
+        <li>start with your ‘home’ page and end with the parent section of the current page</li>
+        <li>display in the top left of the screen’s content area, above the page title</li>
+        <li>reflect the section names of the IA and use chevrons between the names to suggest a visual hierarchy.</li>
+        </ul>
+        <p>For mobile resolutions (under 768px), the breadcrumb shows a link to the immediate parent and current page only.</p>
         <h2 id="accessibility">Accessibility</h2>
         <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
         
