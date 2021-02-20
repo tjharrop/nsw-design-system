@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,432 +255,222 @@
           <h1>Iconography</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-                      <div class="nsw-wysiwyg-content">
-        <h1>Iconography</h1>
-        <p>NSW Design System icons use svg sprite to render the icons.</p>
-        
-        <div class="nsw-code">&lt;svg class=&quot;nsw-icon&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;
-          &lt;use xlink:href=&quot;[icon-id]&quot;&gt;&lt;/use&gt;
-        &lt;/svg&gt;</div>
-        
-        <p>Available icon ID's:</p>
-        <div style="max-width: 260px;">
-          <table class="nsw-table nsw-table--striped">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>Icon</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td width="100%">#arrow</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#close</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#close"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#menu</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#search</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#status-error</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-error"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#status-info</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-info"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#status-success</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-success"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#status-warning</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-warning"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">#tick</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#tick"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-          
-        <h2>Icon colour</h2>
-        <p>By default all nsw icons are distinctly NSW blue, there are some preset colours availible:</p>
-        
-        <div style="max-width: 260px;">
-          <table class="nsw-table nsw-table--striped">
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Icon</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td width="100%">.nsw-icon--error</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--error" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-error"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--success</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--success" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-success"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--info</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--info" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-info"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--warning</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--warning" focusable="false" aria-hidden="true">
-                    <use xlink:href="#status-warning"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        
-        <h2>Icon rotation</h2>
-        <p>By default nsw icon if directional will all point right, if another direction is needed helper classes can be applied to change the direction:</p>
-        <div style="max-width: 260px;">
-          <table class="nsw-table nsw-table--striped">
-            <thead>
-              <tr>
-                <th>Class</th>
-                <th>Icon</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td width="100%">default</td>
-                <td>
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#chevron"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--rotate-90</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
-                    <use xlink:href="#chevron"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--rotate-180</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
-                    <use xlink:href="#chevron"></use>
-                  </svg>
-                </td>
-              </tr>
-              <tr>
-                <td width="100%">.nsw-icon--rotate-270</td>
-                <td>
-                  <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
-                    <use xlink:href="#chevron"></use>
-                  </svg>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+              <div class="nsw-wysiwyg-content">
+<h1>Iconography</h1>
+<p>NSW Design System icons use svg sprite to render the icons.</p>
+
+<div class="nsw-code">&lt;svg class=&quot;nsw-icon&quot; focusable=&quot;false&quot; aria-hidden=&quot;true&quot;&gt;
+  &lt;use xlink:href=&quot;[icon-id]&quot;&gt;&lt;/use&gt;
+&lt;/svg&gt;</div>
+
+<p>Available icon ID's:</p>
+<div style="max-width: 260px;">
+  <table class="nsw-table nsw-table--striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width="100%">#arrow</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#arrow"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#close</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#menu</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#search</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#status-error</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-error"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#status-info</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-info"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#status-success</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-success"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#status-warning</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-warning"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">#tick</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#tick"></use>
+          </svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+  
+<h2>Icon colour</h2>
+<p>By default all nsw icons are distinctly NSW blue, there are some preset colours availible:</p>
+
+<div style="max-width: 260px;">
+  <table class="nsw-table nsw-table--striped">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width="100%">.nsw-icon--error</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--error" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-error"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--success</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--success" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-success"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--info</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--info" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-info"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--warning</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--warning" focusable="false" aria-hidden="true">
+            <use xlink:href="#status-warning"></use>
+          </svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h2>Icon rotation</h2>
+<p>By default nsw icon if directional will all point right, if another direction is needed helper classes can be applied to change the direction:</p>
+<div style="max-width: 260px;">
+  <table class="nsw-table nsw-table--striped">
+    <thead>
+      <tr>
+        <th>Class</th>
+        <th>Icon</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td width="100%">default</td>
+        <td>
+          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#chevron"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--rotate-90</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
+            <use xlink:href="#chevron"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--rotate-180</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+            <use xlink:href="#chevron"></use>
+          </svg>
+        </td>
+      </tr>
+      <tr>
+        <td width="100%">.nsw-icon--rotate-270</td>
+        <td>
+          <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
+            <use xlink:href="#chevron"></use>
+          </svg>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
               </div>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-        &lt;h1&gt;Iconography&lt;/h1&gt;
-        &lt;p&gt;NSW Design System icons use svg sprite to render the icons.&lt;/p&gt;
-        
-        &lt;div class&#x3D;&quot;nsw-code&quot;&gt;&amp;lt;svg class&#x3D;&amp;quot;nsw-icon&amp;quot; focusable&#x3D;&amp;quot;false&amp;quot; aria-hidden&#x3D;&amp;quot;true&amp;quot;&amp;gt;
-          &amp;lt;use xlink:href&#x3D;&amp;quot;[icon-id]&amp;quot;&amp;gt;&amp;lt;/use&amp;gt;
-        &amp;lt;/svg&amp;gt;&lt;/div&gt;
-        
-        &lt;p&gt;Available icon ID&#x27;s:&lt;/p&gt;
-        &lt;div style&#x3D;&quot;max-width: 260px;&quot;&gt;
-          &lt;table class&#x3D;&quot;nsw-table nsw-table--striped&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;ID&lt;/th&gt;
-                &lt;th&gt;Icon&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#arrow&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#close&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#menu&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#menu&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#search&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#status-error&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-error&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#status-info&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-info&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#status-success&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-success&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#status-warning&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-warning&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;#tick&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#tick&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-          
-        &lt;h2&gt;Icon colour&lt;/h2&gt;
-        &lt;p&gt;By default all nsw icons are distinctly NSW blue, there are some preset colours availible:&lt;/p&gt;
-        
-        &lt;div style&#x3D;&quot;max-width: 260px;&quot;&gt;
-          &lt;table class&#x3D;&quot;nsw-table nsw-table--striped&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;Class&lt;/th&gt;
-                &lt;th&gt;Icon&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--error&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--error&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-error&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--success&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--success&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-success&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--info&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--info&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-info&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--warning&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--warning&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#status-warning&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-        
-        &lt;h2&gt;Icon rotation&lt;/h2&gt;
-        &lt;p&gt;By default nsw icon if directional will all point right, if another direction is needed helper classes can be applied to change the direction:&lt;/p&gt;
-        &lt;div style&#x3D;&quot;max-width: 260px;&quot;&gt;
-          &lt;table class&#x3D;&quot;nsw-table nsw-table--striped&quot;&gt;
-            &lt;thead&gt;
-              &lt;tr&gt;
-                &lt;th&gt;Class&lt;/th&gt;
-                &lt;th&gt;Icon&lt;/th&gt;
-              &lt;/tr&gt;
-            &lt;/thead&gt;
-            &lt;tbody&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;default&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#chevron&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--rotate-90&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-90&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#chevron&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--rotate-180&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-180&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#chevron&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-              &lt;tr&gt;
-                &lt;td width&#x3D;&quot;100%&quot;&gt;.nsw-icon--rotate-270&lt;/td&gt;
-                &lt;td&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-270&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#chevron&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                &lt;/td&gt;
-              &lt;/tr&gt;
-            &lt;/tbody&gt;
-          &lt;/table&gt;
-        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -704,6 +496,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

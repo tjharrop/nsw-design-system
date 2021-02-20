@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,144 +255,92 @@
           <h1>Link list</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141227" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141227" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141227" class="nsw-tabs__content">
+      <p>Link lists let users navigate to related content.</p>
+<h2 id="using-link-lists">Using link lists</h2>
+<p>Use link lists to display a list of navigation items to provide a quick way for users to navigate to a content area.</p>
+<p>Do:</p>
+<ul>
+<li>keep links short and intuitive. Links that are too long (more than 1 line) make it difficult for users to scan.</li>
+<li>use the <a href="https://www.digital.nsw.gov.au/digital-service-toolkit/guides/content-101">writing guide</a> to ensure you keep the tone active.</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Do not</p>
+<ul>
+<li>use a link list for pages that aren&#39;t related as this is likely to confuse users</li>
+<li>use a link list in a transactional service or a form</li>
+<li>use as an on-page navigation pattern.</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>Navigation items are separated from each other by a fine line, grouping related links, but keeping the individual links separate.</p>
+<p>Forward arrows are used to help suggest that each of the list items is a link.</p>
+<p>The entire row is clickable.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<div class="nsw-link-list">
+							  <ul class="nsw-link-list__list">
+							        <li class="nsw-link-list__item" >
+							          <a class="nsw-link-list__link" href="#">First home buyer grant and assistance
+							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+							              <use xlink:href="#arrow"></use>
+							            </svg>
+							          </a>
+							        </li>
+							        <li class="nsw-link-list__item" >
+							          <a class="nsw-link-list__link" href="#">Buying and selling property
+							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+							              <use xlink:href="#arrow"></use>
+							            </svg>
+							          </a>
+							        </li>
+							        <li class="nsw-link-list__item" >
+							          <a class="nsw-link-list__link" href="#">Building or renovating a home
+							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+							              <use xlink:href="#arrow"></use>
+							            </svg>
+							          </a>
+							        </li>
+							        <li class="nsw-link-list__item" >
+							          <a class="nsw-link-list__link" href="#">Aged care housing, home living assistance and retirement villages
+							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
+							              <use xlink:href="#arrow"></use>
+							            </svg>
+							          </a>
+							        </li>
+							  </ul>
+							</div>            </div>
           </div>
-          <section id="section141227" class="nsw-tabs__content">
-              <p>Link lists let users navigate to related content.</p>
-        <h2 id="using-link-lists">Using link lists</h2>
-        <p>Use link lists to display a list of navigation items to provide a quick way for users to navigate to a content area.</p>
-        <p>Do:</p>
-        <ul>
-        <li>keep links short and intuitive. Links that are too long (more than 1 line) make it difficult for users to scan.</li>
-        <li>use the <a href="https://www.digital.nsw.gov.au/digital-service-toolkit/guides/content-101">writing guide</a> to ensure you keep the tone active.</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Do not</p>
-        <ul>
-        <li>use a link list for pages that aren&#39;t related as this is likely to confuse users</li>
-        <li>use a link list in a transactional service or a form</li>
-        <li>use as an on-page navigation pattern.</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>Navigation items are separated from each other by a fine line, grouping related links, but keeping the individual links separate.</p>
-        <p>Forward arrows are used to help suggest that each of the list items is a link.</p>
-        <p>The entire row is clickable.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<div class="nsw-link-list">
-        							  <ul class="nsw-link-list__list">
-        							        <li class="nsw-link-list__item" >
-        							          <a class="nsw-link-list__link" href="#">First home buyer grant and assistance
-        							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-        							              <use xlink:href="#arrow"></use>
-        							            </svg>
-        							          </a>
-        							        </li>
-        							        <li class="nsw-link-list__item" >
-        							          <a class="nsw-link-list__link" href="#">Buying and selling property
-        							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-        							              <use xlink:href="#arrow"></use>
-        							            </svg>
-        							          </a>
-        							        </li>
-        							        <li class="nsw-link-list__item" >
-        							          <a class="nsw-link-list__link" href="#">Building or renovating a home
-        							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-        							              <use xlink:href="#arrow"></use>
-        							            </svg>
-        							          </a>
-        							        </li>
-        							        <li class="nsw-link-list__item" >
-        							          <a class="nsw-link-list__link" href="#">Aged care housing, home living assistance and retirement villages
-        							            <svg class="nsw-icon nsw-link-list__icon" focusable="false" aria-hidden="true">
-        							              <use xlink:href="#arrow"></use>
-        							            </svg>
-        							          </a>
-        							        </li>
-        							  </ul>
-        							</div>            </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;div class&#x3D;&quot;nsw-link-list&quot;&gt;
-        							  &lt;ul class&#x3D;&quot;nsw-link-list__list&quot;&gt;
-        							        &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-        							          &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;First home buyer grant and assistance
-        							            &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							              &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							            &lt;/svg&gt;
-        							          &lt;/a&gt;
-        							        &lt;/li&gt;
-        							        &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-        							          &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;Buying and selling property
-        							            &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							              &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							            &lt;/svg&gt;
-        							          &lt;/a&gt;
-        							        &lt;/li&gt;
-        							        &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-        							          &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;Building or renovating a home
-        							            &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							              &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							            &lt;/svg&gt;
-        							          &lt;/a&gt;
-        							        &lt;/li&gt;
-        							        &lt;li class&#x3D;&quot;nsw-link-list__item&quot; &gt;
-        							          &lt;a class&#x3D;&quot;nsw-link-list__link&quot; href&#x3D;&quot;#&quot;&gt;Aged care housing, home living assistance and retirement villages
-        							            &lt;svg class&#x3D;&quot;nsw-icon nsw-link-list__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							              &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							            &lt;/svg&gt;
-        							          &lt;/a&gt;
-        							        &lt;/li&gt;
-        							  &lt;/ul&gt;
-        							&lt;/div&gt;            &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -416,6 +366,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

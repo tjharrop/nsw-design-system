@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,173 +255,238 @@
           <h1>Header</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141202" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#section141201" class="nsw-tabs__link">Customisation</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141202" class="nsw-tabs__content">
-              <p>The NSW Government network header displays across the top of all NSW Government sites. It helps users see which service they are using.</p>
-        <h2 id="using-header">Using header</h2>
-        <p>The NSW Government network header should be used at the top of all NSW Government websites, products and services. The consistent placement of the network header helps our customers easily trust and identify our websites. The logo further reinforces this and helps to identify which department or agency they&#39;re interacting with. The search displays on the right-hand side where users expect it to be.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="section141201" class="nsw-tabs__content">
-              <h2 id="customisation">Customisation</h2>
-        <h3 id="logos">Logos</h3>
-        <p>By default, the lock-up is a co-brand of the NSW Government logo and and the department or agency name. If using the default, ensure the NSW Government logo remains the same size and your logo does not exceed 60px in height. The lock-up between the NSW Government logo and your logo must remain the same. See the <a href="https://www.digital.nsw.gov.au/digital-design-system/style/logo">logo placement page</a> for more details.</p>
-        <p>If you have a brand exemption, replace the logo with your own. You need to use a maximum height of 60px.</p>
-        <h3 id="search">Search</h3>
-        <p>The optional search can be omitted if it&#39;s not required.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <nav class="nsw-skipto nsw-container" aria-label="Skip to links">
-          <a class="nsw-skipto__link" href="#"><span>Skip to navigation</span></a>
-          <a class="nsw-skipto__link" href="#"><span>Skip to content</span></a>
-        </nav>
-        <div class="nsw-masthead">
-          <div class="nsw-container">
-            <p>A NSW Government website</p>
-          </div>
-        </div>
-        <header class="nsw-header">
-          <div class="nsw-header__container">
-            <div class="nsw-header__wrapper">
-              <div class="nsw-header__center">
-                <a href="#" class="nsw-header__logo-link">
-                  <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
-                    <use xlink:href="#dpc-logo"></use>
-                  </svg>
-                  <span class="sr-only">NSW Department of Premier and Cabinet</span>
-                </a>
-              </div>
-              <div class="nsw-header__left">
-                <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
-                  aria-controls="main-navigation">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#menu"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
-                </button>
-              </div>
-              <div class="nsw-header__right">
-                <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
-                  aria-controls="header-search">
-                  <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
-                </button>
-              </div>
-            </div>
-            <div class="nsw-search">
-              <div id="header-search" class="nsw-search__area js-search-area" hidden>
-                <form role="search">
-                  <label for="nsw-search__input" class="sr-only">Search site for:</label>
-                  <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
-                    name="input-autocomplete" type="text">
-                  <button class="nsw-search__submit" type="submit" aria-label="search">
-                  <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#search"></use>
-                  </svg>
-                  </button>
-                </form>
-                <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
-                  <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#close"></use>
-                  </svg>
-                  <span class="sr-only">Close search</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </header>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;nav class&#x3D;&quot;nsw-skipto nsw-container&quot; aria-label&#x3D;&quot;Skip to links&quot;&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#&quot;&gt;&lt;span&gt;Skip to navigation&lt;/span&gt;&lt;/a&gt;
-          &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#&quot;&gt;&lt;span&gt;Skip to content&lt;/span&gt;&lt;/a&gt;
-        &lt;/nav&gt;
-        &lt;div class&#x3D;&quot;nsw-masthead&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-            &lt;p&gt;A NSW Government website&lt;/p&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;header class&#x3D;&quot;nsw-header&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-header__container&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-header__wrapper&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-header__center&quot;&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-header__logo-link&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header__logo&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#dpc-logo&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;NSW Department of Premier and Cabinet&lt;/span&gt;
-                &lt;/a&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__left&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--menu js-open-navigation&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;main-navigation&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#menu&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Open&lt;/span&gt; Menu&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-header__right&quot;&gt;
-                &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--search js-open-search&quot; aria-expanded&#x3D;&quot;false&quot;
-                  aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Show&lt;/span&gt; Search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;nsw-search&quot;&gt;
-              &lt;div id&#x3D;&quot;header-search&quot; class&#x3D;&quot;nsw-search__area js-search-area&quot; hidden&gt;
-                &lt;form role&#x3D;&quot;search&quot;&gt;
-                  &lt;label for&#x3D;&quot;nsw-search__input&quot; class&#x3D;&quot;sr-only&quot;&gt;Search site for:&lt;/label&gt;
-                  &lt;input autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;nsw-search__input js-search-input&quot; id&#x3D;&quot;nsw-search__input&quot;
-                    name&#x3D;&quot;input-autocomplete&quot; type&#x3D;&quot;text&quot;&gt;
-                  &lt;button class&#x3D;&quot;nsw-search__submit&quot; type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__search-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;/button&gt;
-                &lt;/form&gt;
-                &lt;button class&#x3D;&quot;nsw-search__close-btn js-close-search&quot; aria-expanded&#x3D;&quot;true&quot; aria-controls&#x3D;&quot;header-search&quot;&gt;
-                  &lt;svg class&#x3D;&quot;nsw-icon nsw-search__close-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                    &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-                  &lt;/svg&gt;
-                  &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close search&lt;/span&gt;
-                &lt;/button&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/header&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141202" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#section141201" class="nsw-tabs__link">Customisation</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#codesection" class="nsw-tabs__link">Code</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141202" class="nsw-tabs__content">
+      <p>The NSW Government network header displays across the top of all NSW Government sites. It helps users see which service they are using.</p>
+<h2 id="using-header">Using header</h2>
+<p>The NSW Government network header should be used at the top of all NSW Government websites, products and services. The consistent placement of the network header helps our customers easily trust and identify our websites. The logo further reinforces this and helps to identify which department or agency they&#39;re interacting with. The search displays on the right-hand side where users expect it to be.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="section141201" class="nsw-tabs__content">
+      <h2 id="customisation">Customisation</h2>
+<h3 id="logos">Logos</h3>
+<p>By default, the lock-up is a co-brand of the NSW Government logo and and the department or agency name. If using the default, ensure the NSW Government logo remains the same size and your logo does not exceed 60px in height. The lock-up between the NSW Government logo and your logo must remain the same. See the <a href="https://www.digital.nsw.gov.au/digital-design-system/style/logo">logo placement page</a> for more details.</p>
+<p>If you have a brand exemption, replace the logo with your own. You need to use a maximum height of 60px.</p>
+<h3 id="search">Search</h3>
+<p>The optional search can be omitted if it&#39;s not required.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#"><span>Skip to content</span></a>
+</nav>
+<div class="nsw-masthead">
+  <div class="nsw-container">
+    <p>A NSW Government website</p>
+  </div>
+</div>
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+          <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+            <use xlink:href="#dpc-logo"></use>
+          </svg>
+          <span class="sr-only">NSW Department of Premier and Cabinet</span>
+        </a>
+      </div>
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+      <div class="nsw-header__right">
+        <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
+          aria-controls="header-search">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
+        </button>
+      </div>
+    </div>
+    <div class="nsw-search">
+      <div id="header-search" class="nsw-search__area js-search-area" hidden>
+        <form role="search">
+          <label for="nsw-search__input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
+            name="input-autocomplete" type="text">
+          <button class="nsw-search__submit" type="submit" aria-label="search">
+          <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          </button>
+        </form>
+        <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
+          <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="sr-only">Close search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!--sample
+<nav class="nsw-skipto nsw-container" aria-label="Skip to links">
+  <a class="nsw-skipto__link" href="#"><span>Skip to navigation</span></a>
+  <a class="nsw-skipto__link" href="#"><span>Skip to content</span></a>
+</nav>
+<div class="nsw-masthead">
+  <div class="nsw-container">
+    <p>A NSW Government website</p>
+  </div>
+</div>
+<header class="nsw-header">
+  <div class="nsw-header__container">
+    <div class="nsw-header__wrapper">
+      <div class="nsw-header__center">
+        <a href="#" class="nsw-header__logo-link">
+          <svg class="nsw-icon nsw-header__logo" focusable="false" aria-hidden="true">
+            <use xlink:href="#dpc-logo"></use>
+          </svg>
+          <span class="sr-only">NSW Department of Premier and Cabinet</span>
+        </a>
+      </div>
+      <div class="nsw-header__left">
+        <button type="button" class="nsw-header-btn nsw-header-btn--menu js-open-navigation" aria-expanded="false"
+          aria-controls="main-navigation">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#menu"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Open</span> Menu</span>
+        </button>
+      </div>
+      <div class="nsw-header__right">
+        <button type="button" class="nsw-header-btn nsw-header-btn--search js-open-search" aria-expanded="false"
+          aria-controls="header-search">
+          <svg class="nsw-icon nsw-header-btn__icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          <span class="nsw-header-btn__sub"><span class="sr-only">Show</span> Search</span>
+        </button>
+      </div>
+    </div>
+    <div class="nsw-search">
+      <div id="header-search" class="nsw-search__area js-search-area" hidden>
+        <form role="search">
+          <label for="nsw-search__input" class="sr-only">Search site for:</label>
+          <input autocomplete="off" class="nsw-search__input js-search-input" id="nsw-search__input"
+            name="input-autocomplete" type="text">
+          <button class="nsw-search__submit" type="submit" aria-label="search">
+          <svg class="nsw-icon nsw-search__search-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#search"></use>
+          </svg>
+          </button>
+        </form>
+        <button class="nsw-search__close-btn js-close-search" aria-expanded="true" aria-controls="header-search">
+          <svg class="nsw-icon nsw-search__close-icon" focusable="false" aria-hidden="true">
+            <use xlink:href="#close"></use>
+          </svg>
+          <span class="sr-only">Close search</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</header>
+endsample-->
+
+  </section>
+  <section id="codesection" class="nsw-tabs__content">
+    <pre><code class="html">
+&lt;nav class&#x3D;&quot;nsw-skipto nsw-container&quot; aria-label&#x3D;&quot;Skip to links&quot;&gt;
+  &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#&quot;&gt;&lt;span&gt;Skip to navigation&lt;/span&gt;&lt;/a&gt;
+  &lt;a class&#x3D;&quot;nsw-skipto__link&quot; href&#x3D;&quot;#&quot;&gt;&lt;span&gt;Skip to content&lt;/span&gt;&lt;/a&gt;
+&lt;/nav&gt;
+&lt;div class&#x3D;&quot;nsw-masthead&quot;&gt;
+  &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
+    &lt;p&gt;A NSW Government website&lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;header class&#x3D;&quot;nsw-header&quot;&gt;
+  &lt;div class&#x3D;&quot;nsw-header__container&quot;&gt;
+    &lt;div class&#x3D;&quot;nsw-header__wrapper&quot;&gt;
+      &lt;div class&#x3D;&quot;nsw-header__center&quot;&gt;
+        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-header__logo-link&quot;&gt;
+          &lt;svg class&#x3D;&quot;nsw-icon nsw-header__logo&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#dpc-logo&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;span class&#x3D;&quot;sr-only&quot;&gt;NSW Department of Premier and Cabinet&lt;/span&gt;
+        &lt;/a&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;nsw-header__left&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--menu js-open-navigation&quot; aria-expanded&#x3D;&quot;false&quot;
+          aria-controls&#x3D;&quot;main-navigation&quot;&gt;
+          &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#menu&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Open&lt;/span&gt; Menu&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;div class&#x3D;&quot;nsw-header__right&quot;&gt;
+        &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-header-btn nsw-header-btn--search js-open-search&quot; aria-expanded&#x3D;&quot;false&quot;
+          aria-controls&#x3D;&quot;header-search&quot;&gt;
+          &lt;svg class&#x3D;&quot;nsw-icon nsw-header-btn__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;span class&#x3D;&quot;nsw-header-btn__sub&quot;&gt;&lt;span class&#x3D;&quot;sr-only&quot;&gt;Show&lt;/span&gt; Search&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;nsw-search&quot;&gt;
+      &lt;div id&#x3D;&quot;header-search&quot; class&#x3D;&quot;nsw-search__area js-search-area&quot; hidden&gt;
+        &lt;form role&#x3D;&quot;search&quot;&gt;
+          &lt;label for&#x3D;&quot;nsw-search__input&quot; class&#x3D;&quot;sr-only&quot;&gt;Search site for:&lt;/label&gt;
+          &lt;input autocomplete&#x3D;&quot;off&quot; class&#x3D;&quot;nsw-search__input js-search-input&quot; id&#x3D;&quot;nsw-search__input&quot;
+            name&#x3D;&quot;input-autocomplete&quot; type&#x3D;&quot;text&quot;&gt;
+          &lt;button class&#x3D;&quot;nsw-search__submit&quot; type&#x3D;&quot;submit&quot; aria-label&#x3D;&quot;search&quot;&gt;
+          &lt;svg class&#x3D;&quot;nsw-icon nsw-search__search-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#search&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;/button&gt;
+        &lt;/form&gt;
+        &lt;button class&#x3D;&quot;nsw-search__close-btn js-close-search&quot; aria-expanded&#x3D;&quot;true&quot; aria-controls&#x3D;&quot;header-search&quot;&gt;
+          &lt;svg class&#x3D;&quot;nsw-icon nsw-search__close-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
+            &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
+          &lt;/svg&gt;
+          &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close search&lt;/span&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/header&gt;
+</code>
+    </pre>
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -445,6 +512,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,682 +255,360 @@
           <h1>Tables</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141285" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141285" class="nsw-tabs__content">
-              <p>Tables provide a structured way to display information in rows and columns that make it easier for users to scan, sort and compare information.</p>
-        <h2 id="using-tables">Using tables</h2>
-        <p>Use tables to display large data sets that share common attributes to make it easier for users to scan, sort, and compare.</p>
-        <p>Do:</p>
-        <ul>
-        <li>left align table contents with the exception of numerical data, to facilitate easy scanning</li>
-        <li>right align numerical data and apply mono-spacing for easier scanning and comparison</li>
-        <li>display content in a way that is meaningful, such as ordering by hierarchy or alphabetically. Organise contents with the most important/relevant from top to bottom or left to right</li>
-        <li>use a caption to describe the table&#39;s contents. The caption may be displayed at the top if required</li>
-        <li>use borders to increase readability of content-dense tables</li>
-        <li>favour wrapping over truncating content. Multiple items starting with the same word may appear the same when truncated.</li>
-        <li>customise the table width for greater legibility. Tables with sparse, widely separated data are hard to scan and read.</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Don’t use the tables to layout content on a page. You can combine other patterns for displaying your content.</p>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>At smaller breakpoints, the tables scroll horizontally by default.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-                      <div class="nsw-wysiwyg-content">
-                        <h2>Responsive Tables (scroll on mobile)</h2>
-                        <div class="nsw-table-responsive" role="region" aria-labelledby="caption0" tabindex="0">
-                          <table class="nsw-table   ">
-                            <caption id="caption0">Table caption for responsive scroll version</caption>
-                            <thead>
-                              <tr>
-                                <th width="20%">Method</th>
-                                <th width="40%">Description</th>
-                                <th width="40%">Purpose</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Annotated prototypes</a></p>
-                                </td>
-                                <td>
-                                  <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
-                                </td>
-                                <td>
-                                  <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Storyboards</a></p>
-                                </td>
-                                <td>
-                                  <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
-                                </td>
-                                <td>
-                                  <p>Help team members and stakeholders visualize the intended user experience.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Service blueprint</a></p>
-                                </td>
-                                <td>
-                                  <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
-                                </td>
-                                <td>
-                                  <p>Helps organizations understand what will be needed for a successful implementation.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">User stories</a></p>
-                                </td>
-                                <td>
-                                  <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
-                                </td>
-                                <td>
-                                  <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-        
-                        <h2>Striped</h2>
-                        <div class="nsw-table-responsive" role="region" aria-labelledby="caption1" tabindex="0">
-                          <table class="nsw-table  nsw-table--striped ">
-                            <caption id="caption1">Table caption for responsive scroll version</caption>
-                            <thead>
-                              <tr>
-                                <th width="20%">Method</th>
-                                <th width="40%">Description</th>
-                                <th width="40%">Purpose</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Annotated prototypes</a></p>
-                                </td>
-                                <td>
-                                  <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
-                                </td>
-                                <td>
-                                  <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Storyboards</a></p>
-                                </td>
-                                <td>
-                                  <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
-                                </td>
-                                <td>
-                                  <p>Help team members and stakeholders visualize the intended user experience.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Service blueprint</a></p>
-                                </td>
-                                <td>
-                                  <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
-                                </td>
-                                <td>
-                                  <p>Helps organizations understand what will be needed for a successful implementation.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">User stories</a></p>
-                                </td>
-                                <td>
-                                  <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
-                                </td>
-                                <td>
-                                  <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-        
-                        <h2>Caption Top</h2>
-                        <div class="nsw-table-responsive" role="region" aria-labelledby="caption2" tabindex="0">
-                          <table class="nsw-table nsw-table--caption-top  ">
-                            <caption id="caption2">Table caption for responsive scroll version</caption>
-                            <thead>
-                              <tr>
-                                <th width="20%">Method</th>
-                                <th width="40%">Description</th>
-                                <th width="40%">Purpose</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Annotated prototypes</a></p>
-                                </td>
-                                <td>
-                                  <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
-                                </td>
-                                <td>
-                                  <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Storyboards</a></p>
-                                </td>
-                                <td>
-                                  <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
-                                </td>
-                                <td>
-                                  <p>Help team members and stakeholders visualize the intended user experience.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Service blueprint</a></p>
-                                </td>
-                                <td>
-                                  <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
-                                </td>
-                                <td>
-                                  <p>Helps organizations understand what will be needed for a successful implementation.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">User stories</a></p>
-                                </td>
-                                <td>
-                                  <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
-                                </td>
-                                <td>
-                                  <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-        
-                        <h2>Bordered</h2>
-                        <div class="nsw-table-responsive" role="region" aria-labelledby="caption3" tabindex="0">
-                          <table class="nsw-table   nsw-table--bordered">
-                            <caption id="caption3">Table caption for responsive scroll version</caption>
-                            <thead>
-                              <tr>
-                                <th width="20%">Method</th>
-                                <th width="40%">Description</th>
-                                <th width="40%">Purpose</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Annotated prototypes</a></p>
-                                </td>
-                                <td>
-                                  <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
-                                </td>
-                                <td>
-                                  <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Storyboards</a></p>
-                                </td>
-                                <td>
-                                  <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
-                                </td>
-                                <td>
-                                  <p>Help team members and stakeholders visualize the intended user experience.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Service blueprint</a></p>
-                                </td>
-                                <td>
-                                  <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
-                                </td>
-                                <td>
-                                  <p>Helps organizations understand what will be needed for a successful implementation.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">User stories</a></p>
-                                </td>
-                                <td>
-                                  <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
-                                </td>
-                                <td>
-                                  <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-        
-                        <h2>Stripe and Bordered</h2>
-                        <div class="nsw-table-responsive" role="region" aria-labelledby="caption4" tabindex="0">
-                          <table class="nsw-table  nsw-table--striped nsw-table--bordered">
-                            <caption id="caption4">Table caption for responsive scroll version</caption>
-                            <thead>
-                              <tr>
-                                <th width="20%">Method</th>
-                                <th width="40%">Description</th>
-                                <th width="40%">Purpose</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Annotated prototypes</a></p>
-                                </td>
-                                <td>
-                                  <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
-                                </td>
-                                <td>
-                                  <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Storyboards</a></p>
-                                </td>
-                                <td>
-                                  <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
-                                </td>
-                                <td>
-                                  <p>Help team members and stakeholders visualize the intended user experience.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">Service blueprint</a></p>
-                                </td>
-                                <td>
-                                  <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
-                                </td>
-                                <td>
-                                  <p>Helps organizations understand what will be needed for a successful implementation.</p>
-                                </td>
-                              </tr>
-                              <tr>
-                                <td>
-                                  <p><a href="#">User stories</a></p>
-                                </td>
-                                <td>
-                                  <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
-                                </td>
-                                <td>
-                                  <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
-                                </td>
-                              </tr>
-                            </tbody>
-                          </table>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141285" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141285" class="nsw-tabs__content">
+      <p>Tables provide a structured way to display information in rows and columns that make it easier for users to scan, sort and compare information.</p>
+<h2 id="using-tables">Using tables</h2>
+<p>Use tables to display large data sets that share common attributes to make it easier for users to scan, sort, and compare.</p>
+<p>Do:</p>
+<ul>
+<li>left align table contents with the exception of numerical data, to facilitate easy scanning</li>
+<li>right align numerical data and apply mono-spacing for easier scanning and comparison</li>
+<li>display content in a way that is meaningful, such as ordering by hierarchy or alphabetically. Organise contents with the most important/relevant from top to bottom or left to right</li>
+<li>use a caption to describe the table&#39;s contents. The caption may be displayed at the top if required</li>
+<li>use borders to increase readability of content-dense tables</li>
+<li>favour wrapping over truncating content. Multiple items starting with the same word may appear the same when truncated.</li>
+<li>customise the table width for greater legibility. Tables with sparse, widely separated data are hard to scan and read.</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Don’t use the tables to layout content on a page. You can combine other patterns for displaying your content.</p>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>At smaller breakpoints, the tables scroll horizontally by default.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+              <div class="nsw-wysiwyg-content">
+                <h2>Responsive Tables (scroll on mobile)</h2>
+                <div class="nsw-table-responsive" role="region" aria-labelledby="caption0" tabindex="0">
+                  <table class="nsw-table   ">
+                    <caption id="caption0">Table caption for responsive scroll version</caption>
+                    <thead>
+                      <tr>
+                        <th width="20%">Method</th>
+                        <th width="40%">Description</th>
+                        <th width="40%">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><a href="#">Annotated prototypes</a></p>
+                        </td>
+                        <td>
+                          <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
+                        </td>
+                        <td>
+                          <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Storyboards</a></p>
+                        </td>
+                        <td>
+                          <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
+                        </td>
+                        <td>
+                          <p>Help team members and stakeholders visualize the intended user experience.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Service blueprint</a></p>
+                        </td>
+                        <td>
+                          <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
+                        </td>
+                        <td>
+                          <p>Helps organizations understand what will be needed for a successful implementation.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">User stories</a></p>
+                        </td>
+                        <td>
+                          <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
+                        </td>
+                        <td>
+                          <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2>Striped</h2>
+                <div class="nsw-table-responsive" role="region" aria-labelledby="caption1" tabindex="0">
+                  <table class="nsw-table  nsw-table--striped ">
+                    <caption id="caption1">Table caption for responsive scroll version</caption>
+                    <thead>
+                      <tr>
+                        <th width="20%">Method</th>
+                        <th width="40%">Description</th>
+                        <th width="40%">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><a href="#">Annotated prototypes</a></p>
+                        </td>
+                        <td>
+                          <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
+                        </td>
+                        <td>
+                          <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Storyboards</a></p>
+                        </td>
+                        <td>
+                          <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
+                        </td>
+                        <td>
+                          <p>Help team members and stakeholders visualize the intended user experience.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Service blueprint</a></p>
+                        </td>
+                        <td>
+                          <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
+                        </td>
+                        <td>
+                          <p>Helps organizations understand what will be needed for a successful implementation.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">User stories</a></p>
+                        </td>
+                        <td>
+                          <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
+                        </td>
+                        <td>
+                          <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2>Caption Top</h2>
+                <div class="nsw-table-responsive" role="region" aria-labelledby="caption2" tabindex="0">
+                  <table class="nsw-table nsw-table--caption-top  ">
+                    <caption id="caption2">Table caption for responsive scroll version</caption>
+                    <thead>
+                      <tr>
+                        <th width="20%">Method</th>
+                        <th width="40%">Description</th>
+                        <th width="40%">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><a href="#">Annotated prototypes</a></p>
+                        </td>
+                        <td>
+                          <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
+                        </td>
+                        <td>
+                          <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Storyboards</a></p>
+                        </td>
+                        <td>
+                          <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
+                        </td>
+                        <td>
+                          <p>Help team members and stakeholders visualize the intended user experience.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Service blueprint</a></p>
+                        </td>
+                        <td>
+                          <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
+                        </td>
+                        <td>
+                          <p>Helps organizations understand what will be needed for a successful implementation.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">User stories</a></p>
+                        </td>
+                        <td>
+                          <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
+                        </td>
+                        <td>
+                          <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2>Bordered</h2>
+                <div class="nsw-table-responsive" role="region" aria-labelledby="caption3" tabindex="0">
+                  <table class="nsw-table   nsw-table--bordered">
+                    <caption id="caption3">Table caption for responsive scroll version</caption>
+                    <thead>
+                      <tr>
+                        <th width="20%">Method</th>
+                        <th width="40%">Description</th>
+                        <th width="40%">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><a href="#">Annotated prototypes</a></p>
+                        </td>
+                        <td>
+                          <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
+                        </td>
+                        <td>
+                          <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Storyboards</a></p>
+                        </td>
+                        <td>
+                          <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
+                        </td>
+                        <td>
+                          <p>Help team members and stakeholders visualize the intended user experience.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Service blueprint</a></p>
+                        </td>
+                        <td>
+                          <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
+                        </td>
+                        <td>
+                          <p>Helps organizations understand what will be needed for a successful implementation.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">User stories</a></p>
+                        </td>
+                        <td>
+                          <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
+                        </td>
+                        <td>
+                          <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <h2>Stripe and Bordered</h2>
+                <div class="nsw-table-responsive" role="region" aria-labelledby="caption4" tabindex="0">
+                  <table class="nsw-table  nsw-table--striped nsw-table--bordered">
+                    <caption id="caption4">Table caption for responsive scroll version</caption>
+                    <thead>
+                      <tr>
+                        <th width="20%">Method</th>
+                        <th width="40%">Description</th>
+                        <th width="40%">Purpose</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>
+                          <p><a href="#">Annotated prototypes</a></p>
+                        </td>
+                        <td>
+                          <p>Prototypes that include brief notes or comments that explain the rationale behind features and design choices.</p>
+                        </td>
+                        <td>
+                          <p>Help give context behind decisions and reminds team members why specific design elements were selected.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Storyboards</a></p>
+                        </td>
+                        <td>
+                          <p>Sequential images showing the main interactions or events that take place throughout a service.</p>
+                        </td>
+                        <td>
+                          <p>Help team members and stakeholders visualize the intended user experience.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">Service blueprint</a></p>
+                        </td>
+                        <td>
+                          <p>A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.</p>
+                        </td>
+                        <td>
+                          <p>Helps organizations understand what will be needed for a successful implementation.</p>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <p><a href="#">User stories</a></p>
+                        </td>
+                        <td>
+                          <p>Short sentences written from the perspective of users, describing their need and the reason behind.</p>
+                        </td>
+                        <td>
+                          <p>Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.</p>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-                      &lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-                        &lt;h2&gt;Responsive Tables (scroll on mobile)&lt;/h2&gt;
-                        &lt;div class&#x3D;&quot;nsw-table-responsive&quot; role&#x3D;&quot;region&quot; aria-labelledby&#x3D;&quot;caption0&quot; tabindex&#x3D;&quot;0&quot;&gt;
-                          &lt;table class&#x3D;&quot;nsw-table   &quot;&gt;
-                            &lt;caption id&#x3D;&quot;caption0&quot;&gt;Table caption for responsive scroll version&lt;/caption&gt;
-                            &lt;thead&gt;
-                              &lt;tr&gt;
-                                &lt;th width&#x3D;&quot;20%&quot;&gt;Method&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Description&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Purpose&lt;/th&gt;
-                              &lt;/tr&gt;
-                            &lt;/thead&gt;
-                            &lt;tbody&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Annotated prototypes&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Prototypes that include brief notes or comments that explain the rationale behind features and design choices.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help give context behind decisions and reminds team members why specific design elements were selected.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Storyboards&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Sequential images showing the main interactions or events that take place throughout a service.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help team members and stakeholders visualize the intended user experience.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service blueprint&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Helps organizations understand what will be needed for a successful implementation.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;User stories&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Short sentences written from the perspective of users, describing their need and the reason behind.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                          &lt;/table&gt;
-                        &lt;/div&gt;
-        
-                        &lt;h2&gt;Striped&lt;/h2&gt;
-                        &lt;div class&#x3D;&quot;nsw-table-responsive&quot; role&#x3D;&quot;region&quot; aria-labelledby&#x3D;&quot;caption1&quot; tabindex&#x3D;&quot;0&quot;&gt;
-                          &lt;table class&#x3D;&quot;nsw-table  nsw-table--striped &quot;&gt;
-                            &lt;caption id&#x3D;&quot;caption1&quot;&gt;Table caption for responsive scroll version&lt;/caption&gt;
-                            &lt;thead&gt;
-                              &lt;tr&gt;
-                                &lt;th width&#x3D;&quot;20%&quot;&gt;Method&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Description&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Purpose&lt;/th&gt;
-                              &lt;/tr&gt;
-                            &lt;/thead&gt;
-                            &lt;tbody&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Annotated prototypes&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Prototypes that include brief notes or comments that explain the rationale behind features and design choices.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help give context behind decisions and reminds team members why specific design elements were selected.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Storyboards&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Sequential images showing the main interactions or events that take place throughout a service.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help team members and stakeholders visualize the intended user experience.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service blueprint&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Helps organizations understand what will be needed for a successful implementation.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;User stories&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Short sentences written from the perspective of users, describing their need and the reason behind.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                          &lt;/table&gt;
-                        &lt;/div&gt;
-        
-                        &lt;h2&gt;Caption Top&lt;/h2&gt;
-                        &lt;div class&#x3D;&quot;nsw-table-responsive&quot; role&#x3D;&quot;region&quot; aria-labelledby&#x3D;&quot;caption2&quot; tabindex&#x3D;&quot;0&quot;&gt;
-                          &lt;table class&#x3D;&quot;nsw-table nsw-table--caption-top  &quot;&gt;
-                            &lt;caption id&#x3D;&quot;caption2&quot;&gt;Table caption for responsive scroll version&lt;/caption&gt;
-                            &lt;thead&gt;
-                              &lt;tr&gt;
-                                &lt;th width&#x3D;&quot;20%&quot;&gt;Method&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Description&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Purpose&lt;/th&gt;
-                              &lt;/tr&gt;
-                            &lt;/thead&gt;
-                            &lt;tbody&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Annotated prototypes&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Prototypes that include brief notes or comments that explain the rationale behind features and design choices.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help give context behind decisions and reminds team members why specific design elements were selected.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Storyboards&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Sequential images showing the main interactions or events that take place throughout a service.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help team members and stakeholders visualize the intended user experience.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service blueprint&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Helps organizations understand what will be needed for a successful implementation.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;User stories&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Short sentences written from the perspective of users, describing their need and the reason behind.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                          &lt;/table&gt;
-                        &lt;/div&gt;
-        
-                        &lt;h2&gt;Bordered&lt;/h2&gt;
-                        &lt;div class&#x3D;&quot;nsw-table-responsive&quot; role&#x3D;&quot;region&quot; aria-labelledby&#x3D;&quot;caption3&quot; tabindex&#x3D;&quot;0&quot;&gt;
-                          &lt;table class&#x3D;&quot;nsw-table   nsw-table--bordered&quot;&gt;
-                            &lt;caption id&#x3D;&quot;caption3&quot;&gt;Table caption for responsive scroll version&lt;/caption&gt;
-                            &lt;thead&gt;
-                              &lt;tr&gt;
-                                &lt;th width&#x3D;&quot;20%&quot;&gt;Method&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Description&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Purpose&lt;/th&gt;
-                              &lt;/tr&gt;
-                            &lt;/thead&gt;
-                            &lt;tbody&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Annotated prototypes&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Prototypes that include brief notes or comments that explain the rationale behind features and design choices.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help give context behind decisions and reminds team members why specific design elements were selected.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Storyboards&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Sequential images showing the main interactions or events that take place throughout a service.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help team members and stakeholders visualize the intended user experience.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service blueprint&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Helps organizations understand what will be needed for a successful implementation.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;User stories&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Short sentences written from the perspective of users, describing their need and the reason behind.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                          &lt;/table&gt;
-                        &lt;/div&gt;
-        
-                        &lt;h2&gt;Stripe and Bordered&lt;/h2&gt;
-                        &lt;div class&#x3D;&quot;nsw-table-responsive&quot; role&#x3D;&quot;region&quot; aria-labelledby&#x3D;&quot;caption4&quot; tabindex&#x3D;&quot;0&quot;&gt;
-                          &lt;table class&#x3D;&quot;nsw-table  nsw-table--striped nsw-table--bordered&quot;&gt;
-                            &lt;caption id&#x3D;&quot;caption4&quot;&gt;Table caption for responsive scroll version&lt;/caption&gt;
-                            &lt;thead&gt;
-                              &lt;tr&gt;
-                                &lt;th width&#x3D;&quot;20%&quot;&gt;Method&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Description&lt;/th&gt;
-                                &lt;th width&#x3D;&quot;40%&quot;&gt;Purpose&lt;/th&gt;
-                              &lt;/tr&gt;
-                            &lt;/thead&gt;
-                            &lt;tbody&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Annotated prototypes&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Prototypes that include brief notes or comments that explain the rationale behind features and design choices.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help give context behind decisions and reminds team members why specific design elements were selected.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Storyboards&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Sequential images showing the main interactions or events that take place throughout a service.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help team members and stakeholders visualize the intended user experience.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service blueprint&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;A diagram that visualizes a new process or service and how the organization’s internal processes, people, systems and policies will support it.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Helps organizations understand what will be needed for a successful implementation.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                              &lt;tr&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;&lt;a href&#x3D;&quot;#&quot;&gt;User stories&lt;/a&gt;&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Short sentences written from the perspective of users, describing their need and the reason behind.&lt;/p&gt;
-                                &lt;/td&gt;
-                                &lt;td&gt;
-                                  &lt;p&gt;Help document the different needs that a service must address, shifting the focus from creating detailed requirements to discussing user needs within a specific context.&lt;/p&gt;
-                                &lt;/td&gt;
-                              &lt;/tr&gt;
-                            &lt;/tbody&gt;
-                          &lt;/table&gt;
-                        &lt;/div&gt;
-                      &lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -954,6 +634,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

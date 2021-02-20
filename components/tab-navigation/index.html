@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,144 +255,101 @@
           <h1>Tabs</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141277" class="nsw-tabs__link">Customisation</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#section141278" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141277" class="nsw-tabs__content">
-              <h2 id="customisation">Customisation</h2>
-        <p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
-        <p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
-        <pre><code>$nsw-primary-highlight: #d7153a !default;</code></pre><p><strong><strong>Add in example</strong></strong></p>
-        
-        
-          </section>
-          <section id="section141278" class="nsw-tabs__content">
-              <p>Tabs are a form of secondary in-page navigation, helping to group different types of content in a limited space.</p>
-        <h2 id="using-tabs">Using tabs</h2>
-        <p>Tabs allow users to focus on specific content whilst remaining clear on the overall context of the screen. Use tabs to split long content into manageable chunks to avoid overwhelming the user.</p>
-        <p>Do:</p>
-        <ul>
-        <li>use to conserve space on busy pages</li>
-        <li>use to split related but discrete content within a single screen</li>
-        <li>use between 2-5 tabs</li>
-        <li>Use short (preferably single word), easily scannable, unique titles</li>
-        <li>order the tabs by importance/relevance to the user, from left to right.</li>
-        </ul>
-        <p>Don&#39;t:</p>
-        <ul>
-        <li>use tabs within tabs</li>
-        <li>display disabled tabs.</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Do not:</p>
-        <ul>
-        <li>use for very small (1 paragraph or equivalent) content, consider paragraphs</li>
-        <li>use for very long content where the physical tabs become lost, consider breaking content into separate pages</li>
-        <li>use for content where users are likely to want to compare information across multiple tabs, consider an <a href="https://www.digital.nsw.gov.au/design-system/component-library/accordion">accordion</a></li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>The tab metaphor is based on filing cabinet tabs which are familiar to many users. They allow users to switch between different blocks of content and declutter the UI through progressive disclosure.</p>
-        <p>By default, the first tab is selected.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<div class="nsw-tabs js-tabs">
-        							  <ul class="nsw-tabs__list">
-        							    <li class="nsw-tabs__list-item">
-        							      <a href="#section1" class="nsw-tabs__link">New and existing homes</a>
-        							    </li>
-        							    <li class="nsw-tabs__list-item">
-        							      <a href="#section2" class="nsw-tabs__link">Vacant land</a>
-        							    </li>
-        							    <li class="nsw-tabs__list-item">
-        							      <a href="#section3" class="nsw-tabs__link">Knockdown rebuild</a>
-        							    </li>
-        							  </ul>
-        							  <section id="section1" class="nsw-tabs__content">
-        							    <div class='nsw-wysiwyg-content'><h2>New and existing homes</h2><p>As a first home buyer, you may be eligible for a <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> concession or exemption.</p><ul><li>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.</li><li>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.</li></ul></div>
-        							  </section>
-        							  <section id="section2" class="nsw-tabs__content">
-        							    <div class='nsw-wysiwyg-content'><h2>Vacant land</h2> <p>The FHBAS applies to vacant land on which you plan to build your home.</p><ul> <li>You won’t pay any <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> if your land is valued at less than $350,000.</li><li>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.</li></ul></div>
-        							  </section>
-        							  <section id="section3" class="nsw-tabs__content">
-        							    <div class='nsw-wysiwyg-content'><h2>Knockdown rebuild</h2> <p>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!<br/>KnockDown Rebuild by Metricon gives you the best of both worlds.</p><p>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.</p></div>
-        							  </section>
-        							</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141277" class="nsw-tabs__link">Customisation</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#section141278" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141277" class="nsw-tabs__content">
+      <h2 id="customisation">Customisation</h2>
+<p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
+<p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
+<pre><code>$nsw-primary-highlight: #d7153a !default;</code></pre><p><strong><strong>Add in example</strong></strong></p>
+
+
+  </section>
+  <section id="section141278" class="nsw-tabs__content">
+      <p>Tabs are a form of secondary in-page navigation, helping to group different types of content in a limited space.</p>
+<h2 id="using-tabs">Using tabs</h2>
+<p>Tabs allow users to focus on specific content whilst remaining clear on the overall context of the screen. Use tabs to split long content into manageable chunks to avoid overwhelming the user.</p>
+<p>Do:</p>
+<ul>
+<li>use to conserve space on busy pages</li>
+<li>use to split related but discrete content within a single screen</li>
+<li>use between 2-5 tabs</li>
+<li>Use short (preferably single word), easily scannable, unique titles</li>
+<li>order the tabs by importance/relevance to the user, from left to right.</li>
+</ul>
+<p>Don&#39;t:</p>
+<ul>
+<li>use tabs within tabs</li>
+<li>display disabled tabs.</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Do not:</p>
+<ul>
+<li>use for very small (1 paragraph or equivalent) content, consider paragraphs</li>
+<li>use for very long content where the physical tabs become lost, consider breaking content into separate pages</li>
+<li>use for content where users are likely to want to compare information across multiple tabs, consider an <a href="https://www.digital.nsw.gov.au/design-system/component-library/accordion">accordion</a></li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>The tab metaphor is based on filing cabinet tabs which are familiar to many users. They allow users to switch between different blocks of content and declutter the UI through progressive disclosure.</p>
+<p>By default, the first tab is selected.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<div class="nsw-tabs js-tabs">
+							  <ul class="nsw-tabs__list">
+							    <li class="nsw-tabs__list-item">
+							      <a href="#section1" class="nsw-tabs__link">New and existing homes</a>
+							    </li>
+							    <li class="nsw-tabs__list-item">
+							      <a href="#section2" class="nsw-tabs__link">Vacant land</a>
+							    </li>
+							    <li class="nsw-tabs__list-item">
+							      <a href="#section3" class="nsw-tabs__link">Knockdown rebuild</a>
+							    </li>
+							  </ul>
+							  <section id="section1" class="nsw-tabs__content">
+							    <div class='nsw-wysiwyg-content'><h2>New and existing homes</h2><p>As a first home buyer, you may be eligible for a <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> concession or exemption.</p><ul><li>If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.</li><li>If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.</li></ul></div>
+							  </section>
+							  <section id="section2" class="nsw-tabs__content">
+							    <div class='nsw-wysiwyg-content'><h2>Vacant land</h2> <p>The FHBAS applies to vacant land on which you plan to build your home.</p><ul> <li>You won’t pay any <a href='https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty'>transfer duty</a> if your land is valued at less than $350,000.</li><li>For land valued between $350,000 and $450,000, you’ll receive a concessional rate.</li></ul></div>
+							  </section>
+							  <section id="section3" class="nsw-tabs__content">
+							    <div class='nsw-wysiwyg-content'><h2>Knockdown rebuild</h2> <p>If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!<br/>KnockDown Rebuild by Metricon gives you the best of both worlds.</p><p>You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.</p></div>
+							  </section>
+							</div>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;div class&#x3D;&quot;nsw-tabs js-tabs&quot;&gt;
-        							  &lt;ul class&#x3D;&quot;nsw-tabs__list&quot;&gt;
-        							    &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-        							      &lt;a href&#x3D;&quot;#section1&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;New and existing homes&lt;/a&gt;
-        							    &lt;/li&gt;
-        							    &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-        							      &lt;a href&#x3D;&quot;#section2&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;Vacant land&lt;/a&gt;
-        							    &lt;/li&gt;
-        							    &lt;li class&#x3D;&quot;nsw-tabs__list-item&quot;&gt;
-        							      &lt;a href&#x3D;&quot;#section3&quot; class&#x3D;&quot;nsw-tabs__link&quot;&gt;Knockdown rebuild&lt;/a&gt;
-        							    &lt;/li&gt;
-        							  &lt;/ul&gt;
-        							  &lt;section id&#x3D;&quot;section1&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-        							    &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h2&gt;New and existing homes&lt;/h2&gt;&lt;p&gt;As a first home buyer, you may be eligible for a &lt;a href&#x3D;&#x27;https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty&#x27;&gt;transfer duty&lt;/a&gt; concession or exemption.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;If your home is valued at less than $650,000, you can apply for a full exemption so that you don’t have to pay transfer duty.&lt;/li&gt;&lt;li&gt;If the value of your home is between $650,000 and $800,000, you can apply for a concessional rate of transfer duty. The amount you’ll have to pay will be based on the value of your home.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-        							  &lt;/section&gt;
-        							  &lt;section id&#x3D;&quot;section2&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-        							    &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h2&gt;Vacant land&lt;/h2&gt; &lt;p&gt;The FHBAS applies to vacant land on which you plan to build your home.&lt;/p&gt;&lt;ul&gt; &lt;li&gt;You won’t pay any &lt;a href&#x3D;&#x27;https://www.revenue.nsw.gov.au/taxes-duties-levies-royalties/transfer-duty&#x27;&gt;transfer duty&lt;/a&gt; if your land is valued at less than $350,000.&lt;/li&gt;&lt;li&gt;For land valued between $350,000 and $450,000, you’ll receive a concessional rate.&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;
-        							  &lt;/section&gt;
-        							  &lt;section id&#x3D;&quot;section3&quot; class&#x3D;&quot;nsw-tabs__content&quot;&gt;
-        							    &lt;div class&#x3D;&#x27;nsw-wysiwyg-content&#x27;&gt;&lt;h2&gt;Knockdown rebuild&lt;/h2&gt; &lt;p&gt;If you’re like many Sydney homeowners, you wish you had a more spacious and luxurious home. The problem is, you don’t want to give up your prized location!&lt;br/&gt;KnockDown Rebuild by Metricon gives you the best of both worlds.&lt;/p&gt;&lt;p&gt;You can have a gorgeous, modern home with plenty of space for your family – without giving up the location you love. All you have to do is demolish your existing dwelling and replace it with your dream Metricon home.&lt;/p&gt;&lt;/div&gt;
-        							  &lt;/section&gt;
-        							&lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -416,6 +375,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

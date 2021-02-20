@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,154 +255,81 @@
           <h1>Callout</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                  	<div class="nsw-row">
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        <div class="code-section" style="border:1px solid red;">
-          <div class="ui-demo">
-                              <div class="nsw-callout">
-                                  <div class="nsw-callout__content">
-                                  <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
-                                  <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
-                                  
-                                </div>
-                              </div>
-          </div>
-          <div class="ui-dev-demo">
-              <code class="html" id="thecode">
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+          	<div class="nsw-row">
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+                <div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-callout">
+        <div class="nsw-callout__content">
+        <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
+        <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
         
-              </code>
+      </div>
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-callout">
+    <div class="nsw-callout__content">
+    <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
+    <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
+    
+  </div>
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+	  				  </div>
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	  						<div class="nsw-callout">
+	  						  <svg class="nsw-icon nsw-callout__icon" focusable="false" aria-hidden="true">
+	  						    <use xlink:href="#status-info"></use>
+	  						  </svg>
+	  						  <div class="nsw-callout__content">
+	  						    <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
+	  						    <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
+	  						    <a href="#" class="nsw-text-link">Conditions for using the Digital Drivers License</a>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				</div>
           </div>
-        
         </div>
-        <script>
-        function escapeHtml(unsafe) {
-          return unsafe
-               .replace(/&/g, "&amp;")
-               .replace(/</g, "&lt;")
-               .replace(/>/g, "&gt;")
-               .replace(/"/g, "&quot;")
-               .replace(/'/g, "&#039;");
-        }
-        var x = document.getElementById("thecode");
-        x.innerHTML = escapeHtml(                  <div class="nsw-callout">
-                              <div class="nsw-callout__content">
-                              <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
-                              <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
-                              
-                            </div>
-                          </div>
-        );
-        </script>
-        	  				  </div>
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	  						<div class="nsw-callout">
-        	  						  <svg class="nsw-icon nsw-callout__icon" focusable="false" aria-hidden="true">
-        	  						    <use xlink:href="#status-info"></use>
-        	  						  </svg>
-        	  						  <div class="nsw-callout__content">
-        	  						    <h4 class="nsw-callout__title">The Digital Driver&#x27;s License trial</h4>
-        	  						    <p>Once we launch statewide, the Digital Drivers License will become legal for use across NSW</p>
-        	  						    <a href="#" class="nsw-text-link">Conditions for using the Digital Drivers License</a>
-        	  						  </div>
-        	  						</div>
-        	  					</div>
-        	  				</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        &lt;div class&#x3D;&quot;code-section&quot; style&#x3D;&quot;border:1px solid red;&quot;&gt;
-          &lt;div class&#x3D;&quot;ui-demo&quot;&gt;
-                              &lt;div class&#x3D;&quot;nsw-callout&quot;&gt;
-                                  &lt;div class&#x3D;&quot;nsw-callout__content&quot;&gt;
-                                  &lt;h4 class&#x3D;&quot;nsw-callout__title&quot;&gt;The Digital Driver&amp;#x27;s License trial&lt;/h4&gt;
-                                  &lt;p&gt;Once we launch statewide, the Digital Drivers License will become legal for use across NSW&lt;/p&gt;
-                                  
-                                &lt;/div&gt;
-                              &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;ui-dev-demo&quot;&gt;
-              &lt;code class&#x3D;&quot;html&quot; id&#x3D;&quot;thecode&quot;&gt;
-        
-              &lt;/code&gt;
-          &lt;/div&gt;
-        
-        &lt;/div&gt;
-        &lt;script&gt;
-        function escapeHtml(unsafe) {
-          return unsafe
-               .replace(/&amp;/g, &quot;&amp;amp;&quot;)
-               .replace(/&lt;/g, &quot;&amp;lt;&quot;)
-               .replace(/&gt;/g, &quot;&amp;gt;&quot;)
-               .replace(/&quot;/g, &quot;&amp;quot;&quot;)
-               .replace(/&#x27;/g, &quot;&amp;#039;&quot;);
-        }
-        var x &#x3D; document.getElementById(&quot;thecode&quot;);
-        x.innerHTML &#x3D; escapeHtml(                  &lt;div class&#x3D;&quot;nsw-callout&quot;&gt;
-                              &lt;div class&#x3D;&quot;nsw-callout__content&quot;&gt;
-                              &lt;h4 class&#x3D;&quot;nsw-callout__title&quot;&gt;The Digital Driver&amp;#x27;s License trial&lt;/h4&gt;
-                              &lt;p&gt;Once we launch statewide, the Digital Drivers License will become legal for use across NSW&lt;/p&gt;
-                              
-                            &lt;/div&gt;
-                          &lt;/div&gt;
-        );
-        &lt;/script&gt;
-        	  				  &lt;/div&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	  						&lt;div class&#x3D;&quot;nsw-callout&quot;&gt;
-        	  						  &lt;svg class&#x3D;&quot;nsw-icon nsw-callout__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        	  						    &lt;use xlink:href&#x3D;&quot;#status-info&quot;&gt;&lt;/use&gt;
-        	  						  &lt;/svg&gt;
-        	  						  &lt;div class&#x3D;&quot;nsw-callout__content&quot;&gt;
-        	  						    &lt;h4 class&#x3D;&quot;nsw-callout__title&quot;&gt;The Digital Driver&amp;#x27;s License trial&lt;/h4&gt;
-        	  						    &lt;p&gt;Once we launch statewide, the Digital Drivers License will become legal for use across NSW&lt;/p&gt;
-        	  						    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-text-link&quot;&gt;Conditions for using the Digital Drivers License&lt;/a&gt;
-        	  						  &lt;/div&gt;
-        	  						&lt;/div&gt;
-        	  					&lt;/div&gt;
-        	  				&lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
-        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -426,6 +355,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

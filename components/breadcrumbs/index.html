@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -251,118 +253,137 @@
     <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Breadcrumbs</h1>
+            <p>Breadcrumbs help users to understand where they are within a website’s structure.</p>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141127" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141127" class="nsw-tabs__content">
-              <p>Breadcrumbs help users to understand where they are within a website’s structure.</p>
-        <h2 id="using-breadcrumbs">Using breadcrumbs</h2>
-        <p>Use the breadcrumbs component when you need to help users understand and move between the multiple levels of a website.</p>
-        <p>Do:</p>
-        <ul>
-        <li>display in the top left of the main content area above the page title</li>
-        <li>ensure you use the same labels and casing as the main IA</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Do not use the breadcrumbs component on websites with a flat structure, or to show progress through a linear journey or transaction.</p>
-        <p>Breadcrumb navigation should be regarded as an extra feature and shouldn’t replace effective primary navigation menus.</p>
-        <p>If you’re using other navigational elements on the page, such as a sidebar, consider whether your users need the additional support of breadcrumbs.</p>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>Breadcrumbs are a navigational aid that display a user&#39;s location on a website as a row of links, usually located at the top of the page.</p>
-        <p>Breadcrumbs should:</p>
-        <ul>
-        <li>start with your ‘home’ page and end with the parent section of the current page</li>
-        <li>display in the top left of the screen’s content area, above the page title</li>
-        <li>reflect the section names of the IA and use chevrons between the names to suggest a visual hierarchy.</li>
-        </ul>
-        <p>For mobile resolutions (under 768px), the breadcrumb shows a link to the immediate parent and current page only.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            <div class="nsw-container">
-        </div>
-        
-        <div class="nsw-section--white">
-        	<div class="nsw-container">
-        	  <div class="nsw-page-layout">
-        	    <div class="nsw-page-layout__main">
-        	      <div class="nsw-grid">
-        	        <div class="nsw-col">
-        						<nav aria-label="Breadcrumb" class="nsw-breadcrumb">
-        						  <ol class="nsw-breadcrumb__list">
-        						      <li class="nsw-breadcrumb__item">
-        						        <a href="#" class="nsw-breadcrumb__link " >Home</a>
-        						      </li>
-        						      <li class="nsw-breadcrumb__item">
-        						        <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
-        						      </li>
-        						      <li class="nsw-breadcrumb__item">
-        						        <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
-        						      </li>
-        						      <li class="nsw-breadcrumb__item">
-        						        <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
-        						      </li>
-        						  </ol>
-        						</nav>
-        	        </div>
-        	      </div>
-        	    </div>
-        	  </div>
-        	</div>
-        </div>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">&lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        &lt;/div&gt;
-        
-        &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-        	&lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        	  &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-        	    &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-        	      &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-        	        &lt;div class&#x3D;&quot;nsw-col&quot;&gt;
-        						&lt;nav aria-label&#x3D;&quot;Breadcrumb&quot; class&#x3D;&quot;nsw-breadcrumb&quot;&gt;
-        						  &lt;ol class&#x3D;&quot;nsw-breadcrumb__list&quot;&gt;
-        						      &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-        						        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;Home&lt;/a&gt;
-        						      &lt;/li&gt;
-        						      &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-        						        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;About DPC&lt;/a&gt;
-        						      &lt;/li&gt;
-        						      &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-        						        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link &quot; &gt;NSW Digital Design System&lt;/a&gt;
-        						      &lt;/li&gt;
-        						      &lt;li class&#x3D;&quot;nsw-breadcrumb__item&quot;&gt;
-        						        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-breadcrumb__link nsw-breadcrumb--current&quot; aria-current&#x3D;&quot;page&quot;&gt;Content design&lt;/a&gt;
-        						      &lt;/li&gt;
-        						  &lt;/ol&gt;
-        						&lt;/nav&gt;
-        	        &lt;/div&gt;
-        	      &lt;/div&gt;
-        	    &lt;/div&gt;
-        	  &lt;/div&gt;
-        	&lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141127" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141127" class="nsw-tabs__content">
+      <p>Breadcrumbs help users to understand where they are within a website’s structure.</p>
+<h2 id="using-breadcrumbs">Using breadcrumbs</h2>
+<p>Use the breadcrumbs component when you need to help users understand and move between the multiple levels of a website.</p>
+<p>Do:</p>
+<ul>
+<li>display in the top left of the main content area above the page title</li>
+<li>ensure you use the same labels and casing as the main IA</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Do not use the breadcrumbs component on websites with a flat structure, or to show progress through a linear journey or transaction.</p>
+<p>Breadcrumb navigation should be regarded as an extra feature and shouldn’t replace effective primary navigation menus.</p>
+<p>If you’re using other navigational elements on the page, such as a sidebar, consider whether your users need the additional support of breadcrumbs.</p>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>Breadcrumbs are a navigational aid that display a user&#39;s location on a website as a row of links, usually located at the top of the page.</p>
+<p>Breadcrumbs should:</p>
+<ul>
+<li>start with your ‘home’ page and end with the parent section of the current page</li>
+<li>display in the top left of the screen’s content area, above the page title</li>
+<li>reflect the section names of the IA and use chevrons between the names to suggest a visual hierarchy.</li>
+</ul>
+<p>For mobile resolutions (under 768px), the breadcrumb shows a link to the immediate parent and current page only.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    <div class="nsw-container">
+</div>
+
+<div class="nsw-section--white">
+	<div class="nsw-container">
+	  <div class="nsw-page-layout">
+	    <div class="nsw-page-layout__main">
+	      <div class="nsw-grid">
+	        <div class="nsw-col">
+						<div class="code-section">
+  <div class="ui-demo">
+    <nav aria-label="Breadcrumb" class="nsw-breadcrumb">
+      <ol class="nsw-breadcrumb__list">
+          <li class="nsw-breadcrumb__item">
+            <a href="#" class="nsw-breadcrumb__link " >Home</a>
+          </li>
+          <li class="nsw-breadcrumb__item">
+            <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
+          </li>
+          <li class="nsw-breadcrumb__item">
+            <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
+          </li>
+          <li class="nsw-breadcrumb__item">
+            <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
+          </li>
+      </ol>
+    </nav>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<nav aria-label="Breadcrumb" class="nsw-breadcrumb">
+  <ol class="nsw-breadcrumb__list">
+      <li class="nsw-breadcrumb__item">
+        <a href="#" class="nsw-breadcrumb__link " >Home</a>
+      </li>
+      <li class="nsw-breadcrumb__item">
+        <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
+      </li>
+      <li class="nsw-breadcrumb__item">
+        <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
+      </li>
+      <li class="nsw-breadcrumb__item">
+        <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
+      </li>
+  </ol>
+</nav>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+</div>
+
+<!--sample
+  <nav aria-label="Breadcrumb" class="nsw-breadcrumb">
+    <ol class="nsw-breadcrumb__list">
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >Home</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >About DPC</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link " >NSW Digital Design System</a>
+        </li>
+        <li class="nsw-breadcrumb__item">
+          <a href="#" class="nsw-breadcrumb__link nsw-breadcrumb--current" aria-current="page">Content design</a>
+        </li>
+    </ol>
+  </nav>
+endsample-->
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -388,6 +409,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

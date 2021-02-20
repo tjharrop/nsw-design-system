@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,210 +255,139 @@
           <h1>In-page notification</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141244" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141244" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141244" class="nsw-tabs__content">
+      <p>In-page notifications are used to contextually inform users of important information or status of an interaction.</p>
+<h2 id="using-in-page-notifications">Using in-page notifications</h2>
+<p>Use in-page notifications to attract the user&#39;s attention. Notifications are often displayed following a user interaction or system event. The level of attention is dependent on the importance of the notification. Notification types are:</p>
+<p><strong>Information notification</strong></p>
+<p>Designed to be less intrusive or interruptive than other levels of notification:</p>
+<ul>
+<li>use for information the user should know, but is not critical</li>
+<li>use for tips or information which the user can benefit from</li>
+<li>use for messages which don&#39;t require too much attention or action</li>
+<li>don&#39;t use in response to a user action.</li>
+</ul>
+<p><strong>Success notification</strong></p>
+<ul>
+<li>use to inform the user that an action was performed successfully (e.g. submitting a form or registering an account).</li>
+</ul>
+<p><strong>Warning notification</strong></p>
+<ul>
+<li>use to warn the user of a possible negative outcome (e.g. password expiry)</li>
+<li>provide sufficient information to avoid the problem</li>
+<li>use for an action that is out of the ordinary or might not be desired.</li>
+</ul>
+<p><strong>Critical notification</strong></p>
+<ul>
+<li>use where a system event has failed</li>
+<li>use when the user has made an error</li>
+<li>use where the user is blocked until the issue is resolved, or the issue needs resolving immediately</li>
+<li>provide sufficient information on the issue and resolution to fix the issue</li>
+<li>don&#39;t use for validation or validation summary.</li>
+</ul>
+<p>Do:</p>
+<ul>
+<li>use clear, concise easy to understand language, to minimise cognitive load</li>
+<li>display the notifications in context and at an appropriate time</li>
+<li>avoid using multiple notifications on a single screen (if multiple are required, display them by importance; critical, warning, success then information).</li>
+<li>use the appropriate notification for the task at hand.</li>
+</ul>
+<p>Do not:</p>
+<ul>
+<li>overuse notifications as this will erode their effectiveness</li>
+<li>use for global alerts which are required on all pages.</li>
+</ul>
+<h3 id="how-this-component-works">How this component works</h3>
+<p>The family of notifications is designed with a consistent layout to aid comprehension of what they are and how they work.</p>
+<p>They are designed to look &#39;not always present&#39;, to draw the user&#39;s attention.</p>
+<p>The type and urgency of the notification is conveyed through colour and the icon used.</p>
+<p>The icons used are industry standard, with the exception of the warning and critical icons which are somewhat interchangeable. Both the warning and critical icons are perceived as more important to aid the user&#39;s comprehension.</p>
+<p>The notifications are not dismissible.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+          	<div class="nsw-row">
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	  						<div class="nsw-notification nsw-notification--info" >
+	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
+	  						    <use xlink:href="#status-info"></use>
+	  						  </svg>
+	  						  <div class="nsw-notification__content">
+	  						    <h4 class="nsw-notification__title">Rockdale Service Centre is coming soon</h4>
+	  						    <p>Rockdale Agency will close on 9 March 2018 and re-open in April. Please visit Kogarah Service Centre during this closure.</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				</div>
+          	<div class="nsw-row">
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	  						<div class="nsw-notification nsw-notification--error" >
+	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
+	  						    <use xlink:href="#status-error"></use>
+	  						  </svg>
+	  						  <div class="nsw-notification__content">
+	  						    <h4 class="nsw-notification__title">It looks like there was a problem</h4>
+	  						    <p>Please contact your service desk for further assistance.</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				</div>
+          	<div class="nsw-row">
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	  						<div class="nsw-notification nsw-notification--warning" >
+	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
+	  						    <use xlink:href="#status-warning"></use>
+	  						  </svg>
+	  						  <div class="nsw-notification__content">
+	  						    <h4 class="nsw-notification__title">Password expiring soon</h4>
+	  						    <p>Your password is expiring in 4 days. Please change your password.</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				</div>
+          	<div class="nsw-row">
+            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	  						<div class="nsw-notification nsw-notification--success" >
+	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
+	  						    <use xlink:href="#status-success"></use>
+	  						  </svg>
+	  						  <div class="nsw-notification__content">
+	  						    <h4 class="nsw-notification__title">Your application has been received</h4>
+	  						    <p>Thank you for submitting your interest. We will be in contact within 5 business days.</p>
+	  						  </div>
+	  						</div>
+	  					</div>
+	  				</div>
           </div>
-          <section id="section141244" class="nsw-tabs__content">
-              <p>In-page notifications are used to contextually inform users of important information or status of an interaction.</p>
-        <h2 id="using-in-page-notifications">Using in-page notifications</h2>
-        <p>Use in-page notifications to attract the user&#39;s attention. Notifications are often displayed following a user interaction or system event. The level of attention is dependent on the importance of the notification. Notification types are:</p>
-        <p><strong>Information notification</strong></p>
-        <p>Designed to be less intrusive or interruptive than other levels of notification:</p>
-        <ul>
-        <li>use for information the user should know, but is not critical</li>
-        <li>use for tips or information which the user can benefit from</li>
-        <li>use for messages which don&#39;t require too much attention or action</li>
-        <li>don&#39;t use in response to a user action.</li>
-        </ul>
-        <p><strong>Success notification</strong></p>
-        <ul>
-        <li>use to inform the user that an action was performed successfully (e.g. submitting a form or registering an account).</li>
-        </ul>
-        <p><strong>Warning notification</strong></p>
-        <ul>
-        <li>use to warn the user of a possible negative outcome (e.g. password expiry)</li>
-        <li>provide sufficient information to avoid the problem</li>
-        <li>use for an action that is out of the ordinary or might not be desired.</li>
-        </ul>
-        <p><strong>Critical notification</strong></p>
-        <ul>
-        <li>use where a system event has failed</li>
-        <li>use when the user has made an error</li>
-        <li>use where the user is blocked until the issue is resolved, or the issue needs resolving immediately</li>
-        <li>provide sufficient information on the issue and resolution to fix the issue</li>
-        <li>don&#39;t use for validation or validation summary.</li>
-        </ul>
-        <p>Do:</p>
-        <ul>
-        <li>use clear, concise easy to understand language, to minimise cognitive load</li>
-        <li>display the notifications in context and at an appropriate time</li>
-        <li>avoid using multiple notifications on a single screen (if multiple are required, display them by importance; critical, warning, success then information).</li>
-        <li>use the appropriate notification for the task at hand.</li>
-        </ul>
-        <p>Do not:</p>
-        <ul>
-        <li>overuse notifications as this will erode their effectiveness</li>
-        <li>use for global alerts which are required on all pages.</li>
-        </ul>
-        <h3 id="how-this-component-works">How this component works</h3>
-        <p>The family of notifications is designed with a consistent layout to aid comprehension of what they are and how they work.</p>
-        <p>They are designed to look &#39;not always present&#39;, to draw the user&#39;s attention.</p>
-        <p>The type and urgency of the notification is conveyed through colour and the icon used.</p>
-        <p>The icons used are industry standard, with the exception of the warning and critical icons which are somewhat interchangeable. Both the warning and critical icons are perceived as more important to aid the user&#39;s comprehension.</p>
-        <p>The notifications are not dismissible.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                  	<div class="nsw-row">
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	  						<div class="nsw-notification nsw-notification--info" >
-        	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
-        	  						    <use xlink:href="#status-info"></use>
-        	  						  </svg>
-        	  						  <div class="nsw-notification__content">
-        	  						    <h4 class="nsw-notification__title">Rockdale Service Centre is coming soon</h4>
-        	  						    <p>Rockdale Agency will close on 9 March 2018 and re-open in April. Please visit Kogarah Service Centre during this closure.</p>
-        	  						  </div>
-        	  						</div>
-        	  					</div>
-        	  				</div>
-                  	<div class="nsw-row">
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	  						<div class="nsw-notification nsw-notification--error" >
-        	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
-        	  						    <use xlink:href="#status-error"></use>
-        	  						  </svg>
-        	  						  <div class="nsw-notification__content">
-        	  						    <h4 class="nsw-notification__title">It looks like there was a problem</h4>
-        	  						    <p>Please contact your service desk for further assistance.</p>
-        	  						  </div>
-        	  						</div>
-        	  					</div>
-        	  				</div>
-                  	<div class="nsw-row">
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	  						<div class="nsw-notification nsw-notification--warning" >
-        	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
-        	  						    <use xlink:href="#status-warning"></use>
-        	  						  </svg>
-        	  						  <div class="nsw-notification__content">
-        	  						    <h4 class="nsw-notification__title">Password expiring soon</h4>
-        	  						    <p>Your password is expiring in 4 days. Please change your password.</p>
-        	  						  </div>
-        	  						</div>
-        	  					</div>
-        	  				</div>
-                  	<div class="nsw-row">
-                    	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	  						<div class="nsw-notification nsw-notification--success" >
-        	  						  <svg class="nsw-icon nsw-notification__icon" focusable="false" aria-hidden="true">
-        	  						    <use xlink:href="#status-success"></use>
-        	  						  </svg>
-        	  						  <div class="nsw-notification__content">
-        	  						    <h4 class="nsw-notification__title">Your application has been received</h4>
-        	  						    <p>Thank you for submitting your interest. We will be in contact within 5 business days.</p>
-        	  						  </div>
-        	  						</div>
-        	  					</div>
-        	  				</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	  						&lt;div class&#x3D;&quot;nsw-notification nsw-notification--info&quot; &gt;
-        	  						  &lt;svg class&#x3D;&quot;nsw-icon nsw-notification__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        	  						    &lt;use xlink:href&#x3D;&quot;#status-info&quot;&gt;&lt;/use&gt;
-        	  						  &lt;/svg&gt;
-        	  						  &lt;div class&#x3D;&quot;nsw-notification__content&quot;&gt;
-        	  						    &lt;h4 class&#x3D;&quot;nsw-notification__title&quot;&gt;Rockdale Service Centre is coming soon&lt;/h4&gt;
-        	  						    &lt;p&gt;Rockdale Agency will close on 9 March 2018 and re-open in April. Please visit Kogarah Service Centre during this closure.&lt;/p&gt;
-        	  						  &lt;/div&gt;
-        	  						&lt;/div&gt;
-        	  					&lt;/div&gt;
-        	  				&lt;/div&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	  						&lt;div class&#x3D;&quot;nsw-notification nsw-notification--error&quot; &gt;
-        	  						  &lt;svg class&#x3D;&quot;nsw-icon nsw-notification__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        	  						    &lt;use xlink:href&#x3D;&quot;#status-error&quot;&gt;&lt;/use&gt;
-        	  						  &lt;/svg&gt;
-        	  						  &lt;div class&#x3D;&quot;nsw-notification__content&quot;&gt;
-        	  						    &lt;h4 class&#x3D;&quot;nsw-notification__title&quot;&gt;It looks like there was a problem&lt;/h4&gt;
-        	  						    &lt;p&gt;Please contact your service desk for further assistance.&lt;/p&gt;
-        	  						  &lt;/div&gt;
-        	  						&lt;/div&gt;
-        	  					&lt;/div&gt;
-        	  				&lt;/div&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	  						&lt;div class&#x3D;&quot;nsw-notification nsw-notification--warning&quot; &gt;
-        	  						  &lt;svg class&#x3D;&quot;nsw-icon nsw-notification__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        	  						    &lt;use xlink:href&#x3D;&quot;#status-warning&quot;&gt;&lt;/use&gt;
-        	  						  &lt;/svg&gt;
-        	  						  &lt;div class&#x3D;&quot;nsw-notification__content&quot;&gt;
-        	  						    &lt;h4 class&#x3D;&quot;nsw-notification__title&quot;&gt;Password expiring soon&lt;/h4&gt;
-        	  						    &lt;p&gt;Your password is expiring in 4 days. Please change your password.&lt;/p&gt;
-        	  						  &lt;/div&gt;
-        	  						&lt;/div&gt;
-        	  					&lt;/div&gt;
-        	  				&lt;/div&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-                    	&lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	  						&lt;div class&#x3D;&quot;nsw-notification nsw-notification--success&quot; &gt;
-        	  						  &lt;svg class&#x3D;&quot;nsw-icon nsw-notification__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        	  						    &lt;use xlink:href&#x3D;&quot;#status-success&quot;&gt;&lt;/use&gt;
-        	  						  &lt;/svg&gt;
-        	  						  &lt;div class&#x3D;&quot;nsw-notification__content&quot;&gt;
-        	  						    &lt;h4 class&#x3D;&quot;nsw-notification__title&quot;&gt;Your application has been received&lt;/h4&gt;
-        	  						    &lt;p&gt;Thank you for submitting your interest. We will be in contact within 5 business days.&lt;/p&gt;
-        	  						  &lt;/div&gt;
-        	  						&lt;/div&gt;
-        	  					&lt;/div&gt;
-        	  				&lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -482,6 +413,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

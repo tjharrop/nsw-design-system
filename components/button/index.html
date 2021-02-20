@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -254,498 +256,349 @@
             <p>Buttons provide users with the ability to submit an action.</p>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141135" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#section141134" class="nsw-tabs__link">Accessibility</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141135" class="nsw-tabs__content">
-              <h2>Using buttons</h2>   
-        <p>Buttons should be used when the user performs an action, and should describe what happens when pressed. Examples of button contexts include:  
-        </p> <ul>   
-        
-        <li>submitting a form</li>   
-        <li>cancelling a transaction</li>   
-        <li>saving information</li>   
-        <li>making a payment</li> </ul>   
-        
-        <h3>Buttons vs. links</h3>   
-        <p>Buttons should be used if there is an <em>action</em> performed. For navigating users to different pages, use a text link instead.</p> <h2>Button states</h2> <p>Buttons are styled according to their purpose:</p> <ul> <li><strong>Primary</strong> buttons are for the page's primary user action (call to action)</li> <li><strong>Highlight</strong> buttons can be coloured with your brand colour and used in place of primary buttons</li> <li><strong>Secondary</strong> buttons are used for call to action other than the primary</li> <li><strong>Disabled</strong> buttons can be used if research shows that it helps users understand the screen</li> </ul> <h3>Tips</h3> <ul> <li>Disabled buttons can be harder to see, so avoid using them where possible</li> <li>Consider the GOV.UK guidance on how to <a class="ext" data-extlink="" href="https://design-system.service.gov.uk/components/button/#stop-users-from-accidentally-sending-information-more-than-once">stop users from accidentally sending information more than once</a></li> <li>Overusing buttons and button-style links makes them less noticable</li> <li>A comprehensive review of buttons vs. links is available from Indiana University - <a class="ext" data-extlink="" href="https://ux.iu.edu/writings/buttons-vs-links-basic/">Buttons & Links - the Basics</a></li> </ul>
-        
-          </section>
-          <section id="section141134" class="nsw-tabs__content">
-              <h2>Button accessibility</h2>
-        <p>The NSW Design system meets WGAG AA.</p>
-        <h3>Further reading on button accessibility</h3>
-        <ul>
-          <li><strong>carnegiemuseums.org</strong> - <a href="http://web-accessibility.carnegiemuseums.org/content/buttons/">Links, Buttons, &amp; Other Clickable Elements</a></li>
-        </ul>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            <main>
-          <div class="nsw-section--white">
-            <div class="nsw-grid">
-              <div class="nsw-col nsw-m-left-md">
-                <h2 class="nsw-section-title">Primary</h2>
-                <a href="#" class="nsw-button nsw-button--primary">
-                  Link
-                </a>
-                <button
-                    type="button"
-                  class="nsw-button nsw-button--primary"
-                  >
-                  Button
-                </button>
-                <button
-                    type="submit"
-                  class="nsw-button nsw-button--primary"
-                  >
-                  Submit Button
-                </button>
-                <button
-                    type="reset"
-                  class="nsw-button nsw-button--primary"
-                  >
-                  Reset Button
-                </button>
-                <input
-                    type="button"
-                  class="nsw-button nsw-button--primary"
-                  
-                  value="Input"
-                  >
-                <input
-                    type="submit"
-                  class="nsw-button nsw-button--primary"
-                  
-                  value="Input Submit"
-                  >
-                <input
-                    type="reset"
-                  class="nsw-button nsw-button--primary"
-                  
-                  value="Input Reset"
-                  >
-              </div>
-              <div class="nsw-col nsw-m-left-md">
-                <h2 class="nsw-section-title">Highlight</h2>
-                <a href="#" class="nsw-button nsw-button--highlight">
-                  Link
-                </a>
-                <button
-                    type="button"
-                  class="nsw-button nsw-button--highlight"
-                  >
-                  Button
-                </button>
-                <button
-                    type="submit"
-                  class="nsw-button nsw-button--highlight"
-                  >
-                  Submit Button
-                </button>
-                <button
-                    type="reset"
-                  class="nsw-button nsw-button--highlight"
-                  >
-                  Reset Button
-                </button>
-                <input
-                    type="button"
-                  class="nsw-button nsw-button--highlight"
-                  
-                  value="Input"
-                  >
-                <input
-                    type="submit"
-                  class="nsw-button nsw-button--highlight"
-                  
-                  value="Input Submit"
-                  >
-                <input
-                    type="reset"
-                  class="nsw-button nsw-button--highlight"
-                  
-                  value="Input Reset"
-                  >
-              </div>
-              <div class="nsw-col nsw-m-left-md">
-                <h2 class="nsw-section-title">Outline</h2>
-                <a href="#" class="nsw-button nsw-button--outline">
-                  Link
-                </a>
-                <button
-                    type="button"
-                  class="nsw-button nsw-button--outline"
-                  >
-                  Button
-                </button>
-                <button
-                    type="submit"
-                  class="nsw-button nsw-button--outline"
-                  >
-                  Submit Button
-                </button>
-                <button
-                    type="reset"
-                  class="nsw-button nsw-button--outline"
-                  >
-                  Reset Button
-                </button>
-                <input
-                    type="button"
-                  class="nsw-button nsw-button--outline"
-                  
-                  value="Input"
-                  >
-                <input
-                    type="submit"
-                  class="nsw-button nsw-button--outline"
-                  
-                  value="Input Submit"
-                  >
-                <input
-                    type="reset"
-                  class="nsw-button nsw-button--outline"
-                  
-                  value="Input Reset"
-                  >
-              </div>
-            </div>
-          </div>
-          <div class="nsw-section--light-40">
-            <div class="nsw-grid">
-              <div class="nsw-col nsw-m-left-md">
-                <h2 class="nsw-section-title">White</h2>
-                <a href="#" class="nsw-button nsw-button--white">
-                  Link
-                </a>
-                <button
-                    type="button"
-                  class="nsw-button nsw-button--white"
-                  >
-                  Button
-                </button>
-                <button
-                    type="submit"
-                  class="nsw-button nsw-button--white"
-                  >
-                  Submit Button
-                </button>
-                <button
-                    type="reset"
-                  class="nsw-button nsw-button--white"
-                  >
-                  Reset Button
-                </button>
-                <input
-                    type="button"
-                  class="nsw-button nsw-button--white"
-                  
-                  value="Input"
-                  >
-                <input
-                    type="submit"
-                  class="nsw-button nsw-button--white"
-                  
-                  value="Input Submit"
-                  >
-                <input
-                    type="reset"
-                  class="nsw-button nsw-button--white"
-                  
-                  value="Input Reset"
-                  >
-              </div>
-            </div>
-          </div>
-          <div class="nsw-section--white">
-            <div class="nsw-grid">
-              <div class="nsw-col nsw-m-left-md">
-                <h2 class="nsw-section-title">Disabled</h2>
-                <p><strong>Note:</strong> Its not possible to disable links, a class of .disable should only be applied to buttons and inputs</p>
-                <button
-                    type="button"
-                  class="nsw-button nsw-button--primary"
-                  disabled>
-                  Button
-                </button>
-                <button
-                    type="submit"
-                  class="nsw-button nsw-button--primary"
-                  disabled>
-                  Submit Button
-                </button>
-                <button
-                    type="reset"
-                  class="nsw-button nsw-button--primary"
-                  disabled>
-                  Reset Button
-                </button>
-                <input
-                    type="button"
-                  class="nsw-button nsw-button--primary"
-                  disabled
-                  value="Input"
-                  >
-                <input
-                    type="submit"
-                  class="nsw-button nsw-button--primary"
-                  disabled
-                  value="Input Submit"
-                  >
-                <input
-                    type="reset"
-                  class="nsw-button nsw-button--primary"
-                  disabled
-                  value="Input Reset"
-                  >
-              </div>
-            </div>
-          </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">&lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Primary&lt;/h2&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--primary&quot;&gt;
-                  Link
-                &lt;/a&gt;
-                &lt;button
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  &gt;
-                  Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  &gt;
-                  Submit Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  &gt;
-                  Reset Button
-                &lt;/button&gt;
-                &lt;input
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  
-                  value&#x3D;&quot;Input&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  
-                  value&#x3D;&quot;Input Submit&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  
-                  value&#x3D;&quot;Input Reset&quot;
-                  &gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Highlight&lt;/h2&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--highlight&quot;&gt;
-                  Link
-                &lt;/a&gt;
-                &lt;button
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  &gt;
-                  Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  &gt;
-                  Submit Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  &gt;
-                  Reset Button
-                &lt;/button&gt;
-                &lt;input
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  
-                  value&#x3D;&quot;Input&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  
-                  value&#x3D;&quot;Input Submit&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--highlight&quot;
-                  
-                  value&#x3D;&quot;Input Reset&quot;
-                  &gt;
-              &lt;/div&gt;
-              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Outline&lt;/h2&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--outline&quot;&gt;
-                  Link
-                &lt;/a&gt;
-                &lt;button
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  &gt;
-                  Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  &gt;
-                  Submit Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  &gt;
-                  Reset Button
-                &lt;/button&gt;
-                &lt;input
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  
-                  value&#x3D;&quot;Input&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  
-                  value&#x3D;&quot;Input Submit&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--outline&quot;
-                  
-                  value&#x3D;&quot;Input Reset&quot;
-                  &gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;nsw-section--light-40&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;White&lt;/h2&gt;
-                &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button nsw-button--white&quot;&gt;
-                  Link
-                &lt;/a&gt;
-                &lt;button
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  &gt;
-                  Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  &gt;
-                  Submit Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  &gt;
-                  Reset Button
-                &lt;/button&gt;
-                &lt;input
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  
-                  value&#x3D;&quot;Input&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  
-                  value&#x3D;&quot;Input Submit&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--white&quot;
-                  
-                  value&#x3D;&quot;Input Reset&quot;
-                  &gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-col nsw-m-left-md&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-section-title&quot;&gt;Disabled&lt;/h2&gt;
-                &lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Its not possible to disable links, a class of .disable should only be applied to buttons and inputs&lt;/p&gt;
-                &lt;button
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled&gt;
-                  Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled&gt;
-                  Submit Button
-                &lt;/button&gt;
-                &lt;button
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled&gt;
-                  Reset Button
-                &lt;/button&gt;
-                &lt;input
-                    type&#x3D;&quot;button&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled
-                  value&#x3D;&quot;Input&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;submit&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled
-                  value&#x3D;&quot;Input Submit&quot;
-                  &gt;
-                &lt;input
-                    type&#x3D;&quot;reset&quot;
-                  class&#x3D;&quot;nsw-button nsw-button--primary&quot;
-                  disabled
-                  value&#x3D;&quot;Input Reset&quot;
-                  &gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141135" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#section141134" class="nsw-tabs__link">Accessibility</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#figmapreview" class="nsw-tabs__link">Figma</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141135" class="nsw-tabs__content">
+      <h2>Using buttons</h2>   
+<p>Buttons should be used when the user performs an action, and should describe what happens when pressed. Examples of button contexts include:  
+</p> <ul>   
+
+<li>submitting a form</li>   
+<li>cancelling a transaction</li>   
+<li>saving information</li>   
+<li>making a payment</li> </ul>   
+
+<h3>Buttons vs. links</h3>   
+<p>Buttons should be used if there is an <em>action</em> performed. For navigating users to different pages, use a text link instead.</p> <h2>Button states</h2> <p>Buttons are styled according to their purpose:</p> <ul> <li><strong>Primary</strong> buttons are for the page's primary user action (call to action)</li> <li><strong>Highlight</strong> buttons can be coloured with your brand colour and used in place of primary buttons</li> <li><strong>Secondary</strong> buttons are used for call to action other than the primary</li> <li><strong>Disabled</strong> buttons can be used if research shows that it helps users understand the screen</li> </ul> <h3>Tips</h3> <ul> <li>Disabled buttons can be harder to see, so avoid using them where possible</li> <li>Consider the GOV.UK guidance on how to <a class="ext" data-extlink="" href="https://design-system.service.gov.uk/components/button/#stop-users-from-accidentally-sending-information-more-than-once">stop users from accidentally sending information more than once</a></li> <li>Overusing buttons and button-style links makes them less noticable</li> <li>A comprehensive review of buttons vs. links is available from Indiana University - <a class="ext" data-extlink="" href="https://ux.iu.edu/writings/buttons-vs-links-basic/">Buttons & Links - the Basics</a></li> </ul>
+
+  </section>
+  <section id="section141134" class="nsw-tabs__content">
+      <h2>Button accessibility</h2>
+<p>The NSW Design system meets WGAG AA.</p>
+<h3>Further reading on button accessibility</h3>
+<ul>
+  <li><strong>carnegiemuseums.org</strong> - <a href="http://web-accessibility.carnegiemuseums.org/content/buttons/">Links, Buttons, &amp; Other Clickable Elements</a></li>
+</ul>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    <main>
+  <div class="nsw-section--white">
+    <div class="nsw-grid">
+      <div class="nsw-col nsw-m-left-md">
+        <h2 class="nsw-section-title">Primary</h2>
+<div class="code-section">
+  <div class="ui-demo">
+            <a href="#" class="nsw-button nsw-button--primary">
+              Link
+            </a>
+            <button  type="button" class="nsw-button nsw-button--primary">
+              Button
+            </button>
+            <button  type="submit" class="nsw-button nsw-button--primary">
+              Submit Button
+            </button>
+            <button  type="reset" class="nsw-button nsw-button--primary">
+              Reset Button
+            </button>
+            <input type="button" class="nsw-button nsw-button--primary" value="Input" aria-label="Input button">
+            <input type="submit" class="nsw-button nsw-button--primary" value="Input Submit" aria-label="Input Submit button">
+            <input type="reset" class="nsw-button nsw-button--primary" value="Input Reset" aria-label="Input Reset button">
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`        <a href="#" class="nsw-button nsw-button--primary">
+          Link
+        </a>
+        <button  type="button" class="nsw-button nsw-button--primary">
+          Button
+        </button>
+        <button  type="submit" class="nsw-button nsw-button--primary">
+          Submit Button
+        </button>
+        <button  type="reset" class="nsw-button nsw-button--primary">
+          Reset Button
+        </button>
+        <input type="button" class="nsw-button nsw-button--primary" value="Input" aria-label="Input button">
+        <input type="submit" class="nsw-button nsw-button--primary" value="Input Submit" aria-label="Input Submit button">
+        <input type="reset" class="nsw-button nsw-button--primary" value="Input Reset" aria-label="Input Reset button">
+`));
+</script></code></pre>
+  </div>
+
+</div>
+      </div>
+      <div class="nsw-col nsw-m-left-md">
+        <h2 class="nsw-section-title">Highlight</h2>
+<div class="code-section">
+  <div class="ui-demo">
+            <a href="#" class="nsw-button nsw-button--highlight">
+              Link
+            </a>
+            <button  type="button" class="nsw-button nsw-button--highlight">
+              Button
+            </button>
+            <button  type="submit" class="nsw-button nsw-button--highlight">
+              Submit Button
+            </button>
+            <button  type="reset" class="nsw-button nsw-button--highlight">
+              Reset Button
+            </button>
+            <input type="button" class="nsw-button nsw-button--highlight" value="Input" aria-label="Input button">
+            <input type="submit" class="nsw-button nsw-button--highlight" value="Input Submit" aria-label="Input Submit button">
+            <input type="reset" class="nsw-button nsw-button--highlight" value="Input Reset" aria-label="Input Reset button">
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`        <a href="#" class="nsw-button nsw-button--highlight">
+          Link
+        </a>
+        <button  type="button" class="nsw-button nsw-button--highlight">
+          Button
+        </button>
+        <button  type="submit" class="nsw-button nsw-button--highlight">
+          Submit Button
+        </button>
+        <button  type="reset" class="nsw-button nsw-button--highlight">
+          Reset Button
+        </button>
+        <input type="button" class="nsw-button nsw-button--highlight" value="Input" aria-label="Input button">
+        <input type="submit" class="nsw-button nsw-button--highlight" value="Input Submit" aria-label="Input Submit button">
+        <input type="reset" class="nsw-button nsw-button--highlight" value="Input Reset" aria-label="Input Reset button">
+`));
+</script></code></pre>
+  </div>
+
+</div>
+      </div>
+      <div class="nsw-col nsw-m-left-md">
+        <h2 class="nsw-section-title">Outline</h2>
+<div class="code-section">
+  <div class="ui-demo">
+            <a href="#" class="nsw-button nsw-button--outline">
+              Link
+            </a>
+            <button  type="button" class="nsw-button nsw-button--outline">
+              Button
+            </button>
+            <button  type="submit" class="nsw-button nsw-button--outline">
+              Submit Button
+            </button>
+            <button  type="reset" class="nsw-button nsw-button--outline">
+              Reset Button
+            </button>
+            <input type="button" class="nsw-button nsw-button--outline" value="Input" aria-label="Input button">
+            <input type="submit" class="nsw-button nsw-button--outline" value="Input Submit" aria-label="Input Submit button">
+            <input type="reset" class="nsw-button nsw-button--outline" value="Input Reset" aria-label="Input Reset button">
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`        <a href="#" class="nsw-button nsw-button--outline">
+          Link
+        </a>
+        <button  type="button" class="nsw-button nsw-button--outline">
+          Button
+        </button>
+        <button  type="submit" class="nsw-button nsw-button--outline">
+          Submit Button
+        </button>
+        <button  type="reset" class="nsw-button nsw-button--outline">
+          Reset Button
+        </button>
+        <input type="button" class="nsw-button nsw-button--outline" value="Input" aria-label="Input button">
+        <input type="submit" class="nsw-button nsw-button--outline" value="Input Submit" aria-label="Input Submit button">
+        <input type="reset" class="nsw-button nsw-button--outline" value="Input Reset" aria-label="Input Reset button">
+`));
+</script></code></pre>
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="nsw-section--light-40">
+    <div class="nsw-grid">
+      <div class="nsw-col nsw-m-left-md">
+        <h2 class="nsw-section-title">White</h2>
+<div class="code-section">
+  <div class="ui-demo">
+            <a href="#" class="nsw-button nsw-button--white">
+              Link
+            </a>
+            <button  type="button" class="nsw-button nsw-button--white">
+              Button
+            </button>
+            <button  type="submit" class="nsw-button nsw-button--white">
+              Submit Button
+            </button>
+            <button  type="reset" class="nsw-button nsw-button--white">
+              Reset Button
+            </button>
+            <input type="button" class="nsw-button nsw-button--white" value="Input" aria-label="Input button">
+            <input type="submit" class="nsw-button nsw-button--white" value="Input Submit" aria-label="Input Submit button">
+            <input type="reset" class="nsw-button nsw-button--white" value="Input Reset" aria-label="Input Reset button">
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`        <a href="#" class="nsw-button nsw-button--white">
+          Link
+        </a>
+        <button  type="button" class="nsw-button nsw-button--white">
+          Button
+        </button>
+        <button  type="submit" class="nsw-button nsw-button--white">
+          Submit Button
+        </button>
+        <button  type="reset" class="nsw-button nsw-button--white">
+          Reset Button
+        </button>
+        <input type="button" class="nsw-button nsw-button--white" value="Input" aria-label="Input button">
+        <input type="submit" class="nsw-button nsw-button--white" value="Input Submit" aria-label="Input Submit button">
+        <input type="reset" class="nsw-button nsw-button--white" value="Input Reset" aria-label="Input Reset button">
+`));
+</script></code></pre>
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+  <div class="nsw-section--white">
+    <div class="nsw-grid">
+      <div class="nsw-col nsw-m-left-md">
+        <h2 class="nsw-section-title">Disabled</h2>
+<div class="code-section">
+  <div class="ui-demo">
+            <p><strong>Note:</strong> Its not possible to disable links, a class of .disable should only be applied to buttons and inputs</p>
+            <button disabled type="button" class="nsw-button nsw-button--primary">
+              Button
+            </button>
+            <button disabled type="submit" class="nsw-button nsw-button--primary">
+              Submit Button
+            </button>
+            <button disabled type="reset" class="nsw-button nsw-button--primary">
+              Reset Button
+            </button>
+            <input type="button" class="nsw-button nsw-button--primary" disabledvalue="Input" aria-label="Input button">
+            <input type="submit" class="nsw-button nsw-button--primary" disabledvalue="Input Submit" aria-label="Input Submit button">
+            <input type="reset" class="nsw-button nsw-button--primary" disabledvalue="Input Reset" aria-label="Input Reset button">
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`        <p><strong>Note:</strong> Its not possible to disable links, a class of .disable should only be applied to buttons and inputs</p>
+        <button disabled type="button" class="nsw-button nsw-button--primary">
+          Button
+        </button>
+        <button disabled type="submit" class="nsw-button nsw-button--primary">
+          Submit Button
+        </button>
+        <button disabled type="reset" class="nsw-button nsw-button--primary">
+          Reset Button
+        </button>
+        <input type="button" class="nsw-button nsw-button--primary" disabledvalue="Input" aria-label="Input button">
+        <input type="submit" class="nsw-button nsw-button--primary" disabledvalue="Input Submit" aria-label="Input Submit button">
+        <input type="reset" class="nsw-button nsw-button--primary" disabledvalue="Input Reset" aria-label="Input Reset button">
+`));
+</script></code></pre>
+  </div>
+
+</div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--sample
+  <button  type="button" class="nsw-button nsw-button--primary">
+    Link
+  </button>
+
+  <button  type="button" class="nsw-button nsw-button--outline">
+    Link
+  </button>
+
+  <button  type="button" class="nsw-button nsw-button--white">
+    Link
+  </button>
+
+  <button disabled type="button" class="nsw-button nsw-button--primary">
+    Button
+  </button>
+endsample-->
+
+  </section>
+  <section id="figmapreview" class="nsw-tabs__content">
+    <iframe
+      height="450"
+      width="100%"
+      style="border:0;"
+      src="https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id&#x3D;0%3A1127"
+      allowfullscreen
+      title="Figma preview"
+    ></iframe>
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -771,6 +624,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

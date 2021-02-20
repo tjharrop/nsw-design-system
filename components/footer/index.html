@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,233 +255,135 @@
           <h1>Footer</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141186" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141186" class="nsw-tabs__content">
-              <p>The footer displays across the bottom of all NSW Government websites.</p>
-        <h2 id="using-footer">Using footer</h2>
-        <p>To be used across the bottom of all NSW Government websites.</p>
-        <p>Use the footer to provide links to content that are separate from the main navigation but that are relevant to the entire site and platform. For example: About us, Privacy statement, Terms of use, Accessibility, Legal content and contact information and links to social media.</p>
-        <p>Do:</p>
-        <ul>
-        <li>Only use option section links where they assist the user, otherwise they can be hidden</li>
-        <li>Use a copyright statement that is specific to your agency.</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p><strong>Optional Section Links</strong></p>
-        <p>The optional section links allow users to bypass the main navigation, or access external links. This section provides users with easy access to additional links both internal and external, allowing them to continue their journey.</p>
-        <p><strong>Acknowledgement of Country</strong></p>
-        <p>The Acknowledgement of Country pays respect to the First Peoples of NSW.</p>
-        <p><strong>Copyright</strong></p>
-        <p>The copyright statement is required as it is applies to all pages of the site.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <footer class="nsw-footer">
-          <div class="nsw-footer__upper">
-            <div class="nsw-container section-links">
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Popular</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Contact the Premier</a></li>
-                      <li class="section-links__item"><a href="#">Contact a Minister</a></li>
-                      <li class="section-links__item"><a href="#">About NSW</a></li>
-                      <li class="section-links__item"><a href="#">State flag</a></li>
-                      <li class="section-links__item"><a href="#">State Funerals</a></li>
-                      <li class="section-links__item"><a href="#">Buy Regional</a></li>
-                      <li class="section-links__item"><a href="#">Life events</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government directory</a></li>
-                      <li class="section-links__item"><a href="#">Service NSW locations</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">News</a></li>
-                      <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
-                      <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
-                      <li class="section-links__item"><a href="#">Have your say</a></li>
-                      <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
-                      <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
-                      <li class="section-links__item"><a href="#">I work for NSW</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">Departments</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">Customer Service</a></li>
-                      <li class="section-links__item"><a href="#">Communities and Justice</a></li>
-                      <li class="section-links__item"><a href="#">Education</a></li>
-                      <li class="section-links__item"><a href="#">Health</a></li>
-                      <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
-                      <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
-                      <li class="section-links__item"><a href="#">Regional NSW</a></li>
-                      <li class="section-links__item"><a href="#">Transport</a></li>
-                      <li class="section-links__item"><a href="#">Treasury</a></li>
-                  </ul>
-                </div>
-                <div class="section-links__group">
-                  <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
-                  <ul class="section-links__list">
-                      <li class="section-links__item"><a href="#">The Premier</a></li>
-                      <li class="section-links__item"><a href="#">NSW Ministers</a></li>
-                      <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
-                      <li class="section-links__item"><a href="#">Boards and Committees</a></li>
-                      <li class="section-links__item"><a href="#">NSW Government communications</a></li>
-                      <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
-                      <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
-                  </ul>
-                </div>
-            </div>
-          </div>
-          <div class="nsw-footer__lower">
-            <div class="nsw-container">
-              <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
-              <hr>
-              <ul class="nsw-footer-links">
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Accessibility</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Copyright</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Disclaimer</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Privacy</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Content sources</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">RSS</a>
-                  </li>
-                  <li class="nsw-footer-links__item">
-                    <a href="#" class="nsw-footer-links__link">Contact us</a>
-                  </li>
-              </ul>
-              <div class="nsw-footer__info">
-                <p class="nsw-footer__copyright">Copyright © 2021</p>
-                <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
-              </div>
-            </div>
-          </div>
-        </footer>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;footer class&#x3D;&quot;nsw-footer&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__upper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container section-links&quot;&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Popular&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact the Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Contact a Minister&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;About NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State flag&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;State Funerals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Buy Regional&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Life events&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government directory&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Service NSW locations&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;What&amp;#x27;s happening&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;News&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Ministerial media releases&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Projects and initiatives&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Have your say&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW school and public holidays&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find a job in NSW Government&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;I work for NSW&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Departments&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Customer Service&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Communities and Justice&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Education&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Health&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Planning, Industry and Environment&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier and Cabinet&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Regional NSW&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Transport&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Treasury&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;div class&#x3D;&quot;section-links__group&quot;&gt;
-                  &lt;h3 class&#x3D;&quot;section-links__heading&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government&lt;/a&gt;&lt;/h3&gt;
-                  &lt;ul class&#x3D;&quot;section-links__list&quot;&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;The Premier&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Ministers&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Find your local Member of Parliament&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Boards and Committees&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;NSW Government communications&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Unsolicited proposals&lt;/a&gt;&lt;/li&gt;
-                      &lt;li class&#x3D;&quot;section-links__item&quot;&gt;&lt;a href&#x3D;&quot;#&quot;&gt;Premier&amp;#x27;s Priorities&lt;/a&gt;&lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-          &lt;div class&#x3D;&quot;nsw-footer__lower&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;p&gt;We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.&lt;/p&gt;
-              &lt;hr&gt;
-              &lt;ul class&#x3D;&quot;nsw-footer-links&quot;&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Accessibility&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Copyright&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Disclaimer&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Privacy&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Content sources&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;RSS&lt;/a&gt;
-                  &lt;/li&gt;
-                  &lt;li class&#x3D;&quot;nsw-footer-links__item&quot;&gt;
-                    &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-footer-links__link&quot;&gt;Contact us&lt;/a&gt;
-                  &lt;/li&gt;
-              &lt;/ul&gt;
-              &lt;div class&#x3D;&quot;nsw-footer__info&quot;&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__copyright&quot;&gt;Copyright © 2021&lt;/p&gt;
-                &lt;p class&#x3D;&quot;nsw-footer__built&quot;&gt;Built by &lt;a href&#x3D;&quot;https://www.digital.nsw.gov.au/digital-design-system&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener noreferrer&quot;&gt;NSW Design System&lt;/a&gt;&lt;/p&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/footer&gt;
-        </code></pre>
-          </section>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141186" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141186" class="nsw-tabs__content">
+      <p>The footer displays across the bottom of all NSW Government websites.</p>
+<h2 id="using-footer">Using footer</h2>
+<p>To be used across the bottom of all NSW Government websites.</p>
+<p>Use the footer to provide links to content that are separate from the main navigation but that are relevant to the entire site and platform. For example: About us, Privacy statement, Terms of use, Accessibility, Legal content and contact information and links to social media.</p>
+<p>Do:</p>
+<ul>
+<li>Only use option section links where they assist the user, otherwise they can be hidden</li>
+<li>Use a copyright statement that is specific to your agency.</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p><strong>Optional Section Links</strong></p>
+<p>The optional section links allow users to bypass the main navigation, or access external links. This section provides users with easy access to additional links both internal and external, allowing them to continue their journey.</p>
+<p><strong>Acknowledgement of Country</strong></p>
+<p>The Acknowledgement of Country pays respect to the First Peoples of NSW.</p>
+<p><strong>Copyright</strong></p>
+<p>The copyright statement is required as it is applies to all pages of the site.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<footer class="nsw-footer">
+  <div class="nsw-footer__upper">
+    <div class="nsw-container section-links">
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Popular</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Contact the Premier</a></li>
+              <li class="section-links__item"><a href="#">Contact a Minister</a></li>
+              <li class="section-links__item"><a href="#">About NSW</a></li>
+              <li class="section-links__item"><a href="#">State flag</a></li>
+              <li class="section-links__item"><a href="#">State Funerals</a></li>
+              <li class="section-links__item"><a href="#">Buy Regional</a></li>
+              <li class="section-links__item"><a href="#">Life events</a></li>
+              <li class="section-links__item"><a href="#">NSW Government directory</a></li>
+              <li class="section-links__item"><a href="#">Service NSW locations</a></li>
+          </ul>
         </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">What&#x27;s happening</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">News</a></li>
+              <li class="section-links__item"><a href="#">Ministerial media releases</a></li>
+              <li class="section-links__item"><a href="#">Projects and initiatives</a></li>
+              <li class="section-links__item"><a href="#">Have your say</a></li>
+              <li class="section-links__item"><a href="#">NSW school and public holidays</a></li>
+              <li class="section-links__item"><a href="#">Find a job in NSW Government</a></li>
+              <li class="section-links__item"><a href="#">I work for NSW</a></li>
+          </ul>
+        </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">Departments</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">Customer Service</a></li>
+              <li class="section-links__item"><a href="#">Communities and Justice</a></li>
+              <li class="section-links__item"><a href="#">Education</a></li>
+              <li class="section-links__item"><a href="#">Health</a></li>
+              <li class="section-links__item"><a href="#">Planning, Industry and Environment</a></li>
+              <li class="section-links__item"><a href="#">Premier and Cabinet</a></li>
+              <li class="section-links__item"><a href="#">Regional NSW</a></li>
+              <li class="section-links__item"><a href="#">Transport</a></li>
+              <li class="section-links__item"><a href="#">Treasury</a></li>
+          </ul>
+        </div>
+        <div class="section-links__group">
+          <h3 class="section-links__heading"><a href="#">NSW Government</a></h3>
+          <ul class="section-links__list">
+              <li class="section-links__item"><a href="#">The Premier</a></li>
+              <li class="section-links__item"><a href="#">NSW Ministers</a></li>
+              <li class="section-links__item"><a href="#">Find your local Member of Parliament</a></li>
+              <li class="section-links__item"><a href="#">Boards and Committees</a></li>
+              <li class="section-links__item"><a href="#">NSW Government communications</a></li>
+              <li class="section-links__item"><a href="#">Unsolicited proposals</a></li>
+              <li class="section-links__item"><a href="#">Premier&#x27;s Priorities</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+  <div class="nsw-footer__lower">
+    <div class="nsw-container">
+      <p>We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture.</p>
+      <hr>
+      <ul class="nsw-footer-links">
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Accessibility</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Copyright</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Disclaimer</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Privacy</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Content sources</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">RSS</a>
+          </li>
+          <li class="nsw-footer-links__item">
+            <a href="#" class="nsw-footer-links__link">Contact us</a>
+          </li>
+      </ul>
+      <div class="nsw-footer__info">
+        <p class="nsw-footer__copyright">Copyright © 2021</p>
+        <p class="nsw-footer__built">Built by <a href="https://www.digital.nsw.gov.au/digital-design-system" target="_blank" rel="noopener noreferrer">NSW Design System</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -505,6 +409,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

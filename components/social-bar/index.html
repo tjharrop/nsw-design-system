@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,145 +255,88 @@
           <h1>Social bar</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141271" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141271" class="nsw-tabs__content">
-              <p>The social bar allows users to share something of interest via social media.</p>
-        <h2 id="using-social-bar">Using social bar</h2>
-        <p>Use to encourage the sharing of links to pages that may be of interest to the user&#39;s social network.</p>
-        <p>Do:</p>
-        <ul>
-        <li>ensure URLs are shareable and will return the user to the relevant page</li>
-        <li>make sure the shareable web address is readable and reflects the content.</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>The social bar encourages users to share links to pages via 3 popular social mediums and email. Easily recognisable icons are used to show users how they can share the page they are currently on.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<section aria-label="Page tools">
-        							  <ul class="nsw-socials">
-        							    <li class="nsw-socials__item">
-        							      <a class="nsw-socials__link js-share-this" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
-        							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
-        							          <use xlink:href="#facebook"></use>
-        							        </svg>
-        							        <span class="sr-only">Facebook</span>
-        							      </a>
-        							    </li>
-        							    <li class="nsw-socials__item">
-        							      <a class="nsw-socials__link js-share-this" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
-        							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
-        							          <use xlink:href="#linkedin"></use>
-        							        </svg>
-        							        <span class="sr-only">LinkedIn</span>
-        							      </a>
-        							    </li>
-        							    <li class="nsw-socials__item">
-        							      <a class="nsw-socials__link js-share-this" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
-        							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
-        							          <use xlink:href="#twitter"></use>
-        							        </svg>
-        							        <span class="sr-only">Twitter</span>
-        							      </a>
-        							    </li>
-        							    <li class="nsw-socials__item">
-        							      <a class="nsw-socials__link " href="mailto:?body=https%3A%2F%2Fwww.service.nsw.gov.au" target="_self" rel="noopener">
-        							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
-        							          <use xlink:href="#email"></use>
-        							        </svg>
-        							        <span class="sr-only">Email</span>
-        							      </a>
-        							    </li>
-        							  </ul>
-        							</section>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141271" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141271" class="nsw-tabs__content">
+      <p>The social bar allows users to share something of interest via social media.</p>
+<h2 id="using-social-bar">Using social bar</h2>
+<p>Use to encourage the sharing of links to pages that may be of interest to the user&#39;s social network.</p>
+<p>Do:</p>
+<ul>
+<li>ensure URLs are shareable and will return the user to the relevant page</li>
+<li>make sure the shareable web address is readable and reflects the content.</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>The social bar encourages users to share links to pages via 3 popular social mediums and email. Easily recognisable icons are used to show users how they can share the page they are currently on.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<section aria-label="Page tools">
+							  <ul class="nsw-socials">
+							    <li class="nsw-socials__item">
+							      <a class="nsw-socials__link js-share-this" href="https://facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
+							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
+							          <use xlink:href="#facebook"></use>
+							        </svg>
+							        <span class="sr-only">Facebook</span>
+							      </a>
+							    </li>
+							    <li class="nsw-socials__item">
+							      <a class="nsw-socials__link js-share-this" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
+							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
+							          <use xlink:href="#linkedin"></use>
+							        </svg>
+							        <span class="sr-only">LinkedIn</span>
+							      </a>
+							    </li>
+							    <li class="nsw-socials__item">
+							      <a class="nsw-socials__link js-share-this" href="https://twitter.com/intent/tweet/?url=https%3A%2F%2Fwww.service.nsw.gov.au" target="_blank" rel="noopener">
+							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
+							          <use xlink:href="#twitter"></use>
+							        </svg>
+							        <span class="sr-only">Twitter</span>
+							      </a>
+							    </li>
+							    <li class="nsw-socials__item">
+							      <a class="nsw-socials__link " href="mailto:?body=https%3A%2F%2Fwww.service.nsw.gov.au" target="_self" rel="noopener">
+							        <svg class="nsw-icon nsw-socials__icon" focusable="false" aria-hidden="true">
+							          <use xlink:href="#email"></use>
+							        </svg>
+							        <span class="sr-only">Email</span>
+							      </a>
+							    </li>
+							  </ul>
+							</section>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;section aria-label&#x3D;&quot;Page tools&quot;&gt;
-        							  &lt;ul class&#x3D;&quot;nsw-socials&quot;&gt;
-        							    &lt;li class&#x3D;&quot;nsw-socials__item&quot;&gt;
-        							      &lt;a class&#x3D;&quot;nsw-socials__link js-share-this&quot; href&#x3D;&quot;https://facebook.com/sharer/sharer.php?u&#x3D;https%3A%2F%2Fwww.service.nsw.gov.au&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;
-        							        &lt;svg class&#x3D;&quot;nsw-icon nsw-socials__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							          &lt;use xlink:href&#x3D;&quot;#facebook&quot;&gt;&lt;/use&gt;
-        							        &lt;/svg&gt;
-        							        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Facebook&lt;/span&gt;
-        							      &lt;/a&gt;
-        							    &lt;/li&gt;
-        							    &lt;li class&#x3D;&quot;nsw-socials__item&quot;&gt;
-        							      &lt;a class&#x3D;&quot;nsw-socials__link js-share-this&quot; href&#x3D;&quot;https://www.linkedin.com/shareArticle?mini&#x3D;true&amp;amp;url&#x3D;https%3A%2F%2Fwww.service.nsw.gov.au&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;
-        							        &lt;svg class&#x3D;&quot;nsw-icon nsw-socials__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							          &lt;use xlink:href&#x3D;&quot;#linkedin&quot;&gt;&lt;/use&gt;
-        							        &lt;/svg&gt;
-        							        &lt;span class&#x3D;&quot;sr-only&quot;&gt;LinkedIn&lt;/span&gt;
-        							      &lt;/a&gt;
-        							    &lt;/li&gt;
-        							    &lt;li class&#x3D;&quot;nsw-socials__item&quot;&gt;
-        							      &lt;a class&#x3D;&quot;nsw-socials__link js-share-this&quot; href&#x3D;&quot;https://twitter.com/intent/tweet/?url&#x3D;https%3A%2F%2Fwww.service.nsw.gov.au&quot; target&#x3D;&quot;_blank&quot; rel&#x3D;&quot;noopener&quot;&gt;
-        							        &lt;svg class&#x3D;&quot;nsw-icon nsw-socials__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							          &lt;use xlink:href&#x3D;&quot;#twitter&quot;&gt;&lt;/use&gt;
-        							        &lt;/svg&gt;
-        							        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Twitter&lt;/span&gt;
-        							      &lt;/a&gt;
-        							    &lt;/li&gt;
-        							    &lt;li class&#x3D;&quot;nsw-socials__item&quot;&gt;
-        							      &lt;a class&#x3D;&quot;nsw-socials__link &quot; href&#x3D;&quot;mailto:?body&#x3D;https%3A%2F%2Fwww.service.nsw.gov.au&quot; target&#x3D;&quot;_self&quot; rel&#x3D;&quot;noopener&quot;&gt;
-        							        &lt;svg class&#x3D;&quot;nsw-icon nsw-socials__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							          &lt;use xlink:href&#x3D;&quot;#email&quot;&gt;&lt;/use&gt;
-        							        &lt;/svg&gt;
-        							        &lt;span class&#x3D;&quot;sr-only&quot;&gt;Email&lt;/span&gt;
-        							      &lt;/a&gt;
-        							    &lt;/li&gt;
-        							  &lt;/ul&gt;
-        							&lt;/section&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -417,6 +362,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

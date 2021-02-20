@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,113 +255,75 @@
           <h1>In-page navigation</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141221" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#section141220" class="nsw-tabs__link">Customisation</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141221" class="nsw-tabs__content">
-              <p>The in-page nav (or page contents as it is sometimes called) provides navigation to individual anchor links located in the main content.</p>
-        <h2 id="using-in-page-navigation">Using in-page navigation</h2>
-        <p>Use when there are multiple section on a page to helps users scan the section names and navigate to different sections of the page.</p>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>Place at the top of the page before the main content. The lefthand highlight is intended to visually separate the component from the actual content on a page and bind the elements together.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="section141220" class="nsw-tabs__content">
-              <h2 id="customisation">Customisation</h2>
-        <p>The highlight bar can be changed to your brand colour, if brand exemption has been approved.</p>
-        <p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
-        <pre><code>$nsw-primary-highlight: #D7153A !default;</code></pre><p>** Add example**</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<nav class="nsw-page-nav" aria-labelledby="in-page-nav">
-        							  <h2 id="in-page-nav" class="nsw-page-nav__title">On this page</h2>
-        							  <ul class="nsw-page-nav__list">
-        							      <li class="nsw-page-nav__list-item">
-        							        <a href="#" class="nsw-page-nav__link">First home buyer grant and assistance</a>
-        							      </li>
-        							      <li class="nsw-page-nav__list-item">
-        							        <a href="#" class="nsw-page-nav__link">Buying and selling property</a>
-        							      </li>
-        							      <li class="nsw-page-nav__list-item">
-        							        <a href="#" class="nsw-page-nav__link">Building or renovating a home</a>
-        							      </li>
-        							      <li class="nsw-page-nav__list-item">
-        							        <a href="#" class="nsw-page-nav__link">Aged care housing, home living assistance and retirement villages</a>
-        							      </li>
-        							  </ul>
-        							</nav>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141221" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#section141220" class="nsw-tabs__link">Customisation</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141221" class="nsw-tabs__content">
+      <p>The in-page nav (or page contents as it is sometimes called) provides navigation to individual anchor links located in the main content.</p>
+<h2 id="using-in-page-navigation">Using in-page navigation</h2>
+<p>Use when there are multiple section on a page to helps users scan the section names and navigate to different sections of the page.</p>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>Place at the top of the page before the main content. The lefthand highlight is intended to visually separate the component from the actual content on a page and bind the elements together.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="section141220" class="nsw-tabs__content">
+      <h2 id="customisation">Customisation</h2>
+<p>The highlight bar can be changed to your brand colour, if brand exemption has been approved.</p>
+<p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
+<pre><code>$nsw-primary-highlight: #D7153A !default;</code></pre><p>** Add example**</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<nav class="nsw-page-nav" aria-labelledby="in-page-nav">
+							  <h2 id="in-page-nav" class="nsw-page-nav__title">On this page</h2>
+							  <ul class="nsw-page-nav__list">
+							      <li class="nsw-page-nav__list-item">
+							        <a href="#" class="nsw-page-nav__link">First home buyer grant and assistance</a>
+							      </li>
+							      <li class="nsw-page-nav__list-item">
+							        <a href="#" class="nsw-page-nav__link">Buying and selling property</a>
+							      </li>
+							      <li class="nsw-page-nav__list-item">
+							        <a href="#" class="nsw-page-nav__link">Building or renovating a home</a>
+							      </li>
+							      <li class="nsw-page-nav__list-item">
+							        <a href="#" class="nsw-page-nav__link">Aged care housing, home living assistance and retirement villages</a>
+							      </li>
+							  </ul>
+							</nav>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;nav class&#x3D;&quot;nsw-page-nav&quot; aria-labelledby&#x3D;&quot;in-page-nav&quot;&gt;
-        							  &lt;h2 id&#x3D;&quot;in-page-nav&quot; class&#x3D;&quot;nsw-page-nav__title&quot;&gt;On this page&lt;/h2&gt;
-        							  &lt;ul class&#x3D;&quot;nsw-page-nav__list&quot;&gt;
-        							      &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-        							        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;First home buyer grant and assistance&lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-        							        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Buying and selling property&lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-        							        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Building or renovating a home&lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-page-nav__list-item&quot;&gt;
-        							        &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-page-nav__link&quot;&gt;Aged care housing, home living assistance and retirement villages&lt;/a&gt;
-        							      &lt;/li&gt;
-        							  &lt;/ul&gt;
-        							&lt;/nav&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -385,6 +349,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,155 +255,97 @@
           <h1>Tags</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141290" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141290" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141290" class="nsw-tabs__content">
+      <p>A tag is an interactive element containing a keyword or phrase used to categorise content.</p>
+<h2 id="using-tags">Using tags</h2>
+<p>Tags help classify content for your users using keywords or phrases. They can also help users search for and find related content quickly and easily.</p>
+<p>Use tags to:</p>
+<ul>
+<li>categorise content</li>
+<li>link to related content</li>
+<li>filter results</li>
+</ul>
+<p>Users often confuse tags as buttons. Conduct user testing to make sure the way you use them is not causing confusion.</p>
+<h3 id="when-to-avoid">When to avoid</h3>
+<p>Do not:</p>
+<ul>
+<li>Use to initiate an action, consider buttons</li>
+<li>Use to link to page content, consider text links</li>
+</ul>
+<h3 id="how-this-component-works">How this component works</h3>
+<p>Each tag links users to a listing of all the content, or filters content, with that specific keyword or phrase.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+          	<div class="nsw-row">
+	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	            	<h2 class="section-title">Links</h2>
+										<a href="#" class="nsw-tag">Digital</a>
+										<a href="#" class="nsw-tag">Digital Design System</a>
+										<a href="#" class="nsw-tag">Transformation</a>
+	            </div>
+	          </div>
+          	<div class="nsw-row">
+	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	            	<h2 class="section-title">Text</h2>
+										<span class="nsw-tag">Pre-discovery</span>
+										<span class="nsw-tag">Discovery</span>
+										<span class="nsw-tag">Alpha</span>
+										<span class="nsw-tag">Beta</span>
+										<span class="nsw-tag">Live</span>
+	            </div>
+	          </div>
+          	<div class="nsw-row">
+	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+	            	<h2 class="section-title">Checkboxes</h2>
+										<div class="nsw-tag nsw-tag--checkbox">
+											<input type="checkbox" id="checkbox-1" name="tagInput">
+											<label for="checkbox-1">Accessibility</label>
+										</div>
+										<div class="nsw-tag nsw-tag--checkbox">
+											<input type="checkbox" id="checkbox-2" name="tagInput">
+											<label for="checkbox-2">Capability</label>
+										</div>
+										<div class="nsw-tag nsw-tag--checkbox">
+											<input type="checkbox" id="checkbox-3" name="tagInput">
+											<label for="checkbox-3">Policy</label>
+										</div>
+										<div class="nsw-tag nsw-tag--checkbox">
+											<input type="checkbox" id="checkbox-4" name="tagInput">
+											<label for="checkbox-4">Transformation</label>
+										</div>
+	            </div>
+	          </div>
           </div>
-          <section id="section141290" class="nsw-tabs__content">
-              <p>A tag is an interactive element containing a keyword or phrase used to categorise content.</p>
-        <h2 id="using-tags">Using tags</h2>
-        <p>Tags help classify content for your users using keywords or phrases. They can also help users search for and find related content quickly and easily.</p>
-        <p>Use tags to:</p>
-        <ul>
-        <li>categorise content</li>
-        <li>link to related content</li>
-        <li>filter results</li>
-        </ul>
-        <p>Users often confuse tags as buttons. Conduct user testing to make sure the way you use them is not causing confusion.</p>
-        <h3 id="when-to-avoid">When to avoid</h3>
-        <p>Do not:</p>
-        <ul>
-        <li>Use to initiate an action, consider buttons</li>
-        <li>Use to link to page content, consider text links</li>
-        </ul>
-        <h3 id="how-this-component-works">How this component works</h3>
-        <p>Each tag links users to a listing of all the content, or filters content, with that specific keyword or phrase.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                  	<div class="nsw-row">
-        	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	            	<h2 class="section-title">Links</h2>
-        										<a href="#" class="nsw-tag">Digital</a>
-        										<a href="#" class="nsw-tag">Digital Design System</a>
-        										<a href="#" class="nsw-tag">Transformation</a>
-        	            </div>
-        	          </div>
-                  	<div class="nsw-row">
-        	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	            	<h2 class="section-title">Text</h2>
-        										<span class="nsw-tag">Pre-discovery</span>
-        										<span class="nsw-tag">Discovery</span>
-        										<span class="nsw-tag">Alpha</span>
-        										<span class="nsw-tag">Beta</span>
-        										<span class="nsw-tag">Live</span>
-        	            </div>
-        	          </div>
-                  	<div class="nsw-row">
-        	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        	            	<h2 class="section-title">Checkboxes</h2>
-        										<div class="nsw-tag nsw-tag--checkbox">
-        											<input type="checkbox" id="checkbox-1" name="tagInput">
-        											<label for="checkbox-1">Accessibility</label>
-        										</div>
-        										<div class="nsw-tag nsw-tag--checkbox">
-        											<input type="checkbox" id="checkbox-2" name="tagInput">
-        											<label for="checkbox-2">Capability</label>
-        										</div>
-        										<div class="nsw-tag nsw-tag--checkbox">
-        											<input type="checkbox" id="checkbox-3" name="tagInput">
-        											<label for="checkbox-3">Policy</label>
-        										</div>
-        										<div class="nsw-tag nsw-tag--checkbox">
-        											<input type="checkbox" id="checkbox-4" name="tagInput">
-        											<label for="checkbox-4">Transformation</label>
-        										</div>
-        	            </div>
-        	          </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-        	            &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	            	&lt;h2 class&#x3D;&quot;section-title&quot;&gt;Links&lt;/h2&gt;
-        										&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-tag&quot;&gt;Digital&lt;/a&gt;
-        										&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-tag&quot;&gt;Digital Design System&lt;/a&gt;
-        										&lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-tag&quot;&gt;Transformation&lt;/a&gt;
-        	            &lt;/div&gt;
-        	          &lt;/div&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-        	            &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	            	&lt;h2 class&#x3D;&quot;section-title&quot;&gt;Text&lt;/h2&gt;
-        										&lt;span class&#x3D;&quot;nsw-tag&quot;&gt;Pre-discovery&lt;/span&gt;
-        										&lt;span class&#x3D;&quot;nsw-tag&quot;&gt;Discovery&lt;/span&gt;
-        										&lt;span class&#x3D;&quot;nsw-tag&quot;&gt;Alpha&lt;/span&gt;
-        										&lt;span class&#x3D;&quot;nsw-tag&quot;&gt;Beta&lt;/span&gt;
-        										&lt;span class&#x3D;&quot;nsw-tag&quot;&gt;Live&lt;/span&gt;
-        	            &lt;/div&gt;
-        	          &lt;/div&gt;
-                  	&lt;div class&#x3D;&quot;nsw-row&quot;&gt;
-        	            &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        	            	&lt;h2 class&#x3D;&quot;section-title&quot;&gt;Checkboxes&lt;/h2&gt;
-        										&lt;div class&#x3D;&quot;nsw-tag nsw-tag--checkbox&quot;&gt;
-        											&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;checkbox-1&quot; name&#x3D;&quot;tagInput&quot;&gt;
-        											&lt;label for&#x3D;&quot;checkbox-1&quot;&gt;Accessibility&lt;/label&gt;
-        										&lt;/div&gt;
-        										&lt;div class&#x3D;&quot;nsw-tag nsw-tag--checkbox&quot;&gt;
-        											&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;checkbox-2&quot; name&#x3D;&quot;tagInput&quot;&gt;
-        											&lt;label for&#x3D;&quot;checkbox-2&quot;&gt;Capability&lt;/label&gt;
-        										&lt;/div&gt;
-        										&lt;div class&#x3D;&quot;nsw-tag nsw-tag--checkbox&quot;&gt;
-        											&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;checkbox-3&quot; name&#x3D;&quot;tagInput&quot;&gt;
-        											&lt;label for&#x3D;&quot;checkbox-3&quot;&gt;Policy&lt;/label&gt;
-        										&lt;/div&gt;
-        										&lt;div class&#x3D;&quot;nsw-tag nsw-tag--checkbox&quot;&gt;
-        											&lt;input type&#x3D;&quot;checkbox&quot; id&#x3D;&quot;checkbox-4&quot; name&#x3D;&quot;tagInput&quot;&gt;
-        											&lt;label for&#x3D;&quot;checkbox-4&quot;&gt;Transformation&lt;/label&gt;
-        										&lt;/div&gt;
-        	            &lt;/div&gt;
-        	          &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -427,6 +371,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

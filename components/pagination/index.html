@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,211 +255,119 @@
           <h1>Pagination</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141252" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141252" class="nsw-tabs__content">
-              <p>Pagination indicates to a user that a list of items has been split in to multiple pages.</p>
-        <h2 id="using-pagination">Using pagination</h2>
-        <p>Use pagination to separate large lists of content, such as search results or an index, into smaller lists that are easier to interact with.</p>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>Pagination allows users to see how many pages there are, which page you are currently viewing, and how to navigate to other pages. Users can click the next and back links to navigate. Clicking on a page number will take you to the selected page.</p>
-        <p>The pattern provides the visual assets required for pagination. The business rules required to display the content will be defined by the individual technology the product or service is being delivered through.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<div class="nsw-container">
-        							  <nav aria-label="Pagination">
-        							    <ul class="nsw-pagination">
-        							      <li class="nsw-pagination__item nsw-pagination__item--prev-page">
-        							
-        							        <a class="nsw-direction-link nsw-direction-link--icon-left" href="#">
-        							          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
-        							            <use xlink:href="#arrow"></use>
-        							          </svg>
-        							          <span class="nsw-direction-link__text">
-        							            Back <span class="sr-only">a page</span>
-        							          </span>
-        							        </a>
-        							
-        							      </li>
-        							      <li class="nsw-pagination__item">
-        							        <a class="nsw-pagination__link" href="#">
-        							          <span class="nsw-pagination__text">
-        							            <span class="sr-only">Page </span>1
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item">
-        							        <a class="nsw-pagination__link" href="#">
-        							          <span class="nsw-pagination__text">
-        							            <span class="sr-only">Page </span>2
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item nsw-pagination__item--is-active">
-        							        <a class="nsw-pagination__link is-current" href="#" aria-current="page">
-        							          <span class="nsw-pagination__text">
-        							            <span class="sr-only">Page </span>3
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item">
-        							        <a class="nsw-pagination__link" href="#">
-        							          <span class="nsw-pagination__text">
-        							            <span class="sr-only">Page </span>4
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item">
-        							        <a class="nsw-pagination__link" href="#">
-        							          <span class="nsw-pagination__text">
-        							            &hellip;
-        							            <span class="sr-only">Page 5</span>
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item">
-        							        <a class="nsw-pagination__link" href="#">
-        							          <span class="nsw-pagination__text">
-        							            <span class="sr-only">Page </span>12
-        							          </span>
-        							        </a>
-        							      </li>
-        							      <li class="nsw-pagination__item nsw-pagination__item--next-page">
-        							        <a class="nsw-direction-link" href="#">
-        							          <span class="nsw-direction-link__text">
-        							            Next <span class="sr-only">page</span>
-        							          </span>
-        							          <svg class="nsw-icon" focusable="false" aria-hidden="true">
-        							            <use xlink:href="#arrow"></use>
-        							          </svg>
-        							        </a>
-        							      </li>
-        							    </ul>
-        							  </nav>
-        							</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141252" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141252" class="nsw-tabs__content">
+      <p>Pagination indicates to a user that a list of items has been split in to multiple pages.</p>
+<h2 id="using-pagination">Using pagination</h2>
+<p>Use pagination to separate large lists of content, such as search results or an index, into smaller lists that are easier to interact with.</p>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>Pagination allows users to see how many pages there are, which page you are currently viewing, and how to navigate to other pages. Users can click the next and back links to navigate. Clicking on a page number will take you to the selected page.</p>
+<p>The pattern provides the visual assets required for pagination. The business rules required to display the content will be defined by the individual technology the product or service is being delivered through.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<div class="nsw-container">
+							  <nav aria-label="Pagination">
+							    <ul class="nsw-pagination">
+							      <li class="nsw-pagination__item nsw-pagination__item--prev-page">
+							
+							        <a class="nsw-direction-link nsw-direction-link--icon-left" href="#">
+							          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+							            <use xlink:href="#arrow"></use>
+							          </svg>
+							          <span class="nsw-direction-link__text">
+							            Back <span class="sr-only">a page</span>
+							          </span>
+							        </a>
+							
+							      </li>
+							      <li class="nsw-pagination__item">
+							        <a class="nsw-pagination__link" href="#">
+							          <span class="nsw-pagination__text">
+							            <span class="sr-only">Page </span>1
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item">
+							        <a class="nsw-pagination__link" href="#">
+							          <span class="nsw-pagination__text">
+							            <span class="sr-only">Page </span>2
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item nsw-pagination__item--is-active">
+							        <a class="nsw-pagination__link is-current" href="#" aria-current="page">
+							          <span class="nsw-pagination__text">
+							            <span class="sr-only">Page </span>3
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item">
+							        <a class="nsw-pagination__link" href="#">
+							          <span class="nsw-pagination__text">
+							            <span class="sr-only">Page </span>4
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item">
+							        <a class="nsw-pagination__link" href="#">
+							          <span class="nsw-pagination__text">
+							            &hellip;
+							            <span class="sr-only">Page 5</span>
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item">
+							        <a class="nsw-pagination__link" href="#">
+							          <span class="nsw-pagination__text">
+							            <span class="sr-only">Page </span>12
+							          </span>
+							        </a>
+							      </li>
+							      <li class="nsw-pagination__item nsw-pagination__item--next-page">
+							        <a class="nsw-direction-link" href="#">
+							          <span class="nsw-direction-link__text">
+							            Next <span class="sr-only">page</span>
+							          </span>
+							          <svg class="nsw-icon" focusable="false" aria-hidden="true">
+							            <use xlink:href="#arrow"></use>
+							          </svg>
+							        </a>
+							      </li>
+							    </ul>
+							  </nav>
+							</div>
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        							  &lt;nav aria-label&#x3D;&quot;Pagination&quot;&gt;
-        							    &lt;ul class&#x3D;&quot;nsw-pagination&quot;&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item nsw-pagination__item--prev-page&quot;&gt;
-        							
-        							        &lt;a class&#x3D;&quot;nsw-direction-link nsw-direction-link--icon-left&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-180&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							            &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							          &lt;/svg&gt;
-        							          &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							            Back &lt;span class&#x3D;&quot;sr-only&quot;&gt;a page&lt;/span&gt;
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page &lt;/span&gt;1
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page &lt;/span&gt;2
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item nsw-pagination__item--is-active&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link is-current&quot; href&#x3D;&quot;#&quot; aria-current&#x3D;&quot;page&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page &lt;/span&gt;3
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page &lt;/span&gt;4
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &amp;hellip;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page 5&lt;/span&gt;
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-pagination__link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-pagination__text&quot;&gt;
-        							            &lt;span class&#x3D;&quot;sr-only&quot;&gt;Page &lt;/span&gt;12
-        							          &lt;/span&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							      &lt;li class&#x3D;&quot;nsw-pagination__item nsw-pagination__item--next-page&quot;&gt;
-        							        &lt;a class&#x3D;&quot;nsw-direction-link&quot; href&#x3D;&quot;#&quot;&gt;
-        							          &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							            Next &lt;span class&#x3D;&quot;sr-only&quot;&gt;page&lt;/span&gt;
-        							          &lt;/span&gt;
-        							          &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							            &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							          &lt;/svg&gt;
-        							        &lt;/a&gt;
-        							      &lt;/li&gt;
-        							    &lt;/ul&gt;
-        							  &lt;/nav&gt;
-        							&lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -483,6 +393,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

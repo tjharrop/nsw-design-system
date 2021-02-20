@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,237 +255,236 @@
           <h1>Direction links</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141172" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141172" class="nsw-tabs__content">
-              <p>Direction links show users how to navigate through a page or process.</p>
-        <h2 id="using-direction-links">Using direction links</h2>
-        <p>The direction of the arrow provides a visual cue as to the direction, which is supported by the text.</p>
-        <p>Use direction links to suggest the direction:</p>
-        <ul>
-        <li>up or down a page</li>
-        <li>through a process</li>
-        <li>back to main content</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p>Direction links have arrows to help users quickly understand what will happen when they click on a link. They help support the mental model the user has of moving through a flow, or around a page.</p>
-        <p><strong>Default</strong></p>
-        <p>Direction links comprise of bold text and an arrow indicating the direction, such as:</p>
-        <ul>
-        <li>linking &#39;up&#39; or &#39;down&#39; within the page.</li>
-        <li>going &#39;back&#39; to a parent page.</li>
-        <li>showing the &#39;next&#39; or &#39;previous&#39; pages.</li>
-        </ul>
-        <p><strong>Buttons</strong></p>
-        <p>Sometimes direction is needed inside a form. Buttons offer a way to direct users to the next or previous section inside a form.</p>
-        <p><strong>Arrow icons</strong></p>
-        <p>Arrow icons are used for direction links, rather than chevrons or triangles, to better articulate their purpose and separate the direction links from other elements which use chevron icons such as accordions or call to action links.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<div class="nsw-container">
-        							  <a class="nsw-direction-link" href="#">
-        							    <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							    <span class="nsw-direction-link__text">
-        							      Back <span class="sr-only">a page</span>
-        							    </span>
-        							  </a>
-        							
-        							  <a class="nsw-direction-link" href="#">
-        							    <span class="nsw-direction-link__text">
-        							      Bottom <span class="sr-only">of page</span>
-        							    </span>
-        							    <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </a>
-        							
-        							  <a class="nsw-direction-link" href="#">
-        							    <span class="nsw-direction-link__text">
-        							      Top <span class="sr-only">of page</span>
-        							    </span>
-        							    <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </a>
-        							
-        							  <a class="nsw-direction-link" href="#">
-        							    <span class="nsw-direction-link__text">
-        							      Next <span class="sr-only">page</span>
-        							    </span>
-        							    <svg class="nsw-icon" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </a>
-        							</div>
-        							
-        							<div class="nsw-container">
-        							  <span class="nsw-direction-link nsw-direction-link--icon-left is-disabled">
-        							    <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							    <span class="nsw-direction-link__text">
-        							      Back <span class="sr-only">a page</span>
-        							    </span>
-        							  </span>
-        							
-        							  <span class="nsw-direction-link is-disabled">
-        							    <span class="nsw-direction-link__text">
-        							      Bottom <span class="sr-only">of page</span>
-        							    </span>
-        							    <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </span>
-        							
-        							  <span class="nsw-direction-link is-disabled">
-        							    <span class="nsw-direction-link__text">
-        							      Top <span class="sr-only">of page</span>
-        							    </span>
-        							    <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </span>
-        							
-        							  <span class="nsw-direction-link is-disabled">
-        							    <span class="nsw-direction-link__text">
-        							      Next <span class="sr-only">page</span>
-        							    </span>
-        							    <svg class="nsw-icon" focusable="false" aria-hidden="true">
-        							      <use xlink:href="#arrow"></use>
-        							    </svg>
-        							  </span>
-        							</div>
-        							
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141172" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141172" class="nsw-tabs__content">
+      <p>Direction links show users how to navigate through a page or process.</p>
+<h2 id="using-direction-links">Using direction links</h2>
+<p>The direction of the arrow provides a visual cue as to the direction, which is supported by the text.</p>
+<p>Use direction links to suggest the direction:</p>
+<ul>
+<li>up or down a page</li>
+<li>through a process</li>
+<li>back to main content</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p>Direction links have arrows to help users quickly understand what will happen when they click on a link. They help support the mental model the user has of moving through a flow, or around a page.</p>
+<p><strong>Default</strong></p>
+<p>Direction links comprise of bold text and an arrow indicating the direction, such as:</p>
+<ul>
+<li>linking &#39;up&#39; or &#39;down&#39; within the page.</li>
+<li>going &#39;back&#39; to a parent page.</li>
+<li>showing the &#39;next&#39; or &#39;previous&#39; pages.</li>
+</ul>
+<p><strong>Buttons</strong></p>
+<p>Sometimes direction is needed inside a form. Buttons offer a way to direct users to the next or previous section inside a form.</p>
+<p><strong>Arrow icons</strong></p>
+<p>Arrow icons are used for direction links, rather than chevrons or triangles, to better articulate their purpose and separate the direction links from other elements which use chevron icons such as accordions or call to action links.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-container">
+      <a class="nsw-direction-link" href="#">
+        <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+        <span class="nsw-direction-link__text">
+          Back <span class="sr-only">a page</span>
+        </span>
+      </a>
+    
+      <a class="nsw-direction-link" href="#">
+        <span class="nsw-direction-link__text">
+          Bottom <span class="sr-only">of page</span>
+        </span>
+        <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </a>
+    
+      <a class="nsw-direction-link" href="#">
+        <span class="nsw-direction-link__text">
+          Top <span class="sr-only">of page</span>
+        </span>
+        <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </a>
+    
+      <a class="nsw-direction-link" href="#">
+        <span class="nsw-direction-link__text">
+          Next <span class="sr-only">page</span>
+        </span>
+        <svg class="nsw-icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </a>
+    </div>
+    
+    <div class="nsw-container">
+      <span class="nsw-direction-link nsw-direction-link--icon-left is-disabled">
+        <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+        <span class="nsw-direction-link__text">
+          Back <span class="sr-only">a page</span>
+        </span>
+      </span>
+    
+      <span class="nsw-direction-link is-disabled">
+        <span class="nsw-direction-link__text">
+          Bottom <span class="sr-only">of page</span>
+        </span>
+        <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </span>
+    
+      <span class="nsw-direction-link is-disabled">
+        <span class="nsw-direction-link__text">
+          Top <span class="sr-only">of page</span>
+        </span>
+        <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </span>
+    
+      <span class="nsw-direction-link is-disabled">
+        <span class="nsw-direction-link__text">
+          Next <span class="sr-only">page</span>
+        </span>
+        <svg class="nsw-icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </span>
+    </div>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-container">
+  <a class="nsw-direction-link" href="#">
+    <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+    <span class="nsw-direction-link__text">
+      Back <span class="sr-only">a page</span>
+    </span>
+  </a>
+
+  <a class="nsw-direction-link" href="#">
+    <span class="nsw-direction-link__text">
+      Bottom <span class="sr-only">of page</span>
+    </span>
+    <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </a>
+
+  <a class="nsw-direction-link" href="#">
+    <span class="nsw-direction-link__text">
+      Top <span class="sr-only">of page</span>
+    </span>
+    <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </a>
+
+  <a class="nsw-direction-link" href="#">
+    <span class="nsw-direction-link__text">
+      Next <span class="sr-only">page</span>
+    </span>
+    <svg class="nsw-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </a>
+</div>
+
+<div class="nsw-container">
+  <span class="nsw-direction-link nsw-direction-link--icon-left is-disabled">
+    <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+    <span class="nsw-direction-link__text">
+      Back <span class="sr-only">a page</span>
+    </span>
+  </span>
+
+  <span class="nsw-direction-link is-disabled">
+    <span class="nsw-direction-link__text">
+      Bottom <span class="sr-only">of page</span>
+    </span>
+    <svg class="nsw-icon nsw-icon--rotate-90" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </span>
+
+  <span class="nsw-direction-link is-disabled">
+    <span class="nsw-direction-link__text">
+      Top <span class="sr-only">of page</span>
+    </span>
+    <svg class="nsw-icon nsw-icon--rotate-270" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </span>
+
+  <span class="nsw-direction-link is-disabled">
+    <span class="nsw-direction-link__text">
+      Next <span class="sr-only">page</span>
+    </span>
+    <svg class="nsw-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+  </span>
+</div>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        							  &lt;a class&#x3D;&quot;nsw-direction-link&quot; href&#x3D;&quot;#&quot;&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-180&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Back &lt;span class&#x3D;&quot;sr-only&quot;&gt;a page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							  &lt;/a&gt;
-        							
-        							  &lt;a class&#x3D;&quot;nsw-direction-link&quot; href&#x3D;&quot;#&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Bottom &lt;span class&#x3D;&quot;sr-only&quot;&gt;of page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-90&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/a&gt;
-        							
-        							  &lt;a class&#x3D;&quot;nsw-direction-link&quot; href&#x3D;&quot;#&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Top &lt;span class&#x3D;&quot;sr-only&quot;&gt;of page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-270&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/a&gt;
-        							
-        							  &lt;a class&#x3D;&quot;nsw-direction-link&quot; href&#x3D;&quot;#&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Next &lt;span class&#x3D;&quot;sr-only&quot;&gt;page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/a&gt;
-        							&lt;/div&gt;
-        							
-        							&lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        							  &lt;span class&#x3D;&quot;nsw-direction-link nsw-direction-link--icon-left is-disabled&quot;&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-180&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Back &lt;span class&#x3D;&quot;sr-only&quot;&gt;a page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							  &lt;/span&gt;
-        							
-        							  &lt;span class&#x3D;&quot;nsw-direction-link is-disabled&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Bottom &lt;span class&#x3D;&quot;sr-only&quot;&gt;of page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-90&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/span&gt;
-        							
-        							  &lt;span class&#x3D;&quot;nsw-direction-link is-disabled&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Top &lt;span class&#x3D;&quot;sr-only&quot;&gt;of page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon nsw-icon--rotate-270&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/span&gt;
-        							
-        							  &lt;span class&#x3D;&quot;nsw-direction-link is-disabled&quot;&gt;
-        							    &lt;span class&#x3D;&quot;nsw-direction-link__text&quot;&gt;
-        							      Next &lt;span class&#x3D;&quot;sr-only&quot;&gt;page&lt;/span&gt;
-        							    &lt;/span&gt;
-        							    &lt;svg class&#x3D;&quot;nsw-icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-        							      &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-        							    &lt;/svg&gt;
-        							  &lt;/span&gt;
-        							&lt;/div&gt;
-        							
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -509,6 +510,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

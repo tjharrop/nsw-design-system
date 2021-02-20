@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,186 +255,99 @@
           <h1>Layout</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <h1 class="nsw-section-title">Layout</h1>
-        	  		</div>
-        	  	</div>
-        			<div class="nsw-page-layout">
-        			  <main class="nsw-page-layout__main">
-        			    <p>Full width - Main content area</p>
-        			    <div class="nsw-ds-example-container"></div>
-        			  </main>
-        			</div>
-        			
-        			<div class="nsw-page-layout">  
-        			  <div class="nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop">
-        			    <p>Side nav area</p>
-        			    <div class="nsw-ds-example-container"></div>
-        			  </div>
-        			  <main class="nsw-page-layout__main">
-        			    <p>Two column - Main content area</p>
-        			    <div class="nsw-ds-example-container"></div>
-        			  </main>
-        			</div>
-        			
-        			<div class="nsw-page-layout">  
-        			  <main class="nsw-page-layout__main">
-        			    <p>Two column - Main content area</p>
-        			    <div class="nsw-ds-example-container"></div>
-        			  </main>
-        			  <div class="nsw-page-layout__sidebar">
-        			    <p>Sidebar area</p>
-        			    <div class="nsw-ds-example-container"></div>
-        			  </div>
-        			</div>			<div class="nsw-grid-overlay">
-        			  <div class="nsw-container">
-        			    <div class="nsw-grid">
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			      <div class="nsw-col nsw-col-1">
-        			        <div class="nsw-ds-example-box"></div>
-        			      </div>
-        			    </div>
-        			  </div>
-        			</div>
-        	  </div>
-        	</div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;h1 class&#x3D;&quot;nsw-section-title&quot;&gt;Layout&lt;/h1&gt;
-        	  		&lt;/div&gt;
-        	  	&lt;/div&gt;
-        			&lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-        			  &lt;main class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-        			    &lt;p&gt;Full width - Main content area&lt;/p&gt;
-        			    &lt;div class&#x3D;&quot;nsw-ds-example-container&quot;&gt;&lt;/div&gt;
-        			  &lt;/main&gt;
-        			&lt;/div&gt;
-        			
-        			&lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;  
-        			  &lt;div class&#x3D;&quot;nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop&quot;&gt;
-        			    &lt;p&gt;Side nav area&lt;/p&gt;
-        			    &lt;div class&#x3D;&quot;nsw-ds-example-container&quot;&gt;&lt;/div&gt;
-        			  &lt;/div&gt;
-        			  &lt;main class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-        			    &lt;p&gt;Two column - Main content area&lt;/p&gt;
-        			    &lt;div class&#x3D;&quot;nsw-ds-example-container&quot;&gt;&lt;/div&gt;
-        			  &lt;/main&gt;
-        			&lt;/div&gt;
-        			
-        			&lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;  
-        			  &lt;main class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-        			    &lt;p&gt;Two column - Main content area&lt;/p&gt;
-        			    &lt;div class&#x3D;&quot;nsw-ds-example-container&quot;&gt;&lt;/div&gt;
-        			  &lt;/main&gt;
-        			  &lt;div class&#x3D;&quot;nsw-page-layout__sidebar&quot;&gt;
-        			    &lt;p&gt;Sidebar area&lt;/p&gt;
-        			    &lt;div class&#x3D;&quot;nsw-ds-example-container&quot;&gt;&lt;/div&gt;
-        			  &lt;/div&gt;
-        			&lt;/div&gt;			&lt;div class&#x3D;&quot;nsw-grid-overlay&quot;&gt;
-        			  &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-        			    &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			      &lt;div class&#x3D;&quot;nsw-col nsw-col-1&quot;&gt;
-        			        &lt;div class&#x3D;&quot;nsw-ds-example-box&quot;&gt;&lt;/div&gt;
-        			      &lt;/div&gt;
-        			    &lt;/div&gt;
-        			  &lt;/div&gt;
-        			&lt;/div&gt;
-        	  &lt;/div&gt;
-        	&lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <h1 class="nsw-section-title">Layout</h1>
+	  		</div>
+	  	</div>
+			<div class="nsw-page-layout">
+			  <main class="nsw-page-layout__main">
+			    <p>Full width - Main content area</p>
+			    <div class="nsw-ds-example-container"></div>
+			  </main>
+			</div>
+			
+			<div class="nsw-page-layout">  
+			  <div class="nsw-page-layout__sidebar nsw-page-layout__sidebar--desktop">
+			    <p>Side nav area</p>
+			    <div class="nsw-ds-example-container"></div>
+			  </div>
+			  <main class="nsw-page-layout__main">
+			    <p>Two column - Main content area</p>
+			    <div class="nsw-ds-example-container"></div>
+			  </main>
+			</div>
+			
+			<div class="nsw-page-layout">  
+			  <main class="nsw-page-layout__main">
+			    <p>Two column - Main content area</p>
+			    <div class="nsw-ds-example-container"></div>
+			  </main>
+			  <div class="nsw-page-layout__sidebar">
+			    <p>Sidebar area</p>
+			    <div class="nsw-ds-example-container"></div>
+			  </div>
+			</div>			<div class="nsw-grid-overlay">
+			  <div class="nsw-container">
+			    <div class="nsw-grid">
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			      <div class="nsw-col nsw-col-1">
+			        <div class="nsw-ds-example-box"></div>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+	  </div>
+	</div>
+</main>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -458,6 +373,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

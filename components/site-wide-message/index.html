@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,152 +255,100 @@
           <h1>Global alert</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141265" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141265" class="nsw-tabs__content">
-              <p>Global alerts display across the top of an entire site to convey important information to users.</p>
-        <h2 id="using-global-alerts">Using global alerts</h2>
-        <ul>
-        <li>global alerts are designed to capture the attention of the user in a deliberately intrusive way</li>
-        <li>global alerts persist over a session but are user dismissible</li>
-        <li>global alerts are purposefully created and not initiated by a user interaction or system event</li>
-        </ul>
-        <h3 id="global-alert-states">Global alert states</h3>
-        <p>Global alerts are styled according to their purpose:</p>
-        <ul>
-        <li><strong>Default alert</strong> - used to convey non-critical important information</li>
-        <li><strong>Critical alert</strong> - used to convey critical information</li>
-        <li><strong>Light alert</strong> - used as an alternative to the blue default on sites where blue features prominently.</li>
-        </ul>
-        <h3 id="when-to-use-global-alerts">When to use global alerts:</h3>
-        <ul>
-        <li>use to attract the attention of the user for important messages, or to encourage an action</li>
-        <li>use for messages or actions that are relevant to the entire product or system, not just a feature or page</li>
-        </ul>
-        <p>Do:</p>
-        <ul>
-        <li>use clear, concise easy to understand language, to minimise cognitive load.</li>
-        <li>use at the upper most part of the screen, before the masthead.</li>
-        <li>reserve the use of the critical alert for circumstances which warrant it.</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Do not display in response to an action initiated by a user interaction or system event.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <div class="nsw-sitewide-message  js-sitewide-message" role="alert">
-          <div class="nsw-sitewide-message__wrapper">
-            <div class="nsw-sitewide-message__content">
-              <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
-              <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
-            </div>
-              <a href="#" class="nsw-button">More information</a>
-            <button type="button" class="nsw-sitewide-message__close">
-              <svg class="nsw-icon " focusable="false" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-              <span class="sr-only">Close message</span>
-            </button>
-          </div>
-        </div>
-        <div class="nsw-sitewide-message nsw-sitewide-message--light js-sitewide-message" role="alert">
-          <div class="nsw-sitewide-message__wrapper">
-            <div class="nsw-sitewide-message__content">
-              <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
-              <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
-            </div>
-              <a href="#" class="nsw-button">More information</a>
-            <button type="button" class="nsw-sitewide-message__close">
-              <svg class="nsw-icon " focusable="false" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-              <span class="sr-only">Close message</span>
-            </button>
-          </div>
-        </div>
-        <div class="nsw-sitewide-message nsw-sitewide-message--critical js-sitewide-message" role="alert">
-          <div class="nsw-sitewide-message__wrapper">
-            <div class="nsw-sitewide-message__content">
-              <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
-              <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
-            </div>
-              <a href="#" class="nsw-button">More information</a>
-            <button type="button" class="nsw-sitewide-message__close">
-              <svg class="nsw-icon " focusable="false" aria-hidden="true">
-                <use xlink:href="#close"></use>
-              </svg>
-              <span class="sr-only">Close message</span>
-            </button>
-          </div>
-        </div>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;div class&#x3D;&quot;nsw-sitewide-message  js-sitewide-message&quot; role&#x3D;&quot;alert&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-sitewide-message__wrapper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-sitewide-message__content&quot;&gt;
-              &lt;h2 class&#x3D;&quot;nsw-sitewide-message__title&quot;&gt;State of Emergency for NSW&lt;/h2&gt;
-              &lt;p&gt;Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.&lt;/p&gt;
-            &lt;/div&gt;
-              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button&quot;&gt;More information&lt;/a&gt;
-            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-sitewide-message__close&quot;&gt;
-              &lt;svg class&#x3D;&quot;nsw-icon &quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-              &lt;/svg&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close message&lt;/span&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;nsw-sitewide-message nsw-sitewide-message--light js-sitewide-message&quot; role&#x3D;&quot;alert&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-sitewide-message__wrapper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-sitewide-message__content&quot;&gt;
-              &lt;h2 class&#x3D;&quot;nsw-sitewide-message__title&quot;&gt;State of Emergency for NSW&lt;/h2&gt;
-              &lt;p&gt;Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.&lt;/p&gt;
-            &lt;/div&gt;
-              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button&quot;&gt;More information&lt;/a&gt;
-            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-sitewide-message__close&quot;&gt;
-              &lt;svg class&#x3D;&quot;nsw-icon &quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-              &lt;/svg&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close message&lt;/span&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        &lt;div class&#x3D;&quot;nsw-sitewide-message nsw-sitewide-message--critical js-sitewide-message&quot; role&#x3D;&quot;alert&quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-sitewide-message__wrapper&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-sitewide-message__content&quot;&gt;
-              &lt;h2 class&#x3D;&quot;nsw-sitewide-message__title&quot;&gt;State of Emergency for NSW&lt;/h2&gt;
-              &lt;p&gt;Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.&lt;/p&gt;
-            &lt;/div&gt;
-              &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-button&quot;&gt;More information&lt;/a&gt;
-            &lt;button type&#x3D;&quot;button&quot; class&#x3D;&quot;nsw-sitewide-message__close&quot;&gt;
-              &lt;svg class&#x3D;&quot;nsw-icon &quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                &lt;use xlink:href&#x3D;&quot;#close&quot;&gt;&lt;/use&gt;
-              &lt;/svg&gt;
-              &lt;span class&#x3D;&quot;sr-only&quot;&gt;Close message&lt;/span&gt;
-            &lt;/button&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141265" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141265" class="nsw-tabs__content">
+      <p>Global alerts display across the top of an entire site to convey important information to users.</p>
+<h2 id="using-global-alerts">Using global alerts</h2>
+<ul>
+<li>global alerts are designed to capture the attention of the user in a deliberately intrusive way</li>
+<li>global alerts persist over a session but are user dismissible</li>
+<li>global alerts are purposefully created and not initiated by a user interaction or system event</li>
+</ul>
+<h3 id="global-alert-states">Global alert states</h3>
+<p>Global alerts are styled according to their purpose:</p>
+<ul>
+<li><strong>Default alert</strong> - used to convey non-critical important information</li>
+<li><strong>Critical alert</strong> - used to convey critical information</li>
+<li><strong>Light alert</strong> - used as an alternative to the blue default on sites where blue features prominently.</li>
+</ul>
+<h3 id="when-to-use-global-alerts">When to use global alerts:</h3>
+<ul>
+<li>use to attract the attention of the user for important messages, or to encourage an action</li>
+<li>use for messages or actions that are relevant to the entire product or system, not just a feature or page</li>
+</ul>
+<p>Do:</p>
+<ul>
+<li>use clear, concise easy to understand language, to minimise cognitive load.</li>
+<li>use at the upper most part of the screen, before the masthead.</li>
+<li>reserve the use of the critical alert for circumstances which warrant it.</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Do not display in response to an action initiated by a user interaction or system event.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<div class="nsw-sitewide-message  js-sitewide-message" role="alert">
+  <div class="nsw-sitewide-message__wrapper">
+    <div class="nsw-sitewide-message__content">
+      <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
+      <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
+    </div>
+      <a href="#" class="nsw-button">More information</a>
+    <button type="button" class="nsw-sitewide-message__close">
+      <svg class="nsw-icon " focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close message</span>
+    </button>
+  </div>
+</div>
+<div class="nsw-sitewide-message nsw-sitewide-message--light js-sitewide-message" role="alert">
+  <div class="nsw-sitewide-message__wrapper">
+    <div class="nsw-sitewide-message__content">
+      <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
+      <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
+    </div>
+      <a href="#" class="nsw-button">More information</a>
+    <button type="button" class="nsw-sitewide-message__close">
+      <svg class="nsw-icon " focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close message</span>
+    </button>
+  </div>
+</div>
+<div class="nsw-sitewide-message nsw-sitewide-message--critical js-sitewide-message" role="alert">
+  <div class="nsw-sitewide-message__wrapper">
+    <div class="nsw-sitewide-message__content">
+      <h2 class="nsw-sitewide-message__title">State of Emergency for NSW</h2>
+      <p>Catastrophic weather conditions are forecast this week for north and north west regions of NSW. Keep up to date with the latest bush fires alerts and warnings in your area.</p>
+    </div>
+      <a href="#" class="nsw-button">More information</a>
+    <button type="button" class="nsw-sitewide-message__close">
+      <svg class="nsw-icon " focusable="false" aria-hidden="true">
+        <use xlink:href="#close"></use>
+      </svg>
+      <span class="sr-only">Close message</span>
+    </button>
+  </div>
+</div>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -424,6 +374,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

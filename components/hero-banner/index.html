@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -253,105 +255,81 @@
           <h1>Hero banner</h1>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141209" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#section141208" class="nsw-tabs__link">Customisation</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141209" class="nsw-tabs__content">
-              <p>The hero pattern uses a simple tagline and description, as well as imagery to call out specific information, or promote an area of the site.</p>
-        <h2 id="using-hero-banner">Using hero banner</h2>
-        <p>Use the hero pattern to promote a product, service or special event, keeping the title and description brief and to the point.</p>
-        <ul>
-        <li><strong>Dark hero pattern</strong> - The dark hero is used with light images, to ensure sufficient contrast.</li>
-        <li><strong>Light hero pattern</strong> - The light hero is used with dark images, to ensure sufficient contrast.</li>
-        </ul>
-        <p>Do:</p>
-        <ul>
-        <li>ensure the image has the focal point on the right.</li>
-        <li>check that you retain a &#39;safe space&#39; on the left of the image as you resize your browser through a full range of sizes.</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Do not use for sites or products:</p>
-        <ul>
-        <li>with large volumes of content where users may search for a variety of options, consider Hero search</li>
-        <li>where the primary navigation of your users is via search, consider Hero Search</li>
-        <li>when research has shown that users prefer to search rather than browse by navigation, consider Hero Search</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p><strong>Placement</strong></p>
-        <p>Place the hero at the top of the main content area as the central point of focus on the page.</p>
-        <p><strong>Banner image</strong></p>
-        <p>The image should have an aspect ratio of 8:5 (1250px high by 2000px wide)</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        <p>.</p>
-        
-        
-          </section>
-          <section id="section141208" class="nsw-tabs__content">
-              <h2 id="customisation">Customisation</h2>
-        <p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
-        <p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
-        <pre><code>$nsw-primary-highlight: #d7153a !default;</code></pre><p>** Add example**</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            <div class="nsw-hero-banner ">
-          <div class="nsw-container">
-            <div class="nsw-hero-banner__image-area">
-              <img src="https://picsum.photos/id/695/2000/1250" class="nsw-hero-banner__image" alt="">
-            </div>
-            <div class="nsw-hero-banner__content-area">
-              <div class="nsw-hero-banner__content">
-                <h2 class="nsw-hero-banner__title">
-                  <a href="#" class="nsw-hero-banner__link">Buy Regional this Christmas</a>
-                </h2>
-                <p>NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.</p>
-                <svg class="nsw-icon nsw-hero-banner__icon" focusable="false" aria-hidden="true">
-                  <use xlink:href="#arrow"></use>
-                </svg>
-              </div>
-            </div>
-          </div>
-        </div>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">&lt;div class&#x3D;&quot;nsw-hero-banner &quot;&gt;
-          &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-hero-banner__image-area&quot;&gt;
-              &lt;img src&#x3D;&quot;https://picsum.photos/id/695/2000/1250&quot; class&#x3D;&quot;nsw-hero-banner__image&quot; alt&#x3D;&quot;&quot;&gt;
-            &lt;/div&gt;
-            &lt;div class&#x3D;&quot;nsw-hero-banner__content-area&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-hero-banner__content&quot;&gt;
-                &lt;h2 class&#x3D;&quot;nsw-hero-banner__title&quot;&gt;
-                  &lt;a href&#x3D;&quot;#&quot; class&#x3D;&quot;nsw-hero-banner__link&quot;&gt;Buy Regional this Christmas&lt;/a&gt;
-                &lt;/h2&gt;
-                &lt;p&gt;NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.&lt;/p&gt;
-                &lt;svg class&#x3D;&quot;nsw-icon nsw-hero-banner__icon&quot; focusable&#x3D;&quot;false&quot; aria-hidden&#x3D;&quot;true&quot;&gt;
-                  &lt;use xlink:href&#x3D;&quot;#arrow&quot;&gt;&lt;/use&gt;
-                &lt;/svg&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/div&gt;
-        </code></pre>
-          </section>
-        </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141209" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#section141208" class="nsw-tabs__link">Customisation</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141209" class="nsw-tabs__content">
+      <p>The hero pattern uses a simple tagline and description, as well as imagery to call out specific information, or promote an area of the site.</p>
+<h2 id="using-hero-banner">Using hero banner</h2>
+<p>Use the hero pattern to promote a product, service or special event, keeping the title and description brief and to the point.</p>
+<ul>
+<li><strong>Dark hero pattern</strong> - The dark hero is used with light images, to ensure sufficient contrast.</li>
+<li><strong>Light hero pattern</strong> - The light hero is used with dark images, to ensure sufficient contrast.</li>
+</ul>
+<p>Do:</p>
+<ul>
+<li>ensure the image has the focal point on the right.</li>
+<li>check that you retain a &#39;safe space&#39; on the left of the image as you resize your browser through a full range of sizes.</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Do not use for sites or products:</p>
+<ul>
+<li>with large volumes of content where users may search for a variety of options, consider Hero search</li>
+<li>where the primary navigation of your users is via search, consider Hero Search</li>
+<li>when research has shown that users prefer to search rather than browse by navigation, consider Hero Search</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p><strong>Placement</strong></p>
+<p>Place the hero at the top of the main content area as the central point of focus on the page.</p>
+<p><strong>Banner image</strong></p>
+<p>The image should have an aspect ratio of 8:5 (1250px high by 2000px wide)</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+<p>.</p>
+
+
+  </section>
+  <section id="section141208" class="nsw-tabs__content">
+      <h2 id="customisation">Customisation</h2>
+<p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
+<p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
+<pre><code>$nsw-primary-highlight: #d7153a !default;</code></pre><p>** Add example**</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    <div class="nsw-hero-banner ">
+  <div class="nsw-container">
+    <div class="nsw-hero-banner__image-area">
+      <img src="https://picsum.photos/id/695/2000/1250" class="nsw-hero-banner__image" alt="">
+    </div>
+    <div class="nsw-hero-banner__content-area">
+      <div class="nsw-hero-banner__content">
+        <h2 class="nsw-hero-banner__title">
+          <a href="#" class="nsw-hero-banner__link">Buy Regional this Christmas</a>
+        </h2>
+        <p>NSW is facing one of the worst droughts on record. Buy Regional and support communities in need this Christmas.</p>
+        <svg class="nsw-icon nsw-hero-banner__icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -377,6 +355,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>

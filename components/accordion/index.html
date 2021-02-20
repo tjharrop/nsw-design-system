@@ -11,7 +11,7 @@
   <link rel="icon" href="../../favicon.ico">
   <link rel="stylesheet" href="../../css/main.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/default.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/atom-one-light.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/xml.min.js"></script>  <script>
     // SVG Sprite Loader
@@ -29,7 +29,9 @@
     (function(e){e.className=e.className.replace(/\bno-js\b/,'js')})(document.documentElement);
   </script>
   <style>
-    .nsw-container {position: relative;} /* to align grid overlay */
+    .ui-dev-demo pre {
+      display: none;
+    }
   </style>
 </head>
 
@@ -251,141 +253,177 @@
     <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Accordion</h1>
+            <p>An accordion is a series of expandable vertical panels, designed to save space on a page by hiding content and revealing it as required.</p>
       </div>
       <div>
-        <div class="nsw-tabs js-tabs">
-          <div class="nsw-p-left-md nsw-bg--light-10">
-            <ul class="nsw-tabs__list">
-              <li class="nsw-tabs__list-item">
-                <a href="#section141121" class="nsw-tabs__link">Guidance</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
-              </li>
-              <li class="nsw-tabs__list-item">
-                <a href="#codesection" class="nsw-tabs__link">Code</a>
-              </li>
-            </ul>
-          </div>
-          <section id="section141121" class="nsw-tabs__content">
-              <p>An accordion is a series of expandable vertical panels, designed to save space on a page by hiding content and revealing it as required.</p>
-        <h2 id="using-accordions">Using accordions</h2>
-        <p>Accordions can work well for people who use a service regularly, or who need to perform familiar tasks quickly.</p>
-        <p>Only use an accordion if there’s evidence it’s helpful for users to:</p>
-        <ul>
-        <li>see an overview of multiple, related sections of content</li>
-        <li>show and hide those sections as needed</li>
-        </ul>
-        <h2 id="when-to-avoid">When to avoid</h2>
-        <p>Test your content without an accordion first. Consider if it’s better to:</p>
-        <ul>
-        <li>simplify and reduce the amount of content</li>
-        <li>split the content across multiple pages</li>
-        <li>keep the content on a single page, separated by headings</li>
-        <li>use a list of links to let users navigate quickly to specific sections of content</li>
-        <li>use the Tab component for users who need to switch quickly between 2 sections. Accordions push other sections down the page when they open, but tabs do not move which makes it easier to switch.</li>
-        </ul>
-        <p>Do not:</p>
-        <ul>
-        <li>use the accordion if the amount of content it would need to contain will make the page slow to load</li>
-        <li>use accordions to split up a series of questions into sections. Use separate pages instead</li>
-        <li>use with very short content, use lists or paragraphs</li>
-        <li>use with very long content, use tabs or separate pages</li>
-        <li>add any other UI elements within the header</li>
-        <li>use where important information can be hidden and missed</li>
-        <li>use an accordion to shorten a page.</li>
-        </ul>
-        <h2 id="how-this-component-works">How this component works</h2>
-        <p><strong>Use clear labels</strong></p>
-        <p>Accordions hide content, so the labels need to be clear. Ensure the headings used are brief and explicit about what is contained in the hidden panel. Intuitive headings help the user build a clear mental model of the content.</p>
-        <p><strong>Do not disable sections</strong></p>
-        <p>Accordions can be set open or closed. They can be configured to only allow 1 panel to be open at a time. Do not use with only 1 panel allowed to be open at once, if people need to compare items in different panels.</p>
-        <p>Disabling controls is normally confusing for users. If there is no content for a section, either remove the section or, if this would be confusing for your users, explain why there is no content when the section is opened.</p>
-        <p>Consider tabs if the user would likely need to flick between content sections.</p>
-        <p><strong>Direct the user</strong></p>
-        <p>A directional arrow indicates that the panel is expandable or collapsible. This is further suggested by a hover state which lets the user know the entire title bar is clickable.</p>
-        <h2 id="accessibility">Accessibility</h2>
-        <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
-        
-        
-          </section>
-          <section id="demosection" class="nsw-tabs__content">
-            
-        <main>
-          <div class="nsw-section--white">
-            <div class="nsw-container">
-              <div class="nsw-page-layout">
-                <div class="nsw-page-layout__main">
-                  <div class="nsw-grid">
-                    <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-        							<div class="nsw-accordion js-accordion">
-        							  <h2 class="nsw-accordion__title">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</h2>
-        							  <div class="nsw-accordion__content">
-        							  	<div class="nsw-wysiwyg-content">
-        							    	<p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
-        							    </div>
-        							  </div>
-        							  <h2 class="nsw-accordion__title">HomeBuilder program</h2>
-        							  <div class="nsw-accordion__content">
-        							  	<div class="nsw-wysiwyg-content">
-        							    	<p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
-        							    </div>
-        							  </div>
-        							  <h2 class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</h2>
-        							  <div class="nsw-accordion__content">
-        							  	<div class="nsw-wysiwyg-content">
-        							    	<p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
-        							    </div>
-        							  </div>
-        							</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+<div class="nsw-tabs js-tabs">
+  <div class="nsw-p-left-md nsw-bg--light-10">
+    <ul class="nsw-tabs__list">
+      <li class="nsw-tabs__list-item">
+        <a href="#section141121" class="nsw-tabs__link">Guidance</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+      </li>
+      <li class="nsw-tabs__list-item">
+        <a href="#figmapreview" class="nsw-tabs__link">Figma</a>
+      </li>
+    </ul>
+  </div>
+  <section id="section141121" class="nsw-tabs__content">
+      <p>An accordion is a series of expandable vertical panels, designed to save space on a page by hiding content and revealing it as required.</p>
+<h2 id="using-accordions">Using accordions</h2>
+<p>Accordions can work well for people who use a service regularly, or who need to perform familiar tasks quickly.</p>
+<p>Only use an accordion if there’s evidence it’s helpful for users to:</p>
+<ul>
+<li>see an overview of multiple, related sections of content</li>
+<li>show and hide those sections as needed</li>
+</ul>
+<h2 id="when-to-avoid">When to avoid</h2>
+<p>Test your content without an accordion first. Consider if it’s better to:</p>
+<ul>
+<li>simplify and reduce the amount of content</li>
+<li>split the content across multiple pages</li>
+<li>keep the content on a single page, separated by headings</li>
+<li>use a list of links to let users navigate quickly to specific sections of content</li>
+<li>use the Tab component for users who need to switch quickly between 2 sections. Accordions push other sections down the page when they open, but tabs do not move which makes it easier to switch.</li>
+</ul>
+<p>Do not:</p>
+<ul>
+<li>use the accordion if the amount of content it would need to contain will make the page slow to load</li>
+<li>use accordions to split up a series of questions into sections. Use separate pages instead</li>
+<li>use with very short content, use lists or paragraphs</li>
+<li>use with very long content, use tabs or separate pages</li>
+<li>add any other UI elements within the header</li>
+<li>use where important information can be hidden and missed</li>
+<li>use an accordion to shorten a page.</li>
+</ul>
+<h2 id="how-this-component-works">How this component works</h2>
+<p><strong>Use clear labels</strong></p>
+<p>Accordions hide content, so the labels need to be clear. Ensure the headings used are brief and explicit about what is contained in the hidden panel. Intuitive headings help the user build a clear mental model of the content.</p>
+<p><strong>Do not disable sections</strong></p>
+<p>Accordions can be set open or closed. They can be configured to only allow 1 panel to be open at a time. Do not use with only 1 panel allowed to be open at once, if people need to compare items in different panels.</p>
+<p>Disabling controls is normally confusing for users. If there is no content for a section, either remove the section or, if this would be confusing for your users, explain why there is no content when the section is opened.</p>
+<p>Consider tabs if the user would likely need to flick between content sections.</p>
+<p><strong>Direct the user</strong></p>
+<p>A directional arrow indicates that the panel is expandable or collapsible. This is further suggested by a hover state which lets the user know the entire title bar is clickable.</p>
+<h2 id="accessibility">Accessibility</h2>
+<p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
+
+
+  </section>
+  <section id="demosection" class="nsw-tabs__content">
+    
+<main>
+  <div class="nsw-section--white">
+    <div class="nsw-container">
+      <div class="nsw-page-layout">
+        <div class="nsw-page-layout__main">
+          <div class="nsw-grid">
+            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
+							<div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-accordion js-accordion">
+      <h2 class="nsw-accordion__title">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</h2>
+      <div class="nsw-accordion__content">
+      	<div class="nsw-wysiwyg-content">
+        	<p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+        </div>
+      </div>
+      <h2 class="nsw-accordion__title">HomeBuilder program</h2>
+      <div class="nsw-accordion__content">
+      	<div class="nsw-wysiwyg-content">
+        	<p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+        </div>
+      </div>
+      <h2 class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</h2>
+      <div class="nsw-accordion__content">
+      	<div class="nsw-wysiwyg-content">
+        	<p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-accordion js-accordion">
+  <h2 class="nsw-accordion__title">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</h2>
+  <div class="nsw-accordion__content">
+  	<div class="nsw-wysiwyg-content">
+    	<p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+    </div>
+  </div>
+  <h2 class="nsw-accordion__title">HomeBuilder program</h2>
+  <div class="nsw-accordion__content">
+  	<div class="nsw-wysiwyg-content">
+    	<p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+    </div>
+  </div>
+  <h2 class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</h2>
+  <div class="nsw-accordion__content">
+  	<div class="nsw-wysiwyg-content">
+    	<p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+    </div>
+  </div>
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
-        </main>
-        
-          </section>
-          <section id="codesection" class="nsw-tabs__content">
-            <pre><code class="html">
-        &lt;main&gt;
-          &lt;div class&#x3D;&quot;nsw-section--white&quot;&gt;
-            &lt;div class&#x3D;&quot;nsw-container&quot;&gt;
-              &lt;div class&#x3D;&quot;nsw-page-layout&quot;&gt;
-                &lt;div class&#x3D;&quot;nsw-page-layout__main&quot;&gt;
-                  &lt;div class&#x3D;&quot;nsw-grid&quot;&gt;
-                    &lt;div class&#x3D;&quot;nsw-col nsw-col-lg-8 nsw-offset-lg-2&quot;&gt;
-        							&lt;div class&#x3D;&quot;nsw-accordion js-accordion&quot;&gt;
-        							  &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;First Home Owner&amp;#x27;s Grant (New Homes) scheme (FHOG)&lt;/h2&gt;
-        							  &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-        							  	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-        							    	&lt;p&gt;Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner&#x27;s Grant (FHOG) scheme.&lt;/p&gt;&lt;p&gt;This grant scheme only applies to buying or building a new home.&lt;/p&gt;&lt;p&gt;You can make a claim if:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;your home is newly constructed and has a total value of less than $600,000&lt;/li&gt;&lt;li&gt;the land and the dwelling you intend to build has a combined value of less than $750,000.&lt;/li&gt;&lt;/ul&gt;
-        							    &lt;/div&gt;
-        							  &lt;/div&gt;
-        							  &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;HomeBuilder program&lt;/h2&gt;
-        							  &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-        							  	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-        							    	&lt;p&gt;If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;sign the contract between 4 June 2020 and 31 December 2020&lt;/li&gt;&lt;li&gt;commence within 3 months of the contract date.&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.&lt;/p&gt;
-        							    &lt;/div&gt;
-        							  &lt;/div&gt;
-        							  &lt;h2 class&#x3D;&quot;nsw-accordion__title&quot;&gt;First Home Buyer Assistance scheme (FHBAS)&lt;/h2&gt;
-        							  &lt;div class&#x3D;&quot;nsw-accordion__content&quot;&gt;
-        							  	&lt;div class&#x3D;&quot;nsw-wysiwyg-content&quot;&gt;
-        							    	&lt;p&gt;The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.&lt;/p&gt;
-        							    &lt;/div&gt;
-        							  &lt;/div&gt;
-        							&lt;/div&gt;
-                    &lt;/div&gt;
-                  &lt;/div&gt;
-                &lt;/div&gt;
-              &lt;/div&gt;
-            &lt;/div&gt;
-          &lt;/div&gt;
-        &lt;/main&gt;
-        </code></pre>
-          </section>
         </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!--sample
+  <div class="nsw-accordion js-accordion">
+    <h2 class="nsw-accordion__title">First Home Owner&#x27;s Grant (New Homes) scheme (FHOG)</h2>
+    <div class="nsw-accordion__content">
+    	<div class="nsw-wysiwyg-content">
+      	<p>Buying or building your first home? You may be eligible for a $10,000 grant under the First Home Owner's Grant (FHOG) scheme.</p><p>This grant scheme only applies to buying or building a new home.</p><p>You can make a claim if:</p><ul><li>your home is newly constructed and has a total value of less than $600,000</li><li>the land and the dwelling you intend to build has a combined value of less than $750,000.</li></ul>
+      </div>
+    </div>
+    <h2 class="nsw-accordion__title">HomeBuilder program</h2>
+    <div class="nsw-accordion__content">
+    	<div class="nsw-wysiwyg-content">
+      	<p>If you are building a new home, you could also be able to apply for the Australian Government grant of $25,000. To be eligible you must:</p><ul><li>sign the contract between 4 June 2020 and 31 December 2020</li><li>commence within 3 months of the contract date.</li></ul><p>HomeBuilder complements the NSW Government’s existing First Home Owner Grant and stamp duty concessions.</p>
+      </div>
+    </div>
+    <h2 class="nsw-accordion__title">First Home Buyer Assistance scheme (FHBAS)</h2>
+    <div class="nsw-accordion__content">
+    	<div class="nsw-wysiwyg-content">
+      	<p>The NSW Government recently announced increased thresholds for purchases of new homes and vacant land to build a new home from 1 August 2020.  The threshold for existing home purchases remains unchanged.</p>
+      </div>
+    </div>
+  </div>
+endsample-->
+
+  </section>
+  <section id="figmapreview" class="nsw-tabs__content">
+    <iframe
+      height="450"
+      width="100%"
+      style="border:0;"
+      src="https://www.figma.com/embed?embed_host=astra&url=https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id&#x3D;0%3A1176"
+      allowfullscreen
+      title="Figma preview"
+    ></iframe>
+  </section>
+</div>
       </div>
     </div>
   </div>
@@ -411,6 +449,13 @@
   <script>
     window.NSW.initSite()
     hljs.initHighlightingOnLoad();
+    document.addEventListener('click', function (event) {
+      if (!event.target.matches('.showHTML')) return;
+      event.preventDefault();
+      console.log(event.target);
+      event.target.nextElementSibling.style.display = 'block';
+      event.target.style.display = 'none';
+    }, false)
 </script>
 </body>
 </html>
