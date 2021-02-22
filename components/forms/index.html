@@ -53,7 +53,7 @@
       </div>
   </header>
   <div class="nsw-grid nsw-m-none" style="margin:0; /* helpers don't override grid */">
-    <div class="nsw-col-3 nsw-col">
+    <div class="nsw-col-3 nsw-col nsw-show-lg">
       <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
         <div class="nsw-sidenav__header">
           <h2 id="componentsTitle" class="nsw-sidenav__heading">
@@ -250,7 +250,19 @@
         </ul> -->
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
+    <div class="nsw-col-12 nsw-hide-lg nsw-bg--light-10 nsw-p-left-md">
+      <p>
+        <a class="nsw-direction-link" href="#">
+          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+            <use xlink:href="#arrow"></use>
+          </svg>
+          <span class="nsw-direction-link__text">
+            Back <span class="sr-only">to home screen</span>
+          </span>
+        </a>
+      </p>
+    </div>
+    <div class="nsw-p-none nsw-col-12 nsw-col-lg-9 nsw-col " style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Forms</h1>
       </div>
@@ -259,14 +271,14 @@
   <div class="nsw-p-left-md nsw-bg--light-10">
     <ul class="nsw-tabs__list">
       <li class="nsw-tabs__list-item">
-        <a href="#section141195" class="nsw-tabs__link">Guidance</a>
+        <a href="#section141194" class="nsw-tabs__link">Guidance</a>
       </li>
       <li class="nsw-tabs__list-item">
         <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
       </li>
     </ul>
   </div>
-  <section id="section141195" class="nsw-tabs__content">
+  <section id="section141194" class="nsw-tabs__content">
       <p>Forms are used to capture data from users.</p>
 <h2 id="using-forms">Using forms</h2>
 <p>Forms comprise of the form itself and multiple form inputs. Each form is broken down into one or more fieldsets that groups the form elements into logical chunks that make sense to the user, for example, a delivery address.  </p>
@@ -327,30 +339,130 @@
                 <br>
                 <div class="nsw-forms">
                   <div class="nsw-form-group">
-                    <label for="txt1" class="nsw-form-label">Single-line text input:</label>
-                    
-                    <input id="txt1" name="text" class="nsw-form-input" aria-describedby="txt1-helper-text txt1-error-text" >
-                    
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txt1" class="nsw-form-label">Single-line text input:</label>
+    
+    <input id="txt1" name="text" class="nsw-form-input" aria-describedby="txt1-helper-text txt1-error-text" >
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txt1" class="nsw-form-label">Single-line text input:</label>
 
-                    <label for="txta1" class="nsw-form-label">Multi-line text input:</label>
-                    
-                    <textarea class="nsw-form-input" name="textarea" id="txta1" aria-describedby="txta1-helper-text txta1-error-text" ></textarea>
-                    
+<input id="txt1" name="text" class="nsw-form-input" aria-describedby="txt1-helper-text txt1-error-text" >
 
-                    <label for="select1" class="nsw-form-label">Select dropdown:</label>
-                    
-                    <select id="select1" class="nsw-form-select"  aria-describedby="select1-helper-text select1-error-text" >
-                      <option value="">Please select</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txta1" class="nsw-form-label">Multi-line text input:</label>
+    
+    <textarea class="nsw-form-input" name="textarea" id="txta1" aria-describedby="txta1-helper-text txta1-error-text" ></textarea>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txta1" class="nsw-form-label">Multi-line text input:</label>
+
+<textarea class="nsw-form-input" name="textarea" id="txta1" aria-describedby="txta1-helper-text txta1-error-text" ></textarea>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="select1" class="nsw-form-label">Select dropdown:</label>
+    
+    <select id="select1" class="nsw-form-select"  aria-describedby="select1-helper-text select1-error-text" >
+      <option value="">Please select</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="select1" class="nsw-form-label">Select dropdown:</label>
+
+<select id="select1" class="nsw-form-select"  aria-describedby="select1-helper-text select1-error-text" >
+  <option value="">Please select</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
 
                     <div class="nsw-form-checkbox">
-                      <input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox" id="check1" aria-describedby="check1-error-text" >
-                      <label class="nsw-form-checkbox__label" for="check1">Single checkbox:</label>
-                      
+                      <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox" id="check1" aria-describedby="check1-error-text" >
+    <label class="nsw-form-checkbox__label" for="check1">Single checkbox:</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox" id="check1" aria-describedby="check1-error-text" >
+<label class="nsw-form-checkbox__label" for="check1">Single checkbox:</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                     </div>
                   </div>
 
@@ -360,12 +472,40 @@
                         <span class="nsw-form-legend-text">Multiple Radio</span>
                       </legend>
                       <div class="nsw-form-radio">
-                        <input class="nsw-form-radio__input" type="radio" name="defaultradio" id="radio1" aria-describedby="radio1-error-text" >
-                        <label class="nsw-form-radio__label" for="radio1">Radio Option 1</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-radio__input" type="radio" name="defaultradio" id="radio1" aria-describedby="radio1-error-text" >
+    <label class="nsw-form-radio__label" for="radio1">Radio Option 1</label>
+    
+    
+                            <input class="nsw-form-radio__input" type="radio" name="defaultradio" id="radio2" aria-describedby="radio2-error-text" >
+    <label class="nsw-form-radio__label" for="radio2">Radio Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-radio__input" type="radio" name="defaultradio" id="radio1" aria-describedby="radio1-error-text" >
+<label class="nsw-form-radio__label" for="radio1">Radio Option 1</label>
+
+
                         <input class="nsw-form-radio__input" type="radio" name="defaultradio" id="radio2" aria-describedby="radio2-error-text" >
-                        <label class="nsw-form-radio__label" for="radio2">Radio Option 2</label>
-                        
+<label class="nsw-form-radio__label" for="radio2">Radio Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>
@@ -376,12 +516,40 @@
                         <span class="nsw-form-legend-text">Multiple Checkbox</span>
                       </legend>
                       <div class="nsw-form-checkbox">
-                        <input class="nsw-form-checkbox__input" type="checkbox" name="defaultcheck" id="checkbox1a" aria-describedby="checkbox1a-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox1a">Checkbox Option 1</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="defaultcheck" id="checkbox1a" aria-describedby="checkbox1a-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox1a">Checkbox Option 1</label>
+    
+    
+                            <input class="nsw-form-checkbox__input" type="checkbox" name="defaultcheck" id="checkbox2a" aria-describedby="checkbox2a-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox2a">Checkbox Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="defaultcheck" id="checkbox1a" aria-describedby="checkbox1a-error-text" >
+<label class="nsw-form-checkbox__label" for="checkbox1a">Checkbox Option 1</label>
+
+
                         <input class="nsw-form-checkbox__input" type="checkbox" name="defaultcheck" id="checkbox2a" aria-describedby="checkbox2a-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox2a">Checkbox Option 2</label>
-                        
+<label class="nsw-form-checkbox__label" for="checkbox2a">Checkbox Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>
@@ -391,25 +559,102 @@
                 <br>
                 <div class="nsw-forms">
                   <div class="nsw-form-group">
-                    <label for="txt2help" class="nsw-form-label">Single-line text input field:</label>
-                    <span id="txt2help-helper-text" class="nsw-form-helper">This is helper text</span>
-                    <input id="txt2help" name="text" class="nsw-form-input" aria-describedby="txt2help-helper-text txt2help-error-text" >
-                    
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txt2help" class="nsw-form-label">Single-line text input field:</label>
+    <span id="txt2help-helper-text" class="nsw-form-helper">This is helper text</span>
+    <input id="txt2help" name="text" class="nsw-form-input" aria-describedby="txt2help-helper-text txt2help-error-text" >
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txt2help" class="nsw-form-label">Single-line text input field:</label>
+<span id="txt2help-helper-text" class="nsw-form-helper">This is helper text</span>
+<input id="txt2help" name="text" class="nsw-form-input" aria-describedby="txt2help-helper-text txt2help-error-text" >
 
-                    <label for="txta1help" class="nsw-form-label">Multi-line text input:</label>
-                    <span id="txta1help-helper-text" class="nsw-form-helper">This is helper text</span>
-                    <textarea class="nsw-form-input" name="textarea" id="txta1help" aria-describedby="txta1help-helper-text txta1help-error-text" ></textarea>
-                    
+`));
+</script></code></pre>
+  </div>
 
-                    <label for="select1help" class="nsw-form-label">Select dropdown:</label>
-                    <span id="select1help-helper-text" class="nsw-form-helper">This is helper text</span>
-                    <select id="select1help" class="nsw-form-select"  aria-describedby="select1help-helper-text select1help-error-text" >
-                      <option value="">Please select</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txta1help" class="nsw-form-label">Multi-line text input:</label>
+    <span id="txta1help-helper-text" class="nsw-form-helper">This is helper text</span>
+    <textarea class="nsw-form-input" name="textarea" id="txta1help" aria-describedby="txta1help-helper-text txta1help-error-text" ></textarea>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txta1help" class="nsw-form-label">Multi-line text input:</label>
+<span id="txta1help-helper-text" class="nsw-form-helper">This is helper text</span>
+<textarea class="nsw-form-input" name="textarea" id="txta1help" aria-describedby="txta1help-helper-text txta1help-error-text" ></textarea>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="select1help" class="nsw-form-label">Select dropdown:</label>
+    <span id="select1help-helper-text" class="nsw-form-helper">This is helper text</span>
+    <select id="select1help" class="nsw-form-select"  aria-describedby="select1help-helper-text select1help-error-text" >
+      <option value="">Please select</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="select1help" class="nsw-form-label">Select dropdown:</label>
+<span id="select1help-helper-text" class="nsw-form-helper">This is helper text</span>
+<select id="select1help" class="nsw-form-select"  aria-describedby="select1help-helper-text select1help-error-text" >
+  <option value="">Please select</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                   </div>
                   <div class="nsw-form-group">
                     <fieldset class="nsw-form-fieldset">
@@ -418,12 +663,58 @@
                         <span class="nsw-form-helper">This is helper text</span>
                       </legend>
                       <div class="nsw-form-radio">
-                        <input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio1helper" aria-describedby="radio1helper-error-text" >
-                        <label class="nsw-form-radio__label" for="radio1helper">Radio Option 1</label>
-                        
-                        <input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio2helper" aria-describedby="radio2helper-error-text" >
-                        <label class="nsw-form-radio__label" for="radio2helper">Radio Option 2</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio1helper" aria-describedby="radio1helper-error-text" >
+    <label class="nsw-form-radio__label" for="radio1helper">Radio Option 1</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio1helper" aria-describedby="radio1helper-error-text" >
+<label class="nsw-form-radio__label" for="radio1helper">Radio Option 1</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio2helper" aria-describedby="radio2helper-error-text" >
+    <label class="nsw-form-radio__label" for="radio2helper">Radio Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-radio__input" type="radio" name="radiohelper" id="radio2helper" aria-describedby="radio2helper-error-text" >
+<label class="nsw-form-radio__label" for="radio2helper">Radio Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>
@@ -434,12 +725,58 @@
                         <span class="nsw-form-helper">This is helper text</span>
                       </legend>
                       <div class="nsw-form-checkbox">
-                        <input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox1helper" aria-describedby="checkbox1helper-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox1helper">Checkbox Option 1</label>
-                        
-                        <input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox2helper" aria-describedby="checkbox2helper-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox2helper">Checkbox Option 2</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox1helper" aria-describedby="checkbox1helper-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox1helper">Checkbox Option 1</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox1helper" aria-describedby="checkbox1helper-error-text" >
+<label class="nsw-form-checkbox__label" for="checkbox1helper">Checkbox Option 1</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox2helper" aria-describedby="checkbox2helper-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox2helper">Checkbox Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="checkhelper" id="checkbox2helper" aria-describedby="checkbox2helper-error-text" >
+<label class="nsw-form-checkbox__label" for="checkbox2helper">Checkbox Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>
@@ -449,30 +786,130 @@
                 <br>
                 <div class="nsw-forms">
                   <div class="nsw-form-group">
-                    <label for="txt3error" class="nsw-form-label">Single-line text input field:</label>
-                    
-                    <input id="txt3error" name="text" class="nsw-form-input" aria-describedby="txt3error-helper-text txt3error-error-text" aria-invalid="true">
-                    <span id="txt3error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txt3error" class="nsw-form-label">Single-line text input field:</label>
+    
+    <input id="txt3error" name="text" class="nsw-form-input" aria-describedby="txt3error-helper-text txt3error-error-text" aria-invalid="true">
+    <span id="txt3error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txt3error" class="nsw-form-label">Single-line text input field:</label>
 
-                    <label for="txta1error" class="nsw-form-label">Multi-line text input:</label>
-                    
-                    <textarea class="nsw-form-input" name="textarea" id="txta1error" aria-describedby="txta1error-helper-text txta1error-error-text" aria-invalid="true"></textarea>
-                    <span id="txta1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+<input id="txt3error" name="text" class="nsw-form-input" aria-describedby="txt3error-helper-text txt3error-error-text" aria-invalid="true">
+<span id="txt3error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+`));
+</script></code></pre>
+  </div>
 
-                    <label for="select1error" class="nsw-form-label">Select dropdown:</label>
-                    
-                    <select id="select1error" class="nsw-form-select"  aria-describedby="select1error-helper-text select1error-error-text" aria-invalid="true">
-                      <option value="">Please select</option>
-                      <option value="1">Option 1</option>
-                      <option value="2">Option 2</option>
-                      <option value="3">Option 3</option>
-                    </select>
-                    <span id="select1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="txta1error" class="nsw-form-label">Multi-line text input:</label>
+    
+    <textarea class="nsw-form-input" name="textarea" id="txta1error" aria-describedby="txta1error-helper-text txta1error-error-text" aria-invalid="true"></textarea>
+    <span id="txta1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="txta1error" class="nsw-form-label">Multi-line text input:</label>
+
+<textarea class="nsw-form-input" name="textarea" id="txta1error" aria-describedby="txta1error-helper-text txta1error-error-text" aria-invalid="true"></textarea>
+<span id="txta1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+
+                    <div class="code-section">
+  <div class="ui-demo">
+    <label for="select1error" class="nsw-form-label">Select dropdown:</label>
+    
+    <select id="select1error" class="nsw-form-select"  aria-describedby="select1error-helper-text select1error-error-text" aria-invalid="true">
+      <option value="">Please select</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <span id="select1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<label for="select1error" class="nsw-form-label">Select dropdown:</label>
+
+<select id="select1error" class="nsw-form-select"  aria-describedby="select1error-helper-text select1error-error-text" aria-invalid="true">
+  <option value="">Please select</option>
+  <option value="1">Option 1</option>
+  <option value="2">Option 2</option>
+  <option value="3">Option 3</option>
+</select>
+<span id="select1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
 
                     <div class="nsw-form-checkbox">
-                      <input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox-error" id="check1error" aria-describedby="check1error-error-text" aria-invalid="true">
-                      <label class="nsw-form-checkbox__label" for="check1error">Single checkbox:</label>
-                      <span id="check1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+                      <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox-error" id="check1error" aria-describedby="check1error-error-text" aria-invalid="true">
+    <label class="nsw-form-checkbox__label" for="check1error">Single checkbox:</label>
+    <span id="check1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="single-checkbox-error" id="check1error" aria-describedby="check1error-error-text" aria-invalid="true">
+<label class="nsw-form-checkbox__label" for="check1error">Single checkbox:</label>
+<span id="check1error-error-text" class="nsw-form-helper nsw-form-helper--error">There was an error with the input above</span>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                     </div>
                   </div>
                   <div class="nsw-form-group">
@@ -482,12 +919,58 @@
                         <span class="nsw-form-helper nsw-form-helper--error">Please select at least one option</span>
                       </legend>
                       <div class="nsw-form-radio">
-                        <input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio1error" aria-describedby="radio1error-error-text" >
-                        <label class="nsw-form-radio__label" for="radio1error">Radio Option 1</label>
-                        
-                        <input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio2error" aria-describedby="radio2error-error-text" >
-                        <label class="nsw-form-radio__label" for="radio2error">Radio Option 2</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio1error" aria-describedby="radio1error-error-text" >
+    <label class="nsw-form-radio__label" for="radio1error">Radio Option 1</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio1error" aria-describedby="radio1error-error-text" >
+<label class="nsw-form-radio__label" for="radio1error">Radio Option 1</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio2error" aria-describedby="radio2error-error-text" >
+    <label class="nsw-form-radio__label" for="radio2error">Radio Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-radio__input" type="radio" name="radiocheck" id="radio2error" aria-describedby="radio2error-error-text" >
+<label class="nsw-form-radio__label" for="radio2error">Radio Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>
@@ -499,12 +982,58 @@
                         <span class="nsw-form-helper nsw-form-helper--error">Please select at least one option</span>
                       </legend>
                       <div class="nsw-form-checkbox">
-                        <input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox1error" aria-describedby="checkbox1error-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox1error">Checkbox Option 1</label>
-                        
-                        <input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox2error" aria-describedby="checkbox2error-error-text" >
-                        <label class="nsw-form-checkbox__label" for="checkbox2error">Checkbox Option 2</label>
-                        
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox1error" aria-describedby="checkbox1error-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox1error">Checkbox Option 1</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox1error" aria-describedby="checkbox1error-error-text" >
+<label class="nsw-form-checkbox__label" for="checkbox1error">Checkbox Option 1</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
+                        <div class="code-section">
+  <div class="ui-demo">
+    <input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox2error" aria-describedby="checkbox2error-error-text" >
+    <label class="nsw-form-checkbox__label" for="checkbox2error">Checkbox Option 2</label>
+    
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<input class="nsw-form-checkbox__input" type="checkbox" name="errorcheck" id="checkbox2error" aria-describedby="checkbox2error-error-text" >
+<label class="nsw-form-checkbox__label" for="checkbox2error">Checkbox Option 2</label>
+
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
                       </div>
                     </fieldset>
                   </div>

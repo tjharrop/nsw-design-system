@@ -53,7 +53,7 @@
       </div>
   </header>
   <div class="nsw-grid nsw-m-none" style="margin:0; /* helpers don't override grid */">
-    <div class="nsw-col-3 nsw-col">
+    <div class="nsw-col-3 nsw-col nsw-show-lg">
       <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
         <div class="nsw-sidenav__header">
           <h2 id="componentsTitle" class="nsw-sidenav__heading">
@@ -250,7 +250,19 @@
         </ul> -->
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
+    <div class="nsw-col-12 nsw-hide-lg nsw-bg--light-10 nsw-p-left-md">
+      <p>
+        <a class="nsw-direction-link" href="#">
+          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+            <use xlink:href="#arrow"></use>
+          </svg>
+          <span class="nsw-direction-link__text">
+            Back <span class="sr-only">to home screen</span>
+          </span>
+        </a>
+      </p>
+    </div>
+    <div class="nsw-p-none nsw-col-12 nsw-col-lg-9 nsw-col " style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Feature tile</h1>
       </div>
@@ -259,14 +271,14 @@
   <div class="nsw-p-left-md nsw-bg--light-10">
     <ul class="nsw-tabs__list">
       <li class="nsw-tabs__list-item">
-        <a href="#section141178" class="nsw-tabs__link">Guidance</a>
+        <a href="#section141177" class="nsw-tabs__link">Guidance</a>
       </li>
       <li class="nsw-tabs__list-item">
         <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
       </li>
     </ul>
   </div>
-  <section id="section141178" class="nsw-tabs__content">
+  <section id="section141177" class="nsw-tabs__content">
       <h1 id="using-this-pattern">Using this pattern</h1>
 <p>Content TBD</p>
 <p>Do:</p>
@@ -293,45 +305,104 @@
         <div class="nsw-page-layout__main">
           <div class="nsw-grid">
             <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-              <h2 class="nsw-section-title">Links list (less than 6)</h2>
+              <div class="code-section">
+  <div class="ui-demo">
+    <h2 class="nsw-section-title">Links list (less than 6)</h2>
+                  <div class="nsw-feature-tile">
+      <h2 class="nsw-feature-tile__title">
+        <svg class="nsw-icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+        Standards
+      </h2>
+      <div class="nsw-body-content">
+        <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+      </div>
+      <div class="nsw-feature-tile__cards-group">
+      </div>
+      <div class="nsw-feature-tile__links-group">
+        <ul >
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing for inclusivity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing style</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content audit</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<h2 class="nsw-section-title">Links list (less than 6)</h2>
               <div class="nsw-feature-tile">
-                <h2 class="nsw-feature-tile__title">
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                  Standards
-                </h2>
-                <div class="nsw-body-content">
-                  <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
-                </div>
-                <div class="nsw-feature-tile__cards-group">
-                </div>
-                <div class="nsw-feature-tile__links-group">
-                  <ul >
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing for inclusivity</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing style</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content audit</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
+  <h2 class="nsw-feature-tile__title">
+    <svg class="nsw-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+    Standards
+  </h2>
+  <div class="nsw-body-content">
+    <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+  </div>
+  <div class="nsw-feature-tile__cards-group">
+  </div>
+  <div class="nsw-feature-tile__links-group">
+    <ul >
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing for inclusivity</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing style</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content audit</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
         </div>
@@ -346,54 +417,122 @@
           <div class="nsw-grid">
             <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
               <h2 class="nsw-section-title">Links list (more than 6)</h2>
-              <div class="nsw-feature-tile">
-                <h2 class="nsw-feature-tile__title">
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                  Standards
-                </h2>
-                <div class="nsw-body-content">
-                  <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
-                </div>
-                <div class="nsw-feature-tile__cards-group">
-                </div>
-                <div class="nsw-feature-tile__links-group">
-                  <ul class="nsw-feature-tile__double-list">
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content basics</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing for inclusivity</span> <sup class="new-text">NEW</sup>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing style</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Finding a tone of voice</span> <sup class="new-text">NEW</sup>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content audit</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content structure</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                
-              </div>
+              <div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-feature-tile">
+      <h2 class="nsw-feature-tile__title">
+        <svg class="nsw-icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+        Standards
+      </h2>
+      <div class="nsw-body-content">
+        <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+      </div>
+      <div class="nsw-feature-tile__cards-group">
+      </div>
+      <div class="nsw-feature-tile__links-group">
+        <ul class="nsw-feature-tile__double-list">
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content basics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing for inclusivity</span> <sup class="new-text">NEW</sup>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing style</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Finding a tone of voice</span> <sup class="new-text">NEW</sup>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content audit</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content structure</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-feature-tile">
+  <h2 class="nsw-feature-tile__title">
+    <svg class="nsw-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+    Standards
+  </h2>
+  <div class="nsw-body-content">
+    <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+  </div>
+  <div class="nsw-feature-tile__cards-group">
+  </div>
+  <div class="nsw-feature-tile__links-group">
+    <ul class="nsw-feature-tile__double-list">
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content basics</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing for inclusivity</span> <sup class="new-text">NEW</sup>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing style</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Finding a tone of voice</span> <sup class="new-text">NEW</sup>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content audit</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content structure</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
         </div>
@@ -408,35 +547,84 @@
           <div class="nsw-grid">
             <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
               <h2 class="nsw-section-title">CTA and Images</h2>
-              <div class="nsw-feature-tile">
-                <h2 class="nsw-feature-tile__title">
-                  <a href="#" class="nsw-feature-tile__title-link">
-                  Standards
-                  </a>
-                </h2>
-                <div class="nsw-body-content">
-                  <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
-                </div>
-                <div class="nsw-feature-tile__cards-group">
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">Expectations</p>
-                  </div>
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">How-top guides</p>
-                  </div>
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">Project checklist</p>
-                  </div>
-                </div>
-                <div class="nsw-feature-tile__links-group">
-                  <ul >
-                  </ul>
-                </div>
-                <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
-              </div>
+              <div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-feature-tile">
+      <h2 class="nsw-feature-tile__title">
+        <a href="#" class="nsw-feature-tile__title-link">
+        Standards
+        </a>
+      </h2>
+      <div class="nsw-body-content">
+        <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+      </div>
+      <div class="nsw-feature-tile__cards-group">
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">Expectations</p>
+        </div>
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">How-top guides</p>
+        </div>
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">Project checklist</p>
+        </div>
+      </div>
+      <div class="nsw-feature-tile__links-group">
+        <ul >
+        </ul>
+      </div>
+      <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-feature-tile">
+  <h2 class="nsw-feature-tile__title">
+    <a href="#" class="nsw-feature-tile__title-link">
+    Standards
+    </a>
+  </h2>
+  <div class="nsw-body-content">
+    <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+  </div>
+  <div class="nsw-feature-tile__cards-group">
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">Expectations</p>
+    </div>
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">How-top guides</p>
+    </div>
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">Project checklist</p>
+    </div>
+  </div>
+  <div class="nsw-feature-tile__links-group">
+    <ul >
+    </ul>
+  </div>
+  <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
         </div>
@@ -451,88 +639,190 @@
           <div class="nsw-grid">
             <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
               <h2 class="nsw-section-title">All options</h2>
-              <div class="nsw-feature-tile">
-                <h2 class="nsw-feature-tile__title">
-                  <svg class="nsw-icon" focusable="false" aria-hidden="true">
-                    <use xlink:href="#arrow"></use>
-                  </svg>
-                  <a href="#" class="nsw-feature-tile__title-link">
-                  Standards
-                  </a>
-                </h2>
-                <div class="nsw-body-content">
-                  <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
-                </div>
-                <div class="nsw-feature-tile__cards-group">
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">Expectations</p>
-                  </div>
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">How-top guides</p>
-                  </div>
-                  <div class="nsw-feature-tile__card">
-                    <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
-                    <p class="nsw-feature-tile__card-text">Project checklist</p>
-                  </div>
-                </div>
-                <div class="nsw-feature-tile__links-group">
-                  <ul class="nsw-feature-tile__double-list">
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing for inclusivity</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Writing style</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content audit</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content structure</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Finding a tone of voice</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Meta data</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Images and alt text</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Documents and media</span>
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#" class="nsw-feature-tile__link">
-                        <span class="link-text">Content style guide</span>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-                <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
-              </div>
+              <div class="code-section">
+  <div class="ui-demo">
+    <div class="nsw-feature-tile">
+      <h2 class="nsw-feature-tile__title">
+        <svg class="nsw-icon" focusable="false" aria-hidden="true">
+          <use xlink:href="#arrow"></use>
+        </svg>
+        <a href="#" class="nsw-feature-tile__title-link">
+        Standards
+        </a>
+      </h2>
+      <div class="nsw-body-content">
+        <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+      </div>
+      <div class="nsw-feature-tile__cards-group">
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">Expectations</p>
+        </div>
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">How-top guides</p>
+        </div>
+        <div class="nsw-feature-tile__card">
+          <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
+          <p class="nsw-feature-tile__card-text">Project checklist</p>
+        </div>
+      </div>
+      <div class="nsw-feature-tile__links-group">
+        <ul class="nsw-feature-tile__double-list">
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing for inclusivity</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Writing style</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content audit</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content structure</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Finding a tone of voice</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Meta data</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Images and alt text</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Documents and media</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nsw-feature-tile__link">
+              <span class="link-text">Content style guide</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
+    </div>
+  </div>
+  <div class="ui-dev-demo nsw-wysiwyg-content nsw-m-top-sm">
+    <a href="#" class="showHTML nsw-p-xs nsw-m-top-xs nsw-bg--light-10">Show HTML</a>
+    <pre><code class="html"><script>
+    function escapeHtml(unsafe) {
+      return unsafe
+           .replace(/&/g, "&amp;")
+           .replace(/</g, "&lt;")
+           .replace(/>/g, "&gt;")
+           .replace(/"/g, "&quot;")
+           .replace(/'/g, "&#039;");
+    }
+    document.write(escapeHtml(`<div class="nsw-feature-tile">
+  <h2 class="nsw-feature-tile__title">
+    <svg class="nsw-icon" focusable="false" aria-hidden="true">
+      <use xlink:href="#arrow"></use>
+    </svg>
+    <a href="#" class="nsw-feature-tile__title-link">
+    Standards
+    </a>
+  </h2>
+  <div class="nsw-body-content">
+    <p>The standards outline the best practice you need to consider when building a NSW Government product or service</p>
+  </div>
+  <div class="nsw-feature-tile__cards-group">
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/1076/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">Expectations</p>
+    </div>
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/20/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">How-top guides</p>
+    </div>
+    <div class="nsw-feature-tile__card">
+      <img src="https://picsum.photos/id/859/200/200" alt="" class="nsw-feature-tile__card-img" />
+      <p class="nsw-feature-tile__card-text">Project checklist</p>
+    </div>
+  </div>
+  <div class="nsw-feature-tile__links-group">
+    <ul class="nsw-feature-tile__double-list">
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content basics</span> <sup class="new-text">NEW</sup>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing for inclusivity</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Writing style</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content audit</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content structure</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Finding a tone of voice</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Meta data</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Images and alt text</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Documents and media</span>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="nsw-feature-tile__link">
+          <span class="link-text">Content style guide</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <a href="#" class="nsw-feature-tile__cta nsw-text-link">View the pattern library</a>
+</div>
+`));
+</script></code></pre>
+  </div>
+
+</div>
+
             </div>
           </div>
         </div>

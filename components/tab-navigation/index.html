@@ -53,7 +53,7 @@
       </div>
   </header>
   <div class="nsw-grid nsw-m-none" style="margin:0; /* helpers don't override grid */">
-    <div class="nsw-col-3 nsw-col">
+    <div class="nsw-col-3 nsw-col nsw-show-lg">
       <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
         <div class="nsw-sidenav__header">
           <h2 id="componentsTitle" class="nsw-sidenav__heading">
@@ -250,7 +250,19 @@
         </ul> -->
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
+    <div class="nsw-col-12 nsw-hide-lg nsw-bg--light-10 nsw-p-left-md">
+      <p>
+        <a class="nsw-direction-link" href="#">
+          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+            <use xlink:href="#arrow"></use>
+          </svg>
+          <span class="nsw-direction-link__text">
+            Back <span class="sr-only">to home screen</span>
+          </span>
+        </a>
+      </p>
+    </div>
+    <div class="nsw-p-none nsw-col-12 nsw-col-lg-9 nsw-col " style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Tabs</h1>
       </div>
@@ -259,17 +271,17 @@
   <div class="nsw-p-left-md nsw-bg--light-10">
     <ul class="nsw-tabs__list">
       <li class="nsw-tabs__list-item">
-        <a href="#section141277" class="nsw-tabs__link">Customisation</a>
+        <a href="#section141276" class="nsw-tabs__link">Customisation</a>
       </li>
       <li class="nsw-tabs__list-item">
-        <a href="#section141278" class="nsw-tabs__link">Guidance</a>
+        <a href="#section141277" class="nsw-tabs__link">Guidance</a>
       </li>
       <li class="nsw-tabs__list-item">
         <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
       </li>
     </ul>
   </div>
-  <section id="section141277" class="nsw-tabs__content">
+  <section id="section141276" class="nsw-tabs__content">
       <h2 id="customisation">Customisation</h2>
 <p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
 <p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
@@ -277,7 +289,7 @@
 
 
   </section>
-  <section id="section141278" class="nsw-tabs__content">
+  <section id="section141277" class="nsw-tabs__content">
       <p>Tabs are a form of secondary in-page navigation, helping to group different types of content in a limited space.</p>
 <h2 id="using-tabs">Using tabs</h2>
 <p>Tabs allow users to focus on specific content whilst remaining clear on the overall context of the screen. Use tabs to split long content into manageable chunks to avoid overwhelming the user.</p>

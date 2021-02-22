@@ -53,7 +53,7 @@
       </div>
   </header>
   <div class="nsw-grid nsw-m-none" style="margin:0; /* helpers don't override grid */">
-    <div class="nsw-col-3 nsw-col">
+    <div class="nsw-col-3 nsw-col nsw-show-lg">
       <nav class="nsw-sidenav nsw-m-left-sm nsw-p-right-md" aria-labelledby="componentsTitle side navigation">
         <div class="nsw-sidenav__header">
           <h2 id="componentsTitle" class="nsw-sidenav__heading">
@@ -250,7 +250,19 @@
         </ul> -->
       </nav>
     </div>
-    <div class="nsw-p-none nsw-col-9 nsw-col" style="padding:0; /* helpers don't override grid */">
+    <div class="nsw-col-12 nsw-hide-lg nsw-bg--light-10 nsw-p-left-md">
+      <p>
+        <a class="nsw-direction-link" href="#">
+          <svg class="nsw-icon nsw-icon--rotate-180" focusable="false" aria-hidden="true">
+            <use xlink:href="#arrow"></use>
+          </svg>
+          <span class="nsw-direction-link__text">
+            Back <span class="sr-only">to home screen</span>
+          </span>
+        </a>
+      </p>
+    </div>
+    <div class="nsw-p-none nsw-col-12 nsw-col-lg-9 nsw-col " style="padding:0; /* helpers don't override grid */">
       <div class="nsw-docs-content-header nsw-bg--light-10 nsw-p-x-md nsw-p-y-xs">
           <h1>Hero search</h1>
       </div>
@@ -259,17 +271,17 @@
   <div class="nsw-p-left-md nsw-bg--light-10">
     <ul class="nsw-tabs__list">
       <li class="nsw-tabs__list-item">
-        <a href="#section141215" class="nsw-tabs__link">Guidance</a>
+        <a href="#section141214" class="nsw-tabs__link">Guidance</a>
       </li>
       <li class="nsw-tabs__list-item">
-        <a href="#section141214" class="nsw-tabs__link">Customisation</a>
+        <a href="#section141213" class="nsw-tabs__link">Customisation</a>
       </li>
       <li class="nsw-tabs__list-item">
         <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
       </li>
     </ul>
   </div>
-  <section id="section141215" class="nsw-tabs__content">
+  <section id="section141214" class="nsw-tabs__content">
       <p>The hero search allows users to easily and quickly go to the area they are interested in.</p>
 <h2 id="using-hero-search">Using hero search</h2>
 <p>Today, people rely more and more on search engines and search to find exactly what they want, without having to learn how an organisation has arranged its information architecture.</p>
@@ -310,7 +322,7 @@
 
 
   </section>
-  <section id="section141214" class="nsw-tabs__content">
+  <section id="section141213" class="nsw-tabs__content">
       <h2 id="customisation">Customisation</h2>
 <p>The highlight bar is customisable with your brand colour, where a brand exemption has been approved.</p>
 <p>You will need to change the nsw-primary-highlight colour in the _settings.scss file.</p>
