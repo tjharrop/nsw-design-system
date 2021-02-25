@@ -283,10 +283,15 @@
     </ul>
   </div>
   <section id="section141256" class="nsw-tabs__content">
-      <p>Cards group related content or tasks to make it easier for users to scan, read, and find information.</p>
-<h2 id="using-cards">Using cards</h2>
+      <h2 id="usage">Usage</h2>
 <p>Use card layouts to present a high-level summary of content related to a single topic.</p>
 <p>Cards group information into meaningful sections, providing concise information in a condensed space to allow users to distinguish between content and find information easily. The information in a card outlines the main idea of a product, service, or piece of information, allowing a user to click through for further information.</p>
+<h4 id="card-types">Card types</h4>
+<ul>
+<li><strong>Highlight cards</strong> - Use to highlight important content of a related topic or area. For example, to draw attention to priority or key content on a Homepage.</li>
+<li><strong>Content cards</strong> - Use to display all or larger groups of content options to your user. For example, on landing pages where it is used to show all content areas within that section of the site.</li>
+</ul>
+<h4 id="how-to-use">How to use</h4>
 <p>Do:</p>
 <ul>
 <li>consider and choose text and visual elements carefully. Test your cards with minimal content and only add additional content or graphics where they give needed context to the user</li>
@@ -302,36 +307,47 @@
 <li>add inline text links, the card itself is clickable and should link to a single piece of information, consider using content blocks in this instance</li>
 <li>use a single card component on its own.</li>
 </ul>
-<h2 id="when-to-avoid">When to avoid</h2>
+<h4 id="when-to-avoid">When to avoid</h4>
 <p>Cards should only display enough information to give a user context. Do not use a card layout:</p>
 <ul>
 <li>to highlight a solo piece of information</li>
 <li>when the content requires in-line or multiple links</li>
 <li>when a large amount of text is needed to give users context.</li>
 </ul>
-<h2 id="how-this-component-works">How this component works</h2>
-<p><strong>User interaction</strong></p>
-<p>Cards feature a shadow and arrow to indicate a clickable component. When a user interacts with a card the headline becomes underlined and the card shadow darkens to indicate to the user which card they are currently focused on and reinforces the clickable area. Maintaining these interactions across all card components ensures a consistent experience for the user.</p>
+<hr>
+<h2 id="principles">Principles</h2>
 <p><strong>Keep content concise</strong></p>
 <p>Cards allow users to scan content in order to find their required information quickly, therefore it is important to make the content concise. Ensure the headlines are brief and explicit about the content the cards link to. Intuitive headlines and copy help the user build a clear mental model of the content.</p>
-<p><strong>Content elements</strong></p>
-<p>Consider and choose content elements carefully. Test your cards with minimal content and only add additional content where they give needed context to the user. Content types in cards include:</p>
-<ul>
-<li>Headline - Provides a snapshot of the content.</li>
-<li>Copy - Provides further details where the headline alone may not be sufficient.</li>
-<li>Date - Indicates how old the content is when this information is important to the user.</li>
-<li>Tags - Indicates the category of a topic or theme when a user needs to further group content. For example, departments, agencies, or services.</li>
-</ul>
-<p><strong>Images</strong></p>
+<hr>
+<h2 id="anatomy">Anatomy</h2>
+<p>The only required elements of a card are it&#39;s container, headline and icon. Consider and choose content elements carefully. Test your cards with minimal content and only add additional content where they give needed context to the user.</p>
+<p><img src="/uploads/cards-anatomy-1.png" alt="Anatomy of card component" title="Anatomy of card component"></p>
+<p><strong>Container</strong></p>
+<p>Contains all elements and uses drop shadow to signify the whole card is clickable.</p>
+<p><strong>Image (optional)</strong></p>
 <p>Using images in cards allows for different content to stand out and provide additional context. It helps users visualise different pieces of information and quickly distinguish between content to find information easily.</p>
 <p>Test your visual elements carefully:</p>
 <ul>
 <li>only use images where it supports and re-enforces the content to the user</li>
 <li>only use images when they can clearly show the difference between content and can be easily identified</li>
-<li>do not use images that are not easily identifiable or do not effectively communicate the difference between content</li>
 <li>do not use for decorative purposes only</li>
-<li>make sure all graphics are readable by screen readers.</li>
 </ul>
+<p><strong>Highlight bar (optional)</strong></p>
+<p>Use to highlight important content of a related topic or area.</p>
+<p><strong>Tag (optional)</strong></p>
+<p>Indicates the category of a topic or theme when a user needs to further group content. For example, departments, agencies, or services.</p>
+<p><strong>Date (optional)</strong></p>
+<p>Indicates how old the content is when this information is important to the user.</p>
+<p><strong>Headline</strong></p>
+<p>Provides a snapshot of the content.</p>
+<p><strong>Description (optional)</strong></p>
+<p>Provides further details where the headline alone may not be sufficient.</p>
+<p><strong>Icon</strong></p>
+<p>Arrow used to indicate a clickable component.</p>
+<hr>
+<h2 id="behavior">Behavior</h2>
+<p>When a user interacts with a card the headline becomes underlined and the card shadow darkens to indicate to the user which card they are currently focused on and reinforces the clickable area.</p>
+<hr>
 <h2 id="accessibility">Accessibility</h2>
 <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
 
