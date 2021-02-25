@@ -272,7 +272,7 @@
   <div class="nsw-p-left-md nsw-bg--light-10">
     <ul class="nsw-tabs__list">
       <li class="nsw-tabs__list-item">
-        <a href="#section141215" class="nsw-tabs__link">Guidance</a>
+        <a href="#section141230" class="nsw-tabs__link">Guidance</a>
       </li>
       <li class="nsw-tabs__list-item">
         <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
@@ -282,16 +282,16 @@
       </li>
     </ul>
   </div>
-  <section id="section141215" class="nsw-tabs__content">
-      <p>An accordion is a series of expandable vertical panels, designed to save space on a page by hiding content and revealing it as required.</p>
-<h2 id="using-accordions">Using accordions</h2>
+  <section id="section141230" class="nsw-tabs__content">
+      <h2 id="usage">Usage</h2>
 <p>Accordions can work well for people who use a service regularly, or who need to perform familiar tasks quickly.</p>
 <p>Only use an accordion if there’s evidence it’s helpful for users to:</p>
 <ul>
 <li>see an overview of multiple, related sections of content</li>
 <li>show and hide those sections as needed</li>
+<li></li>
 </ul>
-<h2 id="when-to-avoid">When to avoid</h2>
+<h4 id="when-to-avoid">When to avoid</h4>
 <p>Test your content without an accordion first. Consider if it’s better to:</p>
 <ul>
 <li>simplify and reduce the amount of content</li>
@@ -310,15 +310,22 @@
 <li>use where important information can be hidden and missed</li>
 <li>use an accordion to shorten a page.</li>
 </ul>
-<h2 id="how-this-component-works">How this component works</h2>
+<hr>
+<h2 id="principles">Principles</h2>
 <p><strong>Use clear labels</strong></p>
 <p>Accordions hide content, so the labels need to be clear. Ensure the headings used are brief and explicit about what is contained in the hidden panel. Intuitive headings help the user build a clear mental model of the content.</p>
 <p><strong>Do not disable sections</strong></p>
 <p>Accordions can be set open or closed. They can be configured to only allow 1 panel to be open at a time. Do not use with only 1 panel allowed to be open at once, if people need to compare items in different panels.</p>
 <p>Disabling controls is normally confusing for users. If there is no content for a section, either remove the section or, if this would be confusing for your users, explain why there is no content when the section is opened.</p>
 <p>Consider tabs if the user would likely need to flick between content sections.</p>
-<p><strong>Direct the user</strong></p>
-<p>A directional arrow indicates that the panel is expandable or collapsible. This is further suggested by a hover state which lets the user know the entire title bar is clickable.</p>
+<hr>
+<h2 id="anatomy">Anatomy</h2>
+<p><img src="/uploads/accordion-anatomy.png" alt=""></p>
+<p><strong>Panel</strong></p>
+<p>Contains accordion headline and content. The panel hover state lets the user know the entire element is clickable.</p>
+<p><strong>Icon</strong></p>
+<p>A directional arrow indicates that the panel is expandable or collapsible. </p>
+<hr>
 <h2 id="accessibility">Accessibility</h2>
 <p>All components are responsive and meet WCAG 2.1 AA accessibility guidelines.</p>
 
