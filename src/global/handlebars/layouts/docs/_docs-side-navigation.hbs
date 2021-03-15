@@ -1,0 +1,35 @@
+<nav class="nsw-docs-nav">
+  <div class="nsw-docs-nav__wrapper">
+    <div class="nsw-docs-nav__logo">
+      <a href="#">
+        <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
+        <span class="sr-only">digital.nsw</span>
+      </a>
+    </div>
+    <div class="nsw-docs-nav__title">Getting started</div>
+    <ul class="nsw-docs-nav__list">
+      <li><a href="#">Figma UI kit</a></li>
+      <li><a href="#">Local setup</a></li>
+      <li><a href="#">HTML starter kit</a></li>
+    </ul>
+    <div class="nsw-docs-nav__title">Styles</div>
+    <ul class="nsw-docs-nav__list">
+      {{#each collections.stylesnav}}
+      <li><a href="/{{change-extention path}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+    <div class="nsw-docs-nav__title">Components</div>
+    <ul class="nsw-docs-nav__list">
+      {{#each collections.componentsnav}}
+      <li><a href="/{{change-extention path}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+    <div class="nsw-docs-nav__title">Page templates</div>
+    <ul class="nsw-docs-nav__list">
+      {{#each collections.templatesnav}}
+      <li><a href="/{{change-extention path}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+    <div class="nsw-docs-nav__title">Customisation</div>
+  </div>
+</nav>
