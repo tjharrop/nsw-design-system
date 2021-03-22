@@ -64,14 +64,6 @@ function buildStyles() {
     .pipe(dest(config.scss.build))
 }
 
-function buildDocStyles() {
-  return src(config.scssDocs.src)
-    .pipe(sassGlob())
-    .pipe(sass().on('error', sass.logError))
-    .pipe(postcss(postcssProcessors))
-    .pipe(dest(config.scssDocs.build))
-}
-
 function lintStyles() {
   return src(config.scss.watch)
     .pipe(gulpStylelint({
@@ -176,6 +168,11 @@ function metalsmithBuild(callback) {
       refer: false,
       sortBy: sortByOrder,
     },
+    templatesnav: {
+      pattern: config.metalSmith.collection.templatesnav.pattern,
+      refer: false,
+      sortBy: sortByOrder,
+    },
   }))
   metalsmith.use(inplace(config.metalSmith.inplace))
   metalsmith.use(dataLoader(config.metalSmith.tabsData))
@@ -270,7 +267,7 @@ function injectSVG() {
     .pipe(dest(config.dir.build))
 }
 
-const styles = series(lintStyles, buildDocStyles, buildStyles)
+const styles = series(lintStyles, buildStyles)
 const javascript = series(lintJavascript, compileJS, compileDocsJS)
 
 function watchFiles(done) {

@@ -1,0 +1,43 @@
+<div class="nsw-tabs js-tabs">
+  <ul class="nsw-tabs__list">
+    {{#each (lookup tabcontent component.folder)}}
+    <li class="nsw-tabs__list-item">
+      <a href="#section{{stats.ino}}" class="nsw-tabs__link">{{label}}</a>
+    </li>
+    {{/each}}
+    <li class="nsw-tabs__list-item">
+      <a href="#demosection" class="nsw-tabs__link">Interactive demo</a>
+    </li>
+    {{#if component.figma }}
+    <li class="nsw-tabs__list-item">
+      <a href="#figmapreview" class="nsw-tabs__link">Figma</a>
+    </li>
+    {{/if}}
+  </ul>
+  {{#each (lookup tabcontent component.folder)}}
+  <section id="section{{stats.ino}}" class="nsw-tabs__content nsw-tabs__content--flush">
+    {{{contents}}}
+  </section>
+  {{/each}}
+  <section id="demosection" class="nsw-tabs__content nsw-tabs__content--flush">
+    {{{contents}}}
+  </section>
+  {{#if codesection }}
+  <section id="codesection" class="nsw-tabs__content nsw-tabs__content--flush">
+    <pre><code class="html">{{sample contents}}</code>
+    </pre>
+  </section>
+  {{/if}}
+  {{#if component.figma }}
+  <section id="figmapreview" class="nsw-tabs__content nsw-tabs__content--flush">
+    <iframe
+      height="450"
+      width="100%"
+      style="border:0;"
+      src="https://www.figma.com/embed?embed_host=astra&url={{component.figma}}"
+      allowfullscreen
+      title="Figma preview"
+    ></iframe>
+  </section>
+  {{/if}}
+</div>
