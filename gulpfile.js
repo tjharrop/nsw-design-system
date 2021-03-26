@@ -5,7 +5,6 @@ const sass = require('gulp-sass')
 const postcss = require('gulp-postcss')
 const autoprefixer = require('autoprefixer')
 const cssnano = require('cssnano')
-const clear_collections = require("./clear_collections");
 const sourcemaps = require('gulp-sourcemaps')
 const browsersync = require('browser-sync')
 const surge = require('gulp-surge')
@@ -34,6 +33,7 @@ const inject = require('gulp-inject-string')
 const fs = require('fs')
 const { argv } = require('yargs')
 const bump = require('gulp-bump')
+const clear_collections = require('./clear_collections')
 const config = require('./config')
 
 const server = browsersync.create()
@@ -137,7 +137,7 @@ function metalsmithBuild(callback) {
   metalsmith.use(discoverHelpers(config.metalSmith.helpers))
   metalsmith.use(discoverPartials(config.metalSmith.partials))
   metalsmith.use(dataLoader(config.metalSmith.data))
-  metalsmith.use(clear_collections(["components", "patterns", "styles", "templates", "pages"]))
+  metalsmith.use(clear_collections(['components', 'patterns', 'styles', 'templates', 'pages']))
   metalsmith.use(collections({
     components: {
       pattern: config.metalSmith.collection.components.pattern,
@@ -156,18 +156,23 @@ function metalsmithBuild(callback) {
     tabcontent: {
       pattern: config.metalSmith.collection.tabcontent.pattern,
       refer: false,
-      sortBy: sortByOrder
+      sortBy: sortByOrder,
     },
     componentsnav: {
       pattern: config.metalSmith.collection.componentsnav.pattern,
       refer: false,
-      sortBy: sortByOrder
+      sortBy: sortByOrder,
     },
     stylesnav: {
       pattern: config.metalSmith.collection.stylesnav.pattern,
       refer: false,
-      sortBy: sortByOrder
-    }
+      sortBy: sortByOrder,
+    },
+    templatesnav: {
+      pattern: config.metalSmith.collection.templatesnav.pattern,
+      refer: false,
+      sortBy: sortByOrder,
+    },
   }))
   metalsmith.use(inplace(config.metalSmith.inplace))
   metalsmith.use(dataLoader(config.metalSmith.tabsData))
@@ -198,6 +203,17 @@ function compileJS() {
     .pipe(dest(config.js.build))
 }
 
+function compileDocsJS() {
+  return src(config.jsDocs.src)
+    .pipe(
+      rollup(
+        {
+          plugins: [babel()],
+        },
+      ),
+    )
+    .pipe(dest(config.jsDocs.build))
+}
 function lintJavascript() {
   return src(config.js.watch)
     .pipe(eslint())
@@ -226,6 +242,9 @@ function renamePath() {
     .pipe(replace('/css/main.css', '../../css/main.css'))
     .pipe(replace('/js/main.js', '../../js/main.js'))
     .pipe(replace('/favicon.ico', '../../favicon.ico'))
+    .pipe(replace('/favicon.ico', '../../favicon.ico'))
+    .pipe(replace('/docs/css/docs.css', '../../docs/css/docs.css'))
+    .pipe(replace('/docs/js/docs.js', '../../docs/js/docs.js'))
     .pipe(dest(config.dir.build))
 }
 
@@ -249,7 +268,7 @@ function injectSVG() {
 }
 
 const styles = series(lintStyles, buildStyles)
-const javascript = series(lintJavascript, compileJS)
+const javascript = series(lintJavascript, compileJS, compileDocsJS)
 
 function watchFiles(done) {
   watch(config.scss.watch, series(styles, reload))

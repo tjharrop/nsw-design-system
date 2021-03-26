@@ -9,6 +9,14 @@
   }
 }
 
+.nsw-section--short {
+  padding: 0;
+
+  @include breakpoint('md') {
+    padding: rem($grid-gutters*2) 0;
+  }
+}
+
 .nsw-section--image {
   background-size: cover;
   background-position: center;
@@ -35,18 +43,8 @@
   background-color: $light40;
 }
 
-.nsw-bg--white {
-  background-color: $white;
-}
-
-.nsw-bg--light-10 {
-  background-color: $light10;
-}
-
-.nsw-bg--light-20 {
-  background-color: $light20;
-}
-
-.nsw-bg--light-40 {
-  background-color: $light40;
+.nsw-section--box {
+  @include border-radius;
+  border: 1px solid $light20;
+  padding: rem(24px);
 }

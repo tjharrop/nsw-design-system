@@ -1,4 +1,5 @@
 <footer class="nsw-footer">
+  {{#if sectionLinks}}
   <div class="nsw-footer__upper">
     <div class="nsw-container section-links">
       {{#each sectionLinks}}
@@ -13,6 +14,7 @@
       {{/each}}
     </div>
   </div>
+  {{/if}}
   <div class="nsw-footer__lower">
     <div class="nsw-container">
       <p>{{respectText}}</p>
