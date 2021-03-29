@@ -6,30 +6,52 @@
         <span class="sr-only">digital.nsw</span>
       </a>
     </div>
-    <div class="nsw-docs-nav__title">Getting started</div>
+    <div class="nsw-docs-nav__title">
+      <button>
+        <span>Getting started</span>
+        <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+      </button>
+    </div>
     <ul class="nsw-docs-nav__list">
       <li><a href="#">Figma UI kit</a></li>
       <li><a href="#">Local setup</a></li>
       <li><a href="#">HTML starter kit</a></li>
     </ul>
-    <div class="nsw-docs-nav__title">Styles</div>
+    <div class="nsw-docs-nav__title">
+      <button>
+        <span>Styles</span>
+        <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+      </button>
+    </div>
     <ul class="nsw-docs-nav__list">
       {{#each collections.stylesnav}}
       <li><a href="/{{change-extention path}}">{{title}}</a></li>
       {{/each}}
     </ul>
-    <div class="nsw-docs-nav__title">Components</div>
+    <div class="nsw-docs-nav__title">
+      <button>
+        <span>Components</span>
+        <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+      </button>
+    </div>
     <ul class="nsw-docs-nav__list">
       {{#each collections.componentsnav}}
-      <li><a href="/{{change-extention path}}">{{title}}</a></li>
+      <li class="asd"><a href="/{{change-extention path}}">{{title}}</a></li>
       {{/each}}
     </ul>
-    <div class="nsw-docs-nav__title">Page templates</div>
+    <div class="nsw-docs-nav__title">
+      <button>
+        <span>Page templates</span>
+        <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+      </button>
+    </div>
     <ul class="nsw-docs-nav__list">
       {{#each collections.templatesnav}}
       <li><a href="/{{change-extention path}}">{{title}}</a></li>
       {{/each}}
     </ul>
-    <div class="nsw-docs-nav__title">Customisation</div>
+    <div class="nsw-docs-nav__title">
+      <a href="#">Customisation</a>
+    </div>
   </div>
 </nav>

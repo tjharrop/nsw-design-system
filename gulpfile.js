@@ -214,6 +214,7 @@ function compileDocsJS() {
     )
     .pipe(dest(config.jsDocs.build))
 }
+
 function lintJavascript() {
   return src(config.js.watch)
     .pipe(eslint())
@@ -273,6 +274,7 @@ const javascript = series(lintJavascript, compileJS, compileDocsJS)
 function watchFiles(done) {
   watch(config.scss.watch, series(styles, reload))
   watch(config.js.watch, series(javascript, reload))
+  watch(config.jsDocs.watch, series(javascript, reload))
   watch(config.svg.watch, series(compileSvg, reload))
   watch(config.metalSmith.watch, series(metalsmithBuild, reload))
   done()
