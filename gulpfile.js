@@ -110,8 +110,8 @@ function cleanBuild(files, metalsmith, done) {
 }
 
 function sortByAlpha(a, b) {
-  const nameA = a.title.toLowerCase()
-  const nameB = b.title.toLowerCase()
+  const nameA = a.title
+  const nameB = b.title
   if (nameA < nameB) { return -1 }
   if (nameA > nameB) { return 1 }
   return 0
@@ -156,22 +156,22 @@ function metalsmithBuild(callback) {
     tabcontent: {
       pattern: config.metalSmith.collection.tabcontent.pattern,
       refer: false,
-      sortBy: sortByOrder,
+      sortBy: sortByAlpha,
     },
     componentsnav: {
       pattern: config.metalSmith.collection.componentsnav.pattern,
       refer: false,
-      sortBy: sortByOrder,
+      sortBy: sortByAlpha,
     },
     stylesnav: {
       pattern: config.metalSmith.collection.stylesnav.pattern,
       refer: false,
-      sortBy: sortByOrder,
+      sortBy: sortByAlpha,
     },
     templatesnav: {
       pattern: config.metalSmith.collection.templatesnav.pattern,
       refer: false,
-      sortBy: sortByOrder,
+      sortBy: sortByAlpha,
     },
   }))
   metalsmith.use(inplace(config.metalSmith.inplace))
