@@ -107,7 +107,7 @@
 
       &.is-open {
         @include font-stack('heading');
-        
+
         .nsw-material-icons {
           transform: rotate(180deg);
         }
@@ -155,5 +155,13 @@
     color: $dark80;
     text-decoration: none;
     background-color: $white;
+  }
+}
+
+.nsw-docs-tabs {
+  >.nsw-tabs__content {
+    &:focus {
+      outline: none;
+    }
   }
 }
