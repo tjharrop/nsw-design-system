@@ -34,6 +34,9 @@
       </div>
     </div>
     <div class="nsw-docs__main">
+{{#if page}}
+{{{contents}}}
+{{else}}
       <div class="nsw-docs__header">
         <div class="nsw-docs__masthead">A NSW Government website</div>
         <div class="nsw-docs__title">NSW Digital Design System</div>
@@ -49,13 +52,12 @@
           </div>
         </div>
       </div>
-
       <div class="nsw-docs__content">
         <div class="nsw-container">
 {{>_docs-tabbed-content}}
         </div>
       </div>
-
+{{/if}}
       {{>_footer  
         respectText="We pay respect to the Traditional Custodians and First Peoples of NSW, and acknowledge their continued connection to their country and culture." 
         copyright="Copyright © 2021"

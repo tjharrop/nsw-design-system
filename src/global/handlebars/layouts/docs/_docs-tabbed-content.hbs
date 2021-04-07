@@ -15,10 +15,12 @@
   </section>
   {{/each}}
   <section id="ui-kits" class="nsw-tabs__content nsw-tabs__content--flush">
+    <h2 class="nsw-section-title">NSW Digital Service</h2>
+    <p class="nsw-section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis.</p>
     <div class="nsw-grid">
       {{#if component.figma}}
       <div class="nsw-col nsw-col-md-4">
-        <div class="nsw-card">
+        <div class="nsw-card nsw-card--content">
             <div class="nsw-card__content">
               <div class="nsw-card__title">
                 <a target="_blank" href="{{component.figma}}" class="nsw-card__link">Figma</a>
@@ -30,7 +32,7 @@
       {{/if}}
       {{#if component.html}}
       <div class="nsw-col nsw-col-md-4">
-        <div class="nsw-card">
+        <div class="nsw-card nsw-card--content">
             <div class="nsw-card__content">
               <div class="nsw-card__title">
                 <a target="_blank" href="{{component.html}}" class="nsw-card__link">HTML</a>
@@ -42,7 +44,7 @@
       {{/if}}
       {{#if component.react}}
       <div class="nsw-col nsw-col-md-4">
-        <div class="nsw-card">
+        <div class="nsw-card nsw-card--content">
             <div class="nsw-card__content">
               <div class="nsw-card__title">
                 <a target="_blank" href="{{component.react}}" class="nsw-card__link">React</a>
@@ -52,18 +54,22 @@
         </div>
       </div>
       {{/if}}
-      {{#if component.kiama}}
+    </div>
+    {{#if component.kiama}}
+    <h2 class="nsw-section-title">Service NSW</h2>
+    <p class="nsw-section-text">Phasellus id dolor augue. Vestibulum aliquet ornare ipsum eu ullamcorper. Integer ornare tortor et dapibus condimentum. Nam rhoncus ipsum at efficitur ornare.</p>
+    <div class="nsw-grid">
       <div class="nsw-col nsw-col-md-4">
-        <div class="nsw-card">
+        <div class="nsw-card nsw-card--content">
             <div class="nsw-card__content">
               <div class="nsw-card__title">
-                <a target="_blank" href="{{component.kiama}}" class="nsw-card__link">Kiama</a>
+                <a target="_blank" href="{{component.kiama}}" class="nsw-card__link">React</a>
               </div>
               <i class="material-icons nsw-material-icons nsw-card__icon" focusable="false" aria-hidden="true">east</i>
             </div>
         </div>
       </div>
-      {{/if}}
     </div>
+    {{/if}}
   </section>
 </div>

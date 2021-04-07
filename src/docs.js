@@ -23,10 +23,14 @@ function initDocs() {
   })
 
   const navLinks = document.querySelectorAll('.nsw-docs-nav a')
-  const currentURL = window.location.pathname
+  var currentURL = window.location.pathname
+
+  if (currentURL == '/') currentURL = '/home/index.html'
 
   navLinks.forEach((link) => {
-  	const linkURL = link.getAttribute('href')
+  	var linkURL = link.getAttribute('href')
+    if (linkURL == '/') linkURL = '/home/index.html'
+
   	if (currentURL.match(linkURL)) {
 	  	link.classList.add('is-active')
 
@@ -34,7 +38,8 @@ function initDocs() {
   			const list = link.closest('ul')
   			const button = list.previousElementSibling.querySelector('button')
 
-	      	button.classList.add('is-open')
+      	button.classList.add('is-open')
+        button.classList.add('is-active')
 		  	list.classList.add('is-open')
   		}
   	}
