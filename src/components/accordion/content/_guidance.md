@@ -53,7 +53,7 @@ Consider tabs if the user would likely need to flick between content sections.
 
 ## Anatomy
 
-![](/uploads/accordion-anatomy-1.png)
+![](/assets/images/accordion-anatomy-1.png)
 
 **Container  
 **Contains accordion headline and content. The headline panel hover state lets the user know the entire element is clickable.

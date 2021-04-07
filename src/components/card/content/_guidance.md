@@ -54,7 +54,7 @@ Cards allow users to scan content in order to find their required information qu
 
 The only required elements of a card are it's container, headline and icon. Consider and choose content elements carefully. Test your cards with minimal content and only add additional content where they give needed context to the user.
 
-![Anatomy of card component](/uploads/cards-anatomy-1.png "Anatomy of card component")
+![Anatomy of card component](/assets/images/cards-anatomy-1.png "Anatomy of card component")
 
 **Container  
 **Contains all elements and uses drop shadow to signify the whole card is clickable.

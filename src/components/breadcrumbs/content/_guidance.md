@@ -28,7 +28,7 @@ Anatomy
 
 Breadcrumbs are a navigational aid that display a user's location on a website as a row of links.
 
-![](/uploads/breadcrumb-anatomy-1.png)
+![](/assets/images/breadcrumb-anatomy-1.png)
 
 **Parent page**  
 Starts with the "Home" page and links users to parent-level pages in the IA
