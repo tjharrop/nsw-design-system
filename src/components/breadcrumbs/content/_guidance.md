@@ -23,8 +23,7 @@ Breadcrumb navigation should be regarded as an extra feature and shouldn’t rep
 
 If you’re using other navigational elements on the page, such as a sidebar, consider whether your users need the additional support of breadcrumbs.
 
-##   
-Anatomy
+## Anatomy
 
 Breadcrumbs are a navigational aid that display a user's location on a website as a row of links.
 
@@ -39,12 +38,10 @@ The chevrons between the names shows the visual hierarchy between pages.
 **Current page**  
 Indicates the current page the user is viewing.
 
-##   
-Behavior
+## Behavior
 
 For mobile resolutions (under 768px), the breadcrumb shows a link to the immediate parent and current page only.
 
-##   
-Accessibility
+## Accessibility
 
 All components are responsive and meet WCAG 2.1 AA accessibility guidelines.

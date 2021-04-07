@@ -12,13 +12,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a
 
 Phasellus id dolor augue. Vestibulum aliquet ornare ipsum eu ullamcorper. Integer ornare tortor et dapibus condimentum. Nam rhoncus ipsum at efficitur ornare. Praesent sagittis enim finibus leo aliquam ultricies sit amet a quam. Integer eget massa eget turpis elementum semper in eget massa.
 
-## 
-
 ## Principles
 
 Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna.
-
-## 
 
 ## Accessibility
 

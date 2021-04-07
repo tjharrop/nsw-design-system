@@ -33,8 +33,6 @@ Do not:
 * use where important information can be hidden and missed
 * use an accordion to shorten a page.
 
-## 
-
 ## Principles
 
 **Use clear labels**
@@ -48,8 +46,6 @@ Accordions can be set open or closed. They can be configured to only allow 1 pan
 Disabling controls is normally confusing for users. If there is no content for a section, either remove the section or, if this would be confusing for your users, explain why there is no content when the section is opened.
 
 Consider tabs if the user would likely need to flick between content sections.
-
-## 
 
 ## Anatomy
 
@@ -66,8 +62,6 @@ Consider tabs if the user would likely need to flick between content sections.
 
 **Icon  
 **A directional arrow that indicates the panel is expandable or collapsible.
-
-## 
 
 ## Accessibility
 
