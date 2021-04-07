@@ -1,43 +1,10 @@
 ---
 title: In-page notification
-model:
-  info: json/notification-info.json
-  error: json/notification-error.json
-  warning: json/notification-warning.json
-  success: json/notification-success.json
 component:
   folder: notification
+  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis. 
+  figma: https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id=363%3A7725
+  html: https://nswdesignsystem.surge.sh/components/notification/index.html
+  react: https://digitalnsw.github.io/nsw-design-system-react/?path=/docs/content-notification--info
+  kiama: #
 ---
-
-<main>
-  <div class="nsw-section--white">
-    <div class="nsw-container">
-      <div class="nsw-page-layout">
-        <div class="nsw-page-layout__main">
-          <div class="nsw-grid">
-          	<div class="nsw-row">
-            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	  						{{>_notification model.info}}
-	  					</div>
-	  				</div>
-          	<div class="nsw-row">
-            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	  						{{>_notification model.error}}
-	  					</div>
-	  				</div>
-          	<div class="nsw-row">
-            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	  						{{>_notification model.warning}}
-	  					</div>
-	  				</div>
-          	<div class="nsw-row">
-            	<div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	  						{{>_notification model.success}}
-	  					</div>
-	  				</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
