@@ -6,7 +6,7 @@ layout: partial.hbs
 ---
 ## Usage
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis. Nullam porttitor non nisl nec pretium. Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna, id aliquam enim mattis a. Pellentesque scelerisque, dolor nec imperdiet mollis, magna nisl tincidunt lorem, id mattis urna risus vel lorem. Proin a rutrum lacus. Sed cursus accumsan nulla vel pretium. Aenean finibus metus ac commodo fringilla
+ ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis. Nullam porttitor non nisl nec pretium. Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna, id aliquam enim mattis a. Pellentesque scelerisque, dolor nec imperdiet mollis, magna nisl tincidunt lorem, id mattis urna risus vel lorem. Proin a rutrum lacus. Sed cursus accumsan nulla vel pretium. Aenean finibus metus ac commodo fringilla
 
 ### When to avoid
 
