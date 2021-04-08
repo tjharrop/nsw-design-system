@@ -1,0 +1,30 @@
+<nav class="nsw-docs-nav">
+  <div class="nsw-docs-nav__wrapper">
+    <div class="nsw-docs-nav__logo">
+      <a href="#">
+        <img class="site-logo" src="https://www.digital.nsw.gov.au//themes/custom/corporateplus/nsw-digitalnsw-combined.svg?v=20191114111300" alt="digital.nsw">
+        <span class="sr-only">digital.nsw</span>
+      </a>
+    </div>
+    <div class="nsw-docs-nav__title">
+      <a class="nsw-docs-nav__title-link" href="/">NSW Digital Design System</a>
+    </div>
+    <div class="nsw-docs-nav__title">
+      <a class="nsw-docs-nav__title-link" href="/foundations/index.html">Foundations</a>
+    </div>
+    <div class="nsw-docs-nav__title">
+      <button>
+        <span>Components</span>
+        <i class="material-icons nsw-material-icons" focusable="false" aria-hidden="true">keyboard_arrow_down</i>
+      </button>
+    </div>
+    <ul class="nsw-docs-nav__list">
+      {{#each collections.componentsnav}}
+      <li><a class="nsw-docs-nav__list-link" href="/{{change-extention path}}">{{title}}</a></li>
+      {{/each}}
+    </ul>
+    <div class="nsw-docs-nav__title">
+      <a class="nsw-docs-nav__title-link" href="/pages/index.html">Pages</a>
+    </div>
+  </div>
+</nav>

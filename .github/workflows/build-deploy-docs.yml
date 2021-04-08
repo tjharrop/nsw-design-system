@@ -1,0 +1,48 @@
+name: build-deploy-docs
+on:
+  push:
+    branches:
+      - 'new-docs-site'
+      - '!master'
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+jobs:
+  build-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 8
+      - run: npm install
+      - run: npm run starterkit:build
+      - uses: actions/upload-artifact@v2
+        with:
+          name: dist
+          path: |
+            dist
+
+  test-docs:
+    needs: build-docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: |
+            dist
+  deploy-docs:
+    needs: test-docs
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+      - run: npm install -g surge
+      - uses: actions/download-artifact@v2
+        with:
+          name: dist
+          path: |
+            dist
+      - run: surge ./dist nswdesignsystem-dev.surge.sh --token ${{ secrets.SURGE_TOKEN }}

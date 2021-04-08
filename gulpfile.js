@@ -20,8 +20,10 @@ const collections = require('metalsmith-collections')
 const ignore = require('metalsmith-ignore')
 const discoverPartials = require('metalsmith-discover-partials')
 const dataLoader = require('metalsmith-data-loader')
+const dynamicCollections = require('metalsmith-dynamic-collections')
 // const debug = require('metalsmith-debug-ui')
 const discoverHelpers = require('metalsmith-discover-helpers')
+const markdown = require('metalsmith-markdown')
 const rollup = require('gulp-better-rollup')
 const babel = require('rollup-plugin-babel')
 const eslint = require('gulp-eslint')
@@ -31,6 +33,7 @@ const inject = require('gulp-inject-string')
 const fs = require('fs')
 const { argv } = require('yargs')
 const bump = require('gulp-bump')
+const clear_collections = require('./clear_collections')
 const config = require('./config')
 
 const server = browsersync.create()
@@ -41,6 +44,11 @@ const postcssProcessors = [
   autoprefixer({ grid: true }),
   cssnano,
 ]
+
+function moveImages() {
+  return src(config.images.src)
+    .pipe(dest(config.images.build))
+}
 
 function compileSvg() {
   return src(config.svg.src)
@@ -107,10 +115,18 @@ function cleanBuild(files, metalsmith, done) {
 }
 
 function sortByAlpha(a, b) {
-  const nameA = a.title.toLowerCase()
-  const nameB = b.title.toLowerCase()
+  const nameA = a.title
+  const nameB = b.title
   if (nameA < nameB) { return -1 }
   if (nameA > nameB) { return 1 }
+  return 0
+}
+
+function sortByOrder(a, b) {
+  const tabA = a.order
+  const tabB = b.order
+  if (tabA < tabB) { return -1 }
+  if (tabA > tabB) { return 1 }
   return 0
 }
 
@@ -122,9 +138,11 @@ function metalsmithBuild(callback) {
   metalsmith.destination(config.metalSmith.build)
   metalsmith.use(ignore(config.metalSmith.ignoreFiles))
   metalsmith.clean(false)
+  metalsmith.use(markdown())
   metalsmith.use(discoverHelpers(config.metalSmith.helpers))
   metalsmith.use(discoverPartials(config.metalSmith.partials))
   metalsmith.use(dataLoader(config.metalSmith.data))
+  metalsmith.use(clear_collections(['components', 'patterns', 'styles', 'templates', 'pages']))
   metalsmith.use(collections({
     components: {
       pattern: config.metalSmith.collection.components.pattern,
@@ -137,9 +155,33 @@ function metalsmithBuild(callback) {
     templates: {
       pattern: config.metalSmith.collection.templates.pattern,
       sortBy: sortByAlpha,
-    }
+    },
+  }))
+  metalsmith.use(dynamicCollections({
+    tabcontent: {
+      pattern: config.metalSmith.collection.tabcontent.pattern,
+      refer: false,
+      sortBy: sortByAlpha,
+    },
+    componentsnav: {
+      pattern: config.metalSmith.collection.componentsnav.pattern,
+      refer: false,
+      sortBy: sortByAlpha,
+    },
+    stylesnav: {
+      pattern: config.metalSmith.collection.stylesnav.pattern,
+      refer: false,
+      sortBy: sortByAlpha,
+    },
+    templatesnav: {
+      pattern: config.metalSmith.collection.templatesnav.pattern,
+      refer: false,
+      sortBy: sortByAlpha,
+    },
   }))
   metalsmith.use(inplace(config.metalSmith.inplace))
+  metalsmith.use(dataLoader(config.metalSmith.tabsData))
+
   metalsmith.use(layouts(config.metalSmith.layouts))
   metalsmith.use(cleanBuild)
   metalsmith.build((err) => {
@@ -164,6 +206,18 @@ function compileJS() {
       ),
     )
     .pipe(dest(config.js.build))
+}
+
+function compileDocsJS() {
+  return src(config.jsDocs.src)
+    .pipe(
+      rollup(
+        {
+          plugins: [babel()],
+        },
+      ),
+    )
+    .pipe(dest(config.jsDocs.build))
 }
 
 function lintJavascript() {
@@ -194,6 +248,9 @@ function renamePath() {
     .pipe(replace('/css/main.css', '../../css/main.css'))
     .pipe(replace('/js/main.js', '../../js/main.js'))
     .pipe(replace('/favicon.ico', '../../favicon.ico'))
+    .pipe(replace('/favicon.ico', '../../favicon.ico'))
+    .pipe(replace('/docs/css/docs.css', '../../docs/css/docs.css'))
+    .pipe(replace('/docs/js/docs.js', '../../docs/js/docs.js'))
     .pipe(dest(config.dir.build))
 }
 
@@ -217,11 +274,13 @@ function injectSVG() {
 }
 
 const styles = series(lintStyles, buildStyles)
-const javascript = series(lintJavascript, compileJS)
+const javascript = series(lintJavascript, compileJS, compileDocsJS)
 
 function watchFiles(done) {
   watch(config.scss.watch, series(styles, reload))
   watch(config.js.watch, series(javascript, reload))
+  watch(config.jsDocs.watch, series(javascript, reload))
+  watch(config.images.watch, series(moveImages, reload))
   watch(config.svg.watch, series(compileSvg, reload))
   watch(config.metalSmith.watch, series(metalsmithBuild, reload))
   done()
@@ -233,6 +292,7 @@ const build = series(
   metalsmithBuild,
   styles,
   javascript,
+  moveImages,
   compileSvg,
   renamePath,
   injectSVG,
@@ -245,6 +305,7 @@ const dev = series(
   metalsmithBuild,
   styles,
   javascript,
+  moveImages,
   compileSvg,
   watchFiles,
   browserSync,
@@ -259,6 +320,7 @@ const deploy = series(
 exports.scss = buildStyles // gulp sass - compiles the sass
 exports.watch = watchFiles // gulp watch - watches the files
 exports.lint = lintStyles // gulp lint - lints the sass
+exports.images = moveImages // gulp images - moves images
 exports.svg = compileSvg // gulp svg - creates svg sprite
 exports.build = build // gulp build - builds the files
 exports.surge = deploy // gulp surge - builds the files and deploys to surge

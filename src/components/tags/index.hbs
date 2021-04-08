@@ -1,38 +1,10 @@
 ---
 title: Tags
-model:
-  link: json/tags-link.json
-  text: json/tags-text.json
-  checkbox: json/tags-checkbox.json
+component:
+  folder: tags
+  description: A tag is an interactive element containing a keyword or phrase used to categorise content. 
+  figma: https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id=264%3A11969
+  html: https://nswdesignsystem.surge.sh/components/tags/index.html
+  react: https://digitalnsw.github.io/nsw-design-system-react/?path=/docs/content-tags--tags
+  kiama: #
 ---
-
-<main>
-  <div class="nsw-section--white">
-    <div class="nsw-container">
-      <div class="nsw-page-layout">
-        <div class="nsw-page-layout__main">
-          <div class="nsw-grid">
-          	<div class="nsw-row">
-	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	            	<h2 class="section-title">Links</h2>
-								{{>_tags model.link}}
-	            </div>
-	          </div>
-          	<div class="nsw-row">
-	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	            	<h2 class="section-title">Text</h2>
-								{{>_tags model.text}}
-	            </div>
-	          </div>
-          	<div class="nsw-row">
-	            <div class="nsw-col nsw-col-lg-8 nsw-offset-lg-2">
-	            	<h2 class="section-title">Checkboxes</h2>
-								{{>_tags model.checkbox}}
-	            </div>
-	          </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>

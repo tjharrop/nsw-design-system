@@ -4,52 +4,41 @@
   @include font-size('sm');
   color: $dark80;
 
-  a:not(.nsw-button):not(.nsw-tag) {
-    color: $nsw-primary-blue;
-    text-decoration: underline;
-    text-decoration-skip-ink: auto;
-
-    &:hover {
-      @include nsw-hover;
-      outline: 2px solid $hover-colour;
-    }
-
-    &:focus {
-      @include nsw-focus($offset: false);
-    }
-
-    &:visited {
-      color: $link-visited;
-    }
-
-    &:active {
-      @include nsw-active;
-    }
+  a:not([class]) {
+    @include link;
   }
 
   p,
   ul,
   ol,
   dl {
-    margin: 0;
+    &:not([class]) {
+      margin: 0;
+    }
   }
 
   * + p,
   * + ul,
   * + ol,
   * + dl {
-    margin-top: 1rem;
+    &:not([class]) {
+      margin-top: rem(16px);
+    }
   }
 
   ul,
   ol {
-    li {
-      @include nsw-spacing(margin-top, xs);
+    &:not([class]) {
+      li {
+        @include nsw-spacing(margin-top, xs);
+      }
     }
   }
 
   dt {
-    @include nsw-spacing(margin-top, xs);
+    &:not([class]) {
+      @include nsw-spacing(margin-top, xs);
+    }
   }
 
   small {
@@ -92,66 +81,79 @@
     background-color: $light20;
     margin: rem(16) 0;
   }
-}
 
-.nsw-wysiwyg-content {
   h1,
   h2,
   h3,
   h4,
   h5,
   h6 {
-    @include font-stack('heading');
-    margin: 0;
+    &:not([class]) {
+      @include font-stack('heading');
+      margin: 0;
+    }
   }
 
   h1 {
-    @include font-size('xxxl');
+    &:not([class]) {
+      @include font-size('xxxl');
+    }
   }
 
   h2 {
-    @include font-size('xxl');
+    &:not([class]) {
+      @include font-size('xxl');
+    }
   }
 
   h3 {
-    @include font-size('lg');
+    &:not([class]) {
+      @include font-size('lg');
+    }
   }
 
   h4 {
-    @include font-size('md');
+    &:not([class]) {
+      @include font-size('md');
+    }
   }
 
   h5,
   h6 {
-    @include font-size('sm');
-  }
-
-  .nsw-intro {
-    @include font-size('md');
+    &:not([class]) {
+      @include font-size('sm');
+    }
   }
 
   * + h1 {
-    @include nsw-spacing(margin-top, xxxl);
+    &:not([class]) {
+      @include nsw-spacing(margin-top, xxxl);
+    }
   }
 
   * + h2 {
-    @include nsw-spacing(margin-top, xxl);
+    &:not([class]) {
+      @include nsw-spacing(margin-top, xxl);
+    }
   }
 
   * + h3 {
-    @include nsw-spacing(margin-top, xl);
+    &:not([class]) {
+      @include nsw-spacing(margin-top, xl);
+    }
   }
 
   * + h4,
   * + h5,
   * + h6 {
-    @include nsw-spacing(margin-top, lg);
+    &:not([class]) {
+      @include nsw-spacing(margin-top, lg);
+    }
   }
-}
 
-.nsw-body-content {
-  * + p {
-    margin-top: 1rem;
+  .nsw-intro {
+    @include font-size('md');
+    margin: rem(16px) 0 0 0;
   }
 }
 
@@ -167,6 +169,7 @@ h4 {
     @include font-stack('heading');
     margin: 0;
     padding-top: rem($grid-gutters);
+    padding-bottom: rem(8px);
 
     @include breakpoint('md') {
       padding-top: rem($grid-gutters*2);
@@ -196,4 +199,21 @@ h4 {
   &.nsw-section-title {
     @include font-size('md');
   }
+}
+
+.nsw-section-separator {    
+  border: 0;
+  height: 1px;
+  background-color: $light20;
+  margin: rem(32) 0;
+
+  @include breakpoint('md') {
+    margin: rem(48) 0;
+  }
+}
+
+.nsw-section-text {
+  margin: 0;
+  margin-top: rem(-8px);
+  padding-bottom: rem(8px);
 }

@@ -1,36 +1,10 @@
 ---
 title: Side navigation
-model:
-  single-level: json/side-navigation.json
-  two-level: json/side-navigation-level-2.json
-  four-level: json/side-navigation-level-4.json
+component:
+  folder: side-navigation
+  description: A vertical list of links that shows the user their current position in the site hierarchy and enables them to navigate to other pages. 
+  figma: https://www.figma.com/file/PVrERKnckLTlJSPk12gbtS/NSW-Digital-Design-System?node-id=323%3A10458
+  html: https://nswdesignsystem.surge.sh/components/side-navigation/index.html
+  react: #
+  kiama: #
 ---
-
-<div class="nsw-section--white">
-  <div class="nsw-container">
-    <div class="nsw-page-layout">
-      <div class="nsw-page-layout__main">
-        <div class="nsw-grid">
-          <div class="nsw-col nsw-col-md-4">
-        		<h2 class="nsw-section-title">Single level</h2>
-        		<div class="nsw-m-top-md" style="max-width: 336px;"> 
-            	{{>_side-navigation model.single-level}}
-            </div>
-          </div>
-          <div class="nsw-col nsw-col-md-4">
-        		<h2 class="nsw-section-title">Two levels</h2>
-        		<div class="nsw-m-top-md" style="max-width: 336px;"> 
-            	{{>_side-navigation model.two-level}}
-            </div>
-          </div>
-          <div class="nsw-col nsw-col-md-4">
-        		<h2 class="nsw-section-title">Four levels</h2>
-        		<div class="nsw-m-top-md" style="max-width: 336px;"> 
-            	{{>_side-navigation model.four-level}}
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
