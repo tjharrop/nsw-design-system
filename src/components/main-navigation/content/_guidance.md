@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-The main navigation shows users the key areas of your site and helps them to find what they are looking for.
-
-## Using main navigation
+## Usage
 
 Use the main navigation to show the top-level detail of your Information Architecture (IA).
 

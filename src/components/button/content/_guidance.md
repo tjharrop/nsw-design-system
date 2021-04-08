@@ -4,7 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-<h2>Using buttons</h2>   
+<h2>Usage</h2>   
 <p>Buttons should be used when the user performs an action, and should describe what happens when pressed. Examples of button contexts include:  
 </p> <ul>   
   
@@ -16,12 +16,12 @@ layout: partial.hbs
 <h3>Buttons vs. links</h3>   
 <p>Buttons should be used if there is an <em>action</em> performed. For navigating users to different pages, use a text link instead.</p> 
 
-<h2>Button states</h2> 
+<h3>Button states</h3> 
 <p>Buttons are styled according to their purpose:</p> 
 <ul> 
 	<li><strong>Primary</strong> buttons are for the page's primary user action (call to action)</li> 
-	<li><strong>Highlight</strong> buttons can be coloured with your brand colour and used in place of primary buttons</li> 
 	<li><strong>Secondary</strong> buttons are used for call to action other than the primary</li> 
+	<li><strong>Danger</strong> buttons are NSW Primary Highlight and used to confirm a destructive action, such as delete. </li> 
 	<li><strong>Disabled</strong> buttons can be used if research shows that it helps users understand the screen</li> 
 </ul> 
 

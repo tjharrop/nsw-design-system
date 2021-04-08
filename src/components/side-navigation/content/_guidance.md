@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-A vertical list of links that shows the user their current position in the site hierarchy and enables them to navigate to other pages.
-
-## Using side navigation
+## Usage
 
 Use the side navigation to allow users to find other pages within a section of a site. This will enable the user to see related pages and click though without having to go back.
 

@@ -6,15 +6,25 @@ layout: partial.hbs
 ---
 ## Usage
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis. Nullam porttitor non nisl nec pretium. Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna, id aliquam enim mattis a. Pellentesque scelerisque, dolor nec imperdiet mollis, magna nisl tincidunt lorem, id mattis urna risus vel lorem. Proin a rutrum lacus. Sed cursus accumsan nulla vel pretium. Aenean finibus metus ac commodo fringilla
+Callouts are text excerpts, used as a visual cue to draw attention to content. 
+
+Use callouts to: 
+* call attention to important pieces of information
+* supplement a point in the main text
+* supply information that applies in special cases
+* link to a relevant resource 
 
 ### When to avoid
 
-Phasellus id dolor augue. Vestibulum aliquet ornare ipsum eu ullamcorper. Integer ornare tortor et dapibus condimentum. Nam rhoncus ipsum at efficitur ornare. Praesent sagittis enim finibus leo aliquam ultricies sit amet a quam. Integer eget massa eget turpis elementum semper in eget massa.
+Callouts should be used sparingly to maintain effectiveness, consider weaving the information into the introduction or as part of the instructions you're creating. 
 
-## Principles
+Do not:
+* add multiple callout boxes to a topic. This dilutes the importance of the callout and distracts the user. 
+* create a callout with content that is not relevant to the user as your reader might then ignore furutre callouts
 
-Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna.
+## How this component works
+
+Callouts can contain an icon, a title and a message. Callouts should be short, easy to scan, informative and clear. 
 
 ## Accessibility
 

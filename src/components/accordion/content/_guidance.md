@@ -47,21 +47,21 @@ Disabling controls is normally confusing for users. If there is no content for a
 
 Consider tabs if the user would likely need to flick between content sections.
 
-## Anatomy
+<!-- ## Anatomy
 
 ![](/assets/images/accordion-anatomy-1.png)
 
-**Container  
-**Contains accordion headline and content. The headline panel hover state lets the user know the entire element is clickable.
+**Container**  
+Contains accordion headline and content. The headline panel hover state lets the user know the entire element is clickable.
 
-**Headline  
-**Headline builds a clear mental model of the hidden content.
+**Headline**  
+Headline builds a clear mental model of the hidden content.
 
-**Content  
-**Information that is contained in your accordion.
+**Content**
+Information that is contained in your accordion.
 
-**Icon  
-**A directional arrow that indicates the panel is expandable or collapsible.
+**Icon** 
+A directional arrow that indicates the panel is expandable or collapsible.-->
 
 ## Accessibility
 

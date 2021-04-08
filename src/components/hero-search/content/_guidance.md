@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-The hero search allows users to easily and quickly go to the area they are interested in.
-
-## Using hero search
+## Usage
 
 Today, people rely more and more on search engines and search to find exactly what they want, without having to learn how an organisation has arranged its information architecture.
 

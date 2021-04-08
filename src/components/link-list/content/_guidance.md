@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-Link lists let users navigate to related content.
-
-## Using link lists
+## Usage
 
 Use link lists to display a list of navigation items to provide a quick way for users to navigate to a content area.
 
@@ -17,11 +15,11 @@ Do:
 
 ## When to avoid
 
-Do not
+Do not use:
 
-* use a link list for pages that aren't related as this is likely to confuse users
-* use a link list in a transactional service or a form
-* use as an on-page navigation pattern.
+* for pages that aren't related as this is likely to confuse users
+* in a transactional service or a form
+* as an on-page navigation pattern.
 
 ## How this component works
 

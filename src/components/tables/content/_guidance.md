@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-Tables provide a structured way to display information in rows and columns that make it easier for users to scan, sort and compare information.
-
-## Using tables
+## Usage
 
 Use tables to display large data sets that share common attributes to make it easier for users to scan, sort, and compare.
 

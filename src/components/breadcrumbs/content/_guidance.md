@@ -8,8 +8,6 @@ layout: partial.hbs
 
 Use the breadcrumbs component when you need to help users understand and move between the multiple levels of a website.
 
-### How to use
-
 Do:
 
 * display in the top left of the main content area above the page title
@@ -38,7 +36,7 @@ The chevrons between the names shows the visual hierarchy between pages.
 **Current page**  
 Indicates the current page the user is viewing.
 
-## Behavior
+## Behaviour
 
 For mobile resolutions (under 768px), the breadcrumb shows a link to the immediate parent and current page only.
 

@@ -4,8 +4,6 @@ order: "1"
 layout: partial.hbs
 
 ---
-The footer displays across the bottom of all NSW Government websites.
-
 ## Using footer
 
 To be used across the bottom of all NSW Government websites.

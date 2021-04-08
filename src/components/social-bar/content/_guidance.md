@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-The social bar allows users to share something of interest via social media.
-
-## Using social bar
+## Usage
 
 Use to encourage the sharing of links to pages that may be of interest to the user's social network.
 

@@ -4,9 +4,7 @@ order: "4"
 layout: partial.hbs
 
 ---
-Tabs are a form of secondary in-page navigation, helping to group different types of content in a limited space.
-
-## Using tabs
+## Usage
 
 Tabs allow users to focus on specific content whilst remaining clear on the overall context of the screen. Use tabs to split long content into manageable chunks to avoid overwhelming the user.
 
@@ -29,7 +27,7 @@ Do not:
 
 * use for very small (1 paragraph or equivalent) content, consider paragraphs
 * use for very long content where the physical tabs become lost, consider breaking content into separate pages
-* use for content where users are likely to want to compare information across multiple tabs, consider an [accordion](https://www.digital.nsw.gov.au/design-system/component-library/accordion)
+* use for content where users are likely to want to compare information across multiple tabs, consider an accordion
 
 ## How this component works
 

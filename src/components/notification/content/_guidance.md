@@ -4,11 +4,24 @@ order: "1"
 layout: partial.hbs
 
 ---
-In-page notifications are used to contextually inform users of important information or status of an interaction.
+## Usage
 
-## Using in-page notifications
+Use in-page notifications to attract the user's attention. Notifications are often displayed following a user interaction or system event. The level of attention is dependent on the importance of the notification. 
 
-Use in-page notifications to attract the user's attention. Notifications are often displayed following a user interaction or system event. The level of attention is dependent on the importance of the notification. Notification types are:
+Do:
+* use clear, concise easy to understand language, to minimise cognitive load
+* display the notifications in context and at an appropriate time
+* avoid using multiple notifications on a single screen (if multiple are required, display them by importance; critical, warning, success then information).
+* use the appropriate notification for the task at hand.
+
+Do not:
+* overuse notifications as this will erode their effectiveness
+* use for global alerts which are required on all pages.
+
+
+### In-page notification states
+
+In-page notification are styled according to their purpose:
 
 **Information notification**
 
@@ -36,18 +49,6 @@ Designed to be less intrusive or interruptive than other levels of notification:
 * use where the user is blocked until the issue is resolved, or the issue needs resolving immediately
 * provide sufficient information on the issue and resolution to fix the issue
 * don't use for validation or validation summary.
-
-Do:
-
-* use clear, concise easy to understand language, to minimise cognitive load
-* display the notifications in context and at an appropriate time
-* avoid using multiple notifications on a single screen (if multiple are required, display them by importance; critical, warning, success then information).
-* use the appropriate notification for the task at hand.
-
-Do not:
-
-* overuse notifications as this will erode their effectiveness
-* use for global alerts which are required on all pages.
 
 ### How this component works
 

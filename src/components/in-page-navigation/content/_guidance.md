@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-The in-page nav (or page contents as it is sometimes called) provides navigation to individual anchor links located in the main content.
-
-## Using in-page navigation
+## Usage
 
 Use when there are multiple section on a page to helps users scan the section names and navigate to different sections of the page.
 

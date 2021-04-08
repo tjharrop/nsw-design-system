@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-Pagination indicates to a user that a list of items has been split in to multiple pages.
-
-## Using pagination
+## Usage
 
 Use pagination to separate large lists of content, such as search results or an index, into smaller lists that are easier to interact with.
 

@@ -4,9 +4,7 @@ order: "1"
 layout: partial.hbs
 
 ---
-A tag is an interactive element containing a keyword or phrase used to categorise content.
-
-## Using tags
+## Usage
 
 Tags help classify content for your users using keywords or phrases. They can also help users search for and find related content quickly and easily.
 

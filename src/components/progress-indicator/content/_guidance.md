@@ -6,15 +6,22 @@ layout: partial.hbs
 ---
 ## Usage
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin dui sem, tempus a pulvinar aliquet, commodo ut neque. Praesent euismod elit id neque tempor, et fringilla dolor mattis. Nullam porttitor non nisl nec pretium. Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna, id aliquam enim mattis a. Pellentesque scelerisque, dolor nec imperdiet mollis, magna nisl tincidunt lorem, id mattis urna risus vel lorem. Proin a rutrum lacus. Sed cursus accumsan nulla vel pretium. Aenean finibus metus ac commodo fringilla
+Use a progress indicator to let a user know how far along they are in the current process. Using a progress indicator helps manage a user's expectation of the time and effort involved to complete a task and convey a sense of progression.
+
+Do:
+* test your content without a progress indicator to see if it is required by the user
+* add where there is an evidence based user need to do so
 
 ### When to avoid
 
-Phasellus id dolor augue. Vestibulum aliquet ornare ipsum eu ullamcorper. Integer ornare tortor et dapibus condimentum. Nam rhoncus ipsum at efficitur ornare. Praesent sagittis enim finibus leo aliquam ultricies sit amet a quam. Integer eget massa eget turpis elementum semper in eget massa.
+Do not use a progress indicator:
+* when there are 2 or less steps in a process
+* as navigation between steps
+* when the exact number of steps may change
 
-## Principles
+## How this component works
 
-Nunc ligula neque, viverra in turpis sit amet, aliquam tempor odio. Pellentesque imperdiet vehicula tincidunt. Aliquam erat volutpat. Curabitur faucibus laoreet urna.
+As a user progresses through the steps of a process, the **Step** position is updated and the progress bar highlights the correlating sections to reflect the steps completed. The **Step _ of _** text can be use on it own (without the progress bar) when this alone communicates enough information to the user. 
 
 ## Accessibility
 
